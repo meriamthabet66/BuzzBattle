@@ -37,7 +37,8 @@ public class TestQuestionSystem : MonoBehaviour
 
     private void OnQuestionLoaded(BaseQuestion question)
     {
-        Debug.Log("Question Loaded: " + question.questionText);
+        questionNumber++;
+        Debug.Log($"Question #{questionNumber}: {question.questionText}");
 
         switch (question.GetQuestionType())
         {
@@ -57,10 +58,11 @@ public class TestQuestionSystem : MonoBehaviour
                 break;
         }
         
-        questionNumber++;
-        Debug.Log($"Question #{questionNumber}: {question.questionText}");
+        
         // Load next question automatically
         Invoke(nameof(LoadNext), 1f);
+        
+        
     }
 
     void LoadNext()
