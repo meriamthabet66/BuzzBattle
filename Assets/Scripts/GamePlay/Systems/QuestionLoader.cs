@@ -39,8 +39,13 @@ namespace GamePlay.Systems
                 switch (currentRound.questionType)
                 {
                     case QuestionType.MultipleChoice:
+
+                        // Regular MCQ
                         pool.AddRange(category.multipleChoiceQuestions);
+
+                        // Include True/False because it's a subtype of MCQ
                         pool.AddRange(category.trueOrFalseQuestions);
+
                         break;
                     
                     case QuestionType.Verbal:
@@ -52,6 +57,11 @@ namespace GamePlay.Systems
             Debug.Log("Pool size before shuffle: " + pool.Count);
             //then shuffles them randomly.
             Shuffle(pool);
+            
+            if(pool.Count < currentRound.questionCount)
+            {
+                Debug.LogWarning("Not enough questions in pool, using available ones.");
+            }
             
             //and finally puts the indicated number in the workingQuestions list
             int count = Mathf.Min(currentRound.questionCount, pool.Count);

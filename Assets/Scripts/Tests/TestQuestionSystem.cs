@@ -10,6 +10,7 @@ public class TestQuestionSystem : MonoBehaviour
 {
     [SerializeField] private QuestionLoader questionLoader;
     [SerializeField] private Category testCategory;
+    private int questionNumber = 0;
 
     private void Start()
     {
@@ -41,18 +42,23 @@ public class TestQuestionSystem : MonoBehaviour
         switch (question.GetQuestionType())
         {
             case QuestionType.MultipleChoice:
-                TestMultipleChoice(question as MultipleChoiceQuestion);
+                if (question is MultipleChoiceQuestion mcq)
+                    TestMultipleChoice(mcq);
                 break;
 
             case QuestionType.TrueOrFalse:
-                TestTrueOrFalse(question as TrueOrFalseQuestion);
+                if (question is TrueOrFalseQuestion tf)
+                    TestTrueOrFalse(tf);
                 break;
 
             case QuestionType.Verbal:
-                TestVerbal(question as VerbalQuestion);
+                if (question is VerbalQuestion vq)
+                    TestVerbal(vq);
                 break;
         }
-
+        
+        questionNumber++;
+        Debug.Log($"Question #{questionNumber}: {question.questionText}");
         // Load next question automatically
         Invoke(nameof(LoadNext), 1f);
     }
@@ -66,6 +72,7 @@ public class TestQuestionSystem : MonoBehaviour
         else
         {
             Debug.Log("ROUND FINISHED");
+            OnRoundFinished();
         }
     }
 
@@ -98,5 +105,10 @@ public class TestQuestionSystem : MonoBehaviour
     private void OnDestroy()
     {
         QuestionLoader.OnQuestionLoaded -= OnQuestionLoaded;
+    }
+    
+    void OnRoundFinished()
+    {
+        Debug.Log("Round Complete");
     }
 }
