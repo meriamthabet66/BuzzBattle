@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255c60e2b6e545f69096a871581b98a2, type: 3}
+  m_Name: Anime
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.Category
+  categoryName: Anime
+  multipleChoiceQuestions:
+  - {fileID: 11400000, guid: a6f5796006e508b4bbfe1cb55c50aec0, type: 2}
+  - {fileID: 11400000, guid: 78550338329d6de49b57b5ca5fca92e4, type: 2}
+  - {fileID: 11400000, guid: 302dc5376460e404bbd692630050c0c6, type: 2}
+  - {fileID: 11400000, guid: da2421274ec1ccf49862218fa21b886f, type: 2}
+  - {fileID: 11400000, guid: 96409fefc84e1704d9389021fe01aeb0, type: 2}
+  - {fileID: 11400000, guid: 3e8915fd38643294f8976ee275bdb0ae, type: 2}
+  - {fileID: 11400000, guid: 268ea8dc7a4693444a01653d584d61a3, type: 2}
+  trueOrFalseQuestions:
+  - {fileID: 11400000, guid: 6276c72315fb8c0419ba789353280e6e, type: 2}
+  - {fileID: 11400000, guid: c2b8d0d4f00419d4a997490f0724cd9e, type: 2}
+  - {fileID: 11400000, guid: d986b18037fa48d4ca0ffb6b09bb2b12, type: 2}
+  - {fileID: 11400000, guid: 91d2db3f4031e4f48ab261ddb02dca53, type: 2}
+  - {fileID: 11400000, guid: f6b506623107a034fb51939300d96664, type: 2}
+  verbalQuestions:
+  - {fileID: 11400000, guid: bf4e97c1e2298d546af6a4fbcdfa469f, type: 2}
+  - {fileID: 11400000, guid: 7bd93d7354a24794680b03e79391cf50, type: 2}
+  - {fileID: 11400000, guid: 7da0e7f3e17aeb6428f188632dce1bb4, type: 2}
+  - {fileID: 11400000, guid: b2164b2a12a3e8c46933839236ceaffc, type: 2}
+  - {fileID: 11400000, guid: e8b9005c1f550ec44ac3c2f88bbc3317, type: 2}

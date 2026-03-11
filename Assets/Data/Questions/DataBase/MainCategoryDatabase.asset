@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d6039f21f7846d68bab9864d9bb0a89, type: 3}
+  m_Name: MainCategoryDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.CategoryDatabase
+  categories:
+  - {fileID: 11400000, guid: ce2047e4b3345fa4daa9f0cbf6207af4, type: 2}
