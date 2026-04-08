@@ -9,6 +9,7 @@ public abstract class BaseQuestion : ScriptableObject
     public string questionText;
     public AudioClip voiceClip;
     public int difficulty;
+   
 
     public abstract QuestionType GetQuestionType();
 }

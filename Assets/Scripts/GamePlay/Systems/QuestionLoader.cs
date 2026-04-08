@@ -17,6 +17,7 @@ namespace GamePlay.Systems
 
         private List<BaseQuestion> workingQuestions = new List<BaseQuestion>();
         private int currentIndex = 0;
+        public BaseQuestion CurrentQuestion { get; private set; }
 
         private RoundConfig currentRound;
 
@@ -92,6 +93,8 @@ namespace GamePlay.Systems
             
             //the next question is loaded
             BaseQuestion question = workingQuestions[currentIndex++];
+            CurrentQuestion = question;
+            
             OnQuestionLoaded?.Invoke(question);
             
             //the question's voice over play. note: maybe we just turn it to a button later 

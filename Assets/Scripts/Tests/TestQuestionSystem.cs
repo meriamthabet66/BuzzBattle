@@ -2,42 +2,35 @@
 using UnityEngine;
 using GamePlay.Questions;
 using GamePlay.Systems;
-using GamePlay.Configs;
+using Managers;
 
-
-//this is just a test class to test questionLoader 
 public class TestQuestionSystem : MonoBehaviour
 {
-    [SerializeField] private QuestionLoader questionLoader;
     [SerializeField] private Category testCategory;
+
     private int questionNumber = 0;
 
     private void Start()
     {
         Debug.Log("TEST STARTED");
 
-        // Create a fake round configuration
-        RoundConfig round = new RoundConfig
-        {
-            categories = new List<Category> { testCategory },
-            questionType = QuestionType.MultipleChoice, // change this to test other types
-            questionCount = 5,
-            questionTimerSeconds = 20
-        };
-
-        // Subscribe to question event
+        // Subscribe to question events
         QuestionLoader.OnQuestionLoaded += OnQuestionLoaded;
 
-        // Initialize loader
-        questionLoader.Initialize(round);
+        // Start a fake match
+        MatchManager.Instance.StartMatch(GameMode.Normal, 1, 5);
 
-        // Start round
-        questionLoader.LoadNextQuestion();
+        // Start the round through MatchManager
+        MatchManager.Instance.StartRound(
+            new List<Category> { testCategory },
+            QuestionType.MultipleChoice
+        );
     }
 
     private void OnQuestionLoaded(BaseQuestion question)
     {
         questionNumber++;
+
         Debug.Log($"Question #{questionNumber}: {question.questionText}");
 
         switch (question.GetQuestionType())
@@ -58,26 +51,9 @@ public class TestQuestionSystem : MonoBehaviour
                 break;
         }
         
-        
-        // Load next question automatically
-        Invoke(nameof(LoadNext), 1f);
-        
-        
     }
 
-    void LoadNext()
-    {
-        if (questionLoader.HasMoreQuestions())
-        {
-            questionLoader.LoadNextQuestion();
-        }
-        else
-        {
-            Debug.Log("ROUND FINISHED");
-            OnRoundFinished();
-        }
-    }
-
+  
     void TestMultipleChoice(MultipleChoiceQuestion mcq)
     {
         Debug.Log("TYPE: Multiple Choice");
@@ -107,10 +83,5 @@ public class TestQuestionSystem : MonoBehaviour
     private void OnDestroy()
     {
         QuestionLoader.OnQuestionLoaded -= OnQuestionLoaded;
-    }
-    
-    void OnRoundFinished()
-    {
-        Debug.Log("Round Complete");
     }
 }

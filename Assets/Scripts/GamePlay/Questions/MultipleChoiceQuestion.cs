@@ -11,6 +11,7 @@ namespace GamePlay.Questions
         [Header("Must contain exactly 4 answers (1 correct, 3 wrong)")]
         public List<AnswerOption> answers = new List<AnswerOption>(4);
 
+
         public override QuestionType GetQuestionType()
         {
             return QuestionType.MultipleChoice;

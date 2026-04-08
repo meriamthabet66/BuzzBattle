@@ -1,28 +1,20 @@
+using System.Collections.Generic;
+using Data;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData : MonoBehaviour
+public class PlayerData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
-        public int ID;
-        public string Name;
-        public int Score;
-        public float ReactionTime;
-        
-        public int FoxSkinID;
-        public int HatID;
-        public int AccessoryID;
+    public int ID;
 
-    void Start()
-    {
-        
-    }
+    public string DisplayName;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int Score;
+    public int Steals;
+
+    public int SelectedCharacterID;
+
+    // Optional link to account
+    public AccountData LinkedAccount;
 }
 

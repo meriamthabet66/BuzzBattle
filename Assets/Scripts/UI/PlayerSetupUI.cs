@@ -1,66 +1,42 @@
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using System.Collections.Generic;
+using Managers;
+using UI.UI;
 
-public class PlayerSetupUI : MonoBehaviour
-{
-    [Header("UI")]
-    public TMP_Dropdown playerCountDropdown;
-    public Transform inputContainer;
-    public GameObject inputPrefab;
-    public Button startButton;
+namespace UI {
+    public class PlayerSetupUI : MonoBehaviour {
+        [Header("Player Inputs")]
+        
+        [SerializeField] private List<PlayerInputSectionUI> playerSections;
 
-    private List<TMP_InputField> inputs = new();
-
-    private void Start()
-    {
-        playerCountDropdown.onValueChanged.AddListener(UpdateInputs);
-        startButton.onClick.AddListener(OnStartClicked);
-
-        UpdateInputs(0);
-    }
-
-    public void Show() => gameObject.SetActive(true);
-    public void Hide() => gameObject.SetActive(false);
-
-    void UpdateInputs(int index)
-    {
-        int count = index + 2; // 2–4 players
-
-        foreach (Transform child in inputContainer)
-            Destroy(child.gameObject);
-
-        inputs.Clear();
-
-        for (int i = 0; i < count; i++)
+        private void Awake()
         {
-            var go = Instantiate(inputPrefab, inputContainer);
-            var input = go.GetComponent<TMP_InputField>();
-            input.placeholder.GetComponent<TextMeshProUGUI>().text = $"Player {i + 1}";
-            inputs.Add(input);
-        }
-    }
-
-    void OnStartClicked()
-    {
-        if (inputs.Count < 2)
-        {
-            Debug.Log("Minimum 2 players required");
-            return;
-        }
-
-        foreach (var input in inputs)
-        {
-            if (string.IsNullOrWhiteSpace(input.text))
+            for (int i = 0; i < playerSections.Count; i++)
             {
-                Debug.Log("All players must have names");
-                return;
+                playerSections[i].playerIndex = i + 1;
             }
         }
 
-        Debug.Log("Game starting with valid players");
 
-        // Transition to next state here
+        public void OnStartClicked() {
+            PlayerManager.Instance.ResetPlayers();
+
+            string p1 = playerSections[0].GetPlayerName();
+            string p2 = playerSections[1].GetPlayerName();
+
+            int c1 = playerSections[0].GetCharacterId();
+            int c2 = playerSections[1].GetCharacterId();
+
+            PlayerManager.Instance.AddPlayer(p1, c1);
+            PlayerManager.Instance.AddPlayer(p2, c2);
+
+            if (!PlayerManager.Instance.ValidateMinPlayers()) {
+                Debug.LogWarning("Not enough players!");
+                return;
+            }
+
+            GameManager.Instance.ChangeState(GameState.CategorySelection);
+        }
     }
 }
