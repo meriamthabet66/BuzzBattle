@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8896548206577762433, guid: 381e71fa23368ea4b9a63af9ab35a5e6, type: 3}
+  m_Sprite: {fileID: -4441382260067031016, guid: 27be45fae2c431a409679aa4fac033fd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7404060743310914452, guid: 806a44295142a014fb092e01cc49e884, type: 3}
+  m_Sprite: {fileID: -8387048995639207893, guid: 5cf5a2e5f26af054290bc1c9eb39cce7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -418,10 +418,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0627\u0643\u062A\u0628 \u0627\u0633\u0645\u0643"
+  m_text: "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628 1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
-  m_sharedMaterial: {fileID: 6896456693373771843, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
+  m_sharedMaterial: {fileID: 798517985090469651, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -728,8 +728,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -2207236230058056998, guid: 56811396c3a8dd14087732a98048b594, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -751,7 +751,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UI.PlayerInputSectionUI
   nameInput: {fileID: 0}
+  nameDisplayText: {fileID: 0}
   characterButton: {fileID: 0}
+  playerIndex: 0
 --- !u!1 &7375807116028428143
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,8 +959,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
-  m_sharedMaterial: {fileID: 6896456693373771843, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
+  m_sharedMaterial: {fileID: 798517985090469651, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

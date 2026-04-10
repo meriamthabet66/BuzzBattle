@@ -8,13 +8,17 @@ namespace Managers {
         public static MatchManager Instance { get; private set; }
 
         public GameMode currentMode;
-
         public int totalRounds;
         public int questionsPerRound;
 
         public int CurrentRoundIndex { get; private set; }
         
         [SerializeField] private RoundManager roundManager;
+
+        // --- ADDED FOR SPRINT 2 TESTING ---
+        [Header("Sprint 2 Test Data")]
+        public Category testCategory; // Drag one of your Category ScriptableObjects here in Unity!
+        // ----------------------------------
 
         private void Awake()
         {
@@ -23,9 +27,26 @@ namespace Managers {
                 Destroy(gameObject);
                 return;
             }
-
             Instance = this;
         }
+
+        // --- ADDED FOR SPRINT 2 TESTING ---
+        private void Start()
+        {
+            if (testCategory != null)
+            {
+                Debug.Log("Starting Sprint 2 Test Match...");
+                StartMatch(GameMode.Normal, 3, 5); // 3 rounds, 5 questions
+                
+                List<Category> testList = new List<Category> { testCategory };
+                StartRound(testList, QuestionType.MultipleChoice);
+            }
+            else
+            {
+                Debug.LogWarning("Please drag a Test Category into MatchManager to start the game!");
+            }
+        }
+        // ----------------------------------
 
         public void StartMatch(GameMode mode, int rounds, int questions)
         {
@@ -58,13 +79,13 @@ namespace Managers {
             CurrentRoundIndex++;
         }
         
-        
         public void OnRoundFinished()
         {
             AdvanceRound();
 
             if (!IsLastRound())
             {
+                // NOTE: Make sure your GameManager actually exists in the scene to avoid NullReferenceErrors here!
                 GameManager.Instance.ChangeState(GameState.CategorySelection);
             }
             else

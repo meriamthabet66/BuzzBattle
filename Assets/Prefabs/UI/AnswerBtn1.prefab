@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6506571825779656457}
   - component: {fileID: 5208135320594003696}
   - component: {fileID: 7710488580349967333}
-  - component: {fileID: 8960955731892506767}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -66,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0625\u062C\u0627\u0628\u0629 1"
+  m_text: "1 \uFE94\uFE91\uFE8E\uFE9F\uFE87"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
   m_sharedMaterial: {fileID: 6896456693373771843, guid: 3debdc905d79c704bb798188f56493eb, type: 2}
@@ -75,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -138,19 +137,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8960955731892506767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756309967905609460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c7cdaba7b7940bdaa4fa008f9f412f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UI.FixTextOnStart
-  textComponent: {fileID: 7710488580349967333}
 --- !u!1 &8059982532564256704
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,6 +149,7 @@ GameObject:
   - component: {fileID: 3785292271903041682}
   - component: {fileID: 3963523051565182462}
   - component: {fileID: 5700351952475016687}
+  - component: {fileID: 3893407043254116623}
   m_Layer: 5
   m_Name: AnswerBtn1
   m_TagString: Untagged
@@ -218,7 +205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8896548206577762433, guid: 381e71fa23368ea4b9a63af9ab35a5e6, type: 3}
+  m_Sprite: {fileID: -7136498553881477850, guid: be4db537933595847bfc2b8c13db1c73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -251,7 +238,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.92156863, g: 0.39607844, b: 0.1254902, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -272,3 +259,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &3893407043254116623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8059982532564256704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52f2e0c0a2444508e2335dac7f3ee0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.AnswerButtonUI
+  answerText: {fileID: 7710488580349967333}
+  button: {fileID: 5700351952475016687}
