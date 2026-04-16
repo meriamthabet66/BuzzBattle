@@ -2,49 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using GamePlay.Systems;
 using GamePlay.Questions;
-using Managers; // <-- Added to listen to RoundManager's Timer!
+using GamePlay.Systems;
+using Managers; 
 
 namespace UI 
 {
     public class GameplayHUD : MonoBehaviour
     {
-        // Sends (PlayerIndex, IsCorrect) to the RoundManager/ScoreManager
         public static Action<int, bool> OnAnswerEvaluated; 
 
-        // --- NEW TIMER LOGIC ---
         [Header("Timer UI")]
-        [SerializeField] private TMP_Text timerText; // Drag your Timer Text object here in Unity!
-        // -----------------------
+        [SerializeField] private TMP_Text timerText; 
 
-        [Header("Question Texts")]
+        [Header("Background Question Texts")]
         [SerializeField] private TMP_Text questionTextUP;
         [SerializeField] private TMP_Text questionTextDown;
 
         [Header("Main Answer Panel (Parent)")]
-        [SerializeField] private GameObject answerPanel; // Drag 'AnswerPanel' here
-        [SerializeField] private RectTransform answerPanelRect; // Drag 'AnswerPanel' here too!
+        [SerializeField] private GameObject answerPanel; 
+        [SerializeField] private RectTransform answerPanelRect; 
+        [SerializeField] private TMP_Text panelQuestionText; 
 
         [Header("Multiple Choice Section")]
-        [SerializeField] private GameObject mcqSection; // Drag 'MCQAnswersSection' here
-        [SerializeField] private AnswerButtonUI[] mcqButtons; // Drag the 4 AnswerBtns here
+        [SerializeField] private GameObject mcqSection; 
+        [SerializeField] private AnswerButtonUI[] mcqButtons; 
 
         [Header("True/False Section")]
-        [SerializeField] private GameObject tfSection; // Drag 'TFAnswersSection' here
-        [SerializeField] private AnswerButtonUI[] tfButtons; // Drag the 2 AnswerBtns here
+        [SerializeField] private GameObject tfSection; 
+        [SerializeField] private AnswerButtonUI[] tfButtons; 
 
         private int currentPlayer = -1;
         private List<AnswerOption> currentAnswers;
         private HashSet<AnswerOption> removedAnswers = new HashSet<AnswerOption>();
-        private HashSet<int> blockedPlayers = new HashSet<int>();
 
         private void OnEnable()
         {
             QuestionLoader.OnQuestionLoaded += UpdateQuestion;
-            BuzzerSystem.OnPlayerBuzzed += OnPlayerBuzzed;
-
-            // --- NEW TIMER LOGIC: Listen for the timer changing ---
+            
+            // --- Listen to RoundManager instead of BuzzerSystem! ---
+            RoundManager.OnValidPlayerBuzzed += OnPlayerBuzzed; 
+            
             RoundManager.OnTimerUpdated += UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI += ForceClosePanel;
         }
@@ -52,30 +50,20 @@ namespace UI
         private void OnDisable()
         {
             QuestionLoader.OnQuestionLoaded -= UpdateQuestion;
-            BuzzerSystem.OnPlayerBuzzed -= OnPlayerBuzzed;
-
-            // --- NEW TIMER LOGIC: Stop listening ---
+            
+            RoundManager.OnValidPlayerBuzzed -= OnPlayerBuzzed;
+            
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
         }
 
-        // --- NEW TIMER LOGIC: Update the visual number ---
         private void UpdateTimerUI(int secondsLeft)
         {
-            if (timerText != null)
-            {
-                timerText.text = secondsLeft.ToString();
-            }
+            if (timerText != null) timerText.text = secondsLeft.ToString();
         }
 
-        // --- NEW TIMER LOGIC: Hide panel if they run out of time ---
         private void ForceClosePanel()
         {
-            if (currentPlayer != -1)
-            {
-                blockedPlayers.Add(currentPlayer); // Block them for taking too long!
-            }
-
             currentPlayer = -1;
             if (answerPanel != null) answerPanel.SetActive(false);
         }
@@ -83,23 +71,18 @@ namespace UI
         void UpdateQuestion(BaseQuestion question)
         {
             currentPlayer = -1;
-            blockedPlayers.Clear();
-            removedAnswers.Clear();
+            removedAnswers.Clear(); // Just clear the removed buttons!
 
-            // 1. Hide the entire AnswerPanel while we wait for someone to buzz
             if (answerPanel != null) answerPanel.SetActive(false);
 
-            // 2. Set the Question Text on the screen
-            if (questionTextUP != null) 
-                questionTextUP.text = ArabicFixer.Fix(question.questionText);
+            string fixedQuestionText = ArabicFixer.Fix(question.questionText);
 
-            if (questionTextDown != null) 
-                questionTextDown.text = ArabicFixer.Fix(question.questionText);
-            
-            // 3. Prep the right section in the background!
+            if (questionTextUP != null) questionTextUP.text = fixedQuestionText;
+            if (questionTextDown != null) questionTextDown.text = fixedQuestionText;
+            if (panelQuestionText != null) panelQuestionText.text = fixedQuestionText;
+
             if (question is TrueOrFalseQuestion tfq)
             {
-                // Turn ON T/F section, turn OFF MCQ section
                 if (mcqSection != null) mcqSection.SetActive(false);
                 if (tfSection != null) tfSection.SetActive(true);
 
@@ -108,7 +91,6 @@ namespace UI
             }
             else if (question is MultipleChoiceQuestion mcq)
             {
-                // Turn ON MCQ section, turn OFF T/F section
                 if (tfSection != null) tfSection.SetActive(false);
                 if (mcqSection != null) mcqSection.SetActive(true);
 
@@ -123,11 +105,8 @@ namespace UI
             {
                 if (i < answersData.Count)
                 {
-                    // NEW: If this answer was already guessed incorrectly, hide this button completely!
                     if (removedAnswers.Contains(answersData[i]))
-                    {
                         buttonsToUse[i].gameObject.SetActive(false);
-                    }
                     else
                     {
                         buttonsToUse[i].gameObject.SetActive(true);
@@ -143,16 +122,11 @@ namespace UI
 
         void OnPlayerBuzzed(int playerIndex)
         {
-            // If someone is answering, or THIS specific player answered wrong earlier, ignore them.
-            // (Other players are NOT in blockedPlayers, so they can buzz!)
-            if (currentPlayer != -1 || blockedPlayers.Contains(playerIndex)) return;
-
+            // We no longer need to check if they are blocked, RoundManager already did it!
             currentPlayer = playerIndex;
-            Debug.Log("Player " + playerIndex + " is answering");
-
+            
             if (answerPanel != null)
             {
-                // NEW: Refresh the buttons right before showing the panel so the wrong answer disappears!
                 if (currentAnswers.Count == 2)
                     PopulateButtons(tfButtons, currentAnswers);
                 else
@@ -168,12 +142,8 @@ namespace UI
             if (answerPanelRect == null) return;
             
             float zRotation = 0f;
-            
-            //Players 1 & 2 are top, Players 3 & 4 are bottom
-            if (playerIndex == 1 || playerIndex == 2) 
-                zRotation = 180f; 
-            else if (playerIndex == 3 || playerIndex == 4) 
-                zRotation = 0f; 
+            if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
+            else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
 
             answerPanelRect.localEulerAngles = new Vector3(0, 0, zRotation);
         }
@@ -186,24 +156,15 @@ namespace UI
 
             if (isCorrect)
             {
-                Debug.Log($"Player {currentPlayer} got it CORRECT!");
                 OnAnswerEvaluated?.Invoke(currentPlayer, true);
-                
-                // Hide panel, wait for next question
                 if (answerPanel != null) answerPanel.SetActive(false);
             }
             else
             {
-                Debug.Log($"Player {currentPlayer} got it WRONG!");
                 OnAnswerEvaluated?.Invoke(currentPlayer, false);
-
-                // Block this player, remove the wrong answer from screen
-                blockedPlayers.Add(currentPlayer);
-                removedAnswers.Add(selectedOption);
+                removedAnswers.Add(selectedOption); // Remove the wrong button
                 
                 currentPlayer = -1;
-                
-                // Hide panel so someone else can buzz!
                 if (answerPanel != null) answerPanel.SetActive(false); 
             }
         }

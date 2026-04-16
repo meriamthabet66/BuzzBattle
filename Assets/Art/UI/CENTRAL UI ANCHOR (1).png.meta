@@ -1,0 +1,7176 @@
+fileFormatVersion: 2
+guid: 0370751b85c6f2647841e8226120f191
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8165925331373592804
+    second: CENTRAL UI ANCHOR (1)_0
+  - first:
+      213: -3863989167164829771
+    second: CENTRAL UI ANCHOR (1)_1
+  - first:
+      213: 9160976350784125942
+    second: CENTRAL UI ANCHOR (1)_2
+  - first:
+      213: -6797607835431011645
+    second: CENTRAL UI ANCHOR (1)_3
+  - first:
+      213: -1730962056322408772
+    second: CENTRAL UI ANCHOR (1)_4
+  - first:
+      213: 5126751559128952803
+    second: CENTRAL UI ANCHOR (1)_5
+  - first:
+      213: 7656068352952894694
+    second: CENTRAL UI ANCHOR (1)_6
+  - first:
+      213: -5391771248287136283
+    second: CENTRAL UI ANCHOR (1)_7
+  - first:
+      213: 7757915000690792782
+    second: CENTRAL UI ANCHOR (1)_8
+  - first:
+      213: -5336135407857736969
+    second: CENTRAL UI ANCHOR (1)_9
+  - first:
+      213: -5227197445789467761
+    second: CENTRAL UI ANCHOR (1)_10
+  - first:
+      213: 2424692886762926916
+    second: CENTRAL UI ANCHOR (1)_11
+  - first:
+      213: 2093043105485461638
+    second: CENTRAL UI ANCHOR (1)_12
+  - first:
+      213: 2740627662378649059
+    second: CENTRAL UI ANCHOR (1)_13
+  - first:
+      213: 1687473666826699374
+    second: CENTRAL UI ANCHOR (1)_14
+  - first:
+      213: -2002006990277770456
+    second: CENTRAL UI ANCHOR (1)_15
+  - first:
+      213: 2118276047605313969
+    second: CENTRAL UI ANCHOR (1)_16
+  - first:
+      213: -4845780247002214045
+    second: CENTRAL UI ANCHOR (1)_17
+  - first:
+      213: 3257289088944990294
+    second: CENTRAL UI ANCHOR (1)_18
+  - first:
+      213: -4778473668917586837
+    second: CENTRAL UI ANCHOR (1)_19
+  - first:
+      213: 3286223219244896309
+    second: CENTRAL UI ANCHOR (1)_20
+  - first:
+      213: 7584837066514721492
+    second: CENTRAL UI ANCHOR (1)_21
+  - first:
+      213: -3281272156478182781
+    second: CENTRAL UI ANCHOR (1)_22
+  - first:
+      213: 6294038436858674100
+    second: CENTRAL UI ANCHOR (1)_23
+  - first:
+      213: -5098433284307845438
+    second: CENTRAL UI ANCHOR (1)_24
+  - first:
+      213: -5077317065410327290
+    second: CENTRAL UI ANCHOR (1)_25
+  - first:
+      213: -3906730171460586356
+    second: CENTRAL UI ANCHOR (1)_26
+  - first:
+      213: 4847189198446708333
+    second: CENTRAL UI ANCHOR (1)_27
+  - first:
+      213: -1454951872400396060
+    second: CENTRAL UI ANCHOR (1)_28
+  - first:
+      213: -224110948787002589
+    second: CENTRAL UI ANCHOR (1)_29
+  - first:
+      213: 3124260913267548079
+    second: CENTRAL UI ANCHOR (1)_30
+  - first:
+      213: 3001765426285370878
+    second: CENTRAL UI ANCHOR (1)_31
+  - first:
+      213: -6751843026095657225
+    second: CENTRAL UI ANCHOR (1)_32
+  - first:
+      213: -8806359718311392033
+    second: CENTRAL UI ANCHOR (1)_33
+  - first:
+      213: 7891083798934449384
+    second: CENTRAL UI ANCHOR (1)_34
+  - first:
+      213: -931789606302350477
+    second: CENTRAL UI ANCHOR (1)_35
+  - first:
+      213: -2433330938879036059
+    second: CENTRAL UI ANCHOR (1)_36
+  - first:
+      213: -7368733938943102828
+    second: CENTRAL UI ANCHOR (1)_37
+  - first:
+      213: -8056050306049213048
+    second: CENTRAL UI ANCHOR (1)_38
+  - first:
+      213: -6451700325688271440
+    second: CENTRAL UI ANCHOR (1)_39
+  - first:
+      213: -1595686633032341159
+    second: CENTRAL UI ANCHOR (1)_40
+  - first:
+      213: -3202005807624315314
+    second: CENTRAL UI ANCHOR (1)_41
+  - first:
+      213: 5909612700217701761
+    second: CENTRAL UI ANCHOR (1)_42
+  - first:
+      213: 6710272219246666988
+    second: CENTRAL UI ANCHOR (1)_43
+  - first:
+      213: 6599428890843590129
+    second: CENTRAL UI ANCHOR (1)_44
+  - first:
+      213: -7695626503911677708
+    second: CENTRAL UI ANCHOR (1)_45
+  - first:
+      213: -5137047069190200656
+    second: CENTRAL UI ANCHOR (1)_46
+  - first:
+      213: 8826792306075012352
+    second: CENTRAL UI ANCHOR (1)_47
+  - first:
+      213: 4111404712679155550
+    second: CENTRAL UI ANCHOR (1)_48
+  - first:
+      213: 7580282958275623287
+    second: CENTRAL UI ANCHOR (1)_49
+  - first:
+      213: -6068789328952694571
+    second: CENTRAL UI ANCHOR (1)_50
+  - first:
+      213: -3862437405620176858
+    second: CENTRAL UI ANCHOR (1)_51
+  - first:
+      213: 105945997272017844
+    second: CENTRAL UI ANCHOR (1)_52
+  - first:
+      213: -8662138873701878907
+    second: CENTRAL UI ANCHOR (1)_53
+  - first:
+      213: 1095059424051770836
+    second: CENTRAL UI ANCHOR (1)_54
+  - first:
+      213: -3641152202077914111
+    second: CENTRAL UI ANCHOR (1)_55
+  - first:
+      213: 5661020373121022358
+    second: CENTRAL UI ANCHOR (1)_56
+  - first:
+      213: 2474068885656972871
+    second: CENTRAL UI ANCHOR (1)_57
+  - first:
+      213: -2141711537979835660
+    second: CENTRAL UI ANCHOR (1)_58
+  - first:
+      213: 7248213690958109836
+    second: CENTRAL UI ANCHOR (1)_59
+  - first:
+      213: 5634173268187931954
+    second: CENTRAL UI ANCHOR (1)_60
+  - first:
+      213: 3329101714436242192
+    second: CENTRAL UI ANCHOR (1)_61
+  - first:
+      213: -6533289646205591514
+    second: CENTRAL UI ANCHOR (1)_62
+  - first:
+      213: 4066790533273015395
+    second: CENTRAL UI ANCHOR (1)_63
+  - first:
+      213: -5257936714357787692
+    second: CENTRAL UI ANCHOR (1)_64
+  - first:
+      213: -3949258246590667433
+    second: CENTRAL UI ANCHOR (1)_65
+  - first:
+      213: 2707469963154834278
+    second: CENTRAL UI ANCHOR (1)_66
+  - first:
+      213: -3642235926107219223
+    second: CENTRAL UI ANCHOR (1)_67
+  - first:
+      213: -8348713150241203723
+    second: CENTRAL UI ANCHOR (1)_68
+  - first:
+      213: 7360088621345005884
+    second: CENTRAL UI ANCHOR (1)_69
+  - first:
+      213: 6989611252186621837
+    second: CENTRAL UI ANCHOR (1)_70
+  - first:
+      213: 7319644392908113381
+    second: CENTRAL UI ANCHOR (1)_71
+  - first:
+      213: 3886882958036552821
+    second: CENTRAL UI ANCHOR (1)_72
+  - first:
+      213: -2087656374061010443
+    second: CENTRAL UI ANCHOR (1)_73
+  - first:
+      213: 2698070104121994610
+    second: CENTRAL UI ANCHOR (1)_74
+  - first:
+      213: 3787468484625694295
+    second: CENTRAL UI ANCHOR (1)_75
+  - first:
+      213: -2909482843416784720
+    second: CENTRAL UI ANCHOR (1)_76
+  - first:
+      213: 3959229265900058313
+    second: CENTRAL UI ANCHOR (1)_77
+  - first:
+      213: 3794988041462684502
+    second: CENTRAL UI ANCHOR (1)_78
+  - first:
+      213: 7996580442217041683
+    second: CENTRAL UI ANCHOR (1)_79
+  - first:
+      213: 8459056467780329
+    second: CENTRAL UI ANCHOR (1)_80
+  - first:
+      213: -1869653106945252104
+    second: CENTRAL UI ANCHOR (1)_81
+  - first:
+      213: 4842634877309875877
+    second: CENTRAL UI ANCHOR (1)_82
+  - first:
+      213: 8752245977129643646
+    second: CENTRAL UI ANCHOR (1)_83
+  - first:
+      213: -7940640247694597513
+    second: CENTRAL UI ANCHOR (1)_84
+  - first:
+      213: -6635876056367103971
+    second: CENTRAL UI ANCHOR (1)_85
+  - first:
+      213: 6120000418022889370
+    second: CENTRAL UI ANCHOR (1)_86
+  - first:
+      213: 3280185557921182788
+    second: CENTRAL UI ANCHOR (1)_87
+  - first:
+      213: -3034906219624204129
+    second: CENTRAL UI ANCHOR (1)_88
+  - first:
+      213: -5452359667987397700
+    second: CENTRAL UI ANCHOR (1)_89
+  - first:
+      213: -5061779506223559168
+    second: CENTRAL UI ANCHOR (1)_90
+  - first:
+      213: -6761498544345729335
+    second: CENTRAL UI ANCHOR (1)_91
+  - first:
+      213: 277067217386627579
+    second: CENTRAL UI ANCHOR (1)_92
+  - first:
+      213: 5917665738615704134
+    second: CENTRAL UI ANCHOR (1)_93
+  - first:
+      213: 3898998193207900499
+    second: CENTRAL UI ANCHOR (1)_94
+  - first:
+      213: -4524000689875637833
+    second: CENTRAL UI ANCHOR (1)_95
+  - first:
+      213: -3917939708288547433
+    second: CENTRAL UI ANCHOR (1)_96
+  - first:
+      213: -2425474346248555565
+    second: CENTRAL UI ANCHOR (1)_97
+  - first:
+      213: 2799990188831580459
+    second: CENTRAL UI ANCHOR (1)_98
+  - first:
+      213: -1905595499227398153
+    second: CENTRAL UI ANCHOR (1)_99
+  - first:
+      213: -3086395653467175241
+    second: CENTRAL UI ANCHOR (1)_100
+  - first:
+      213: 5396942844595257252
+    second: CENTRAL UI ANCHOR (1)_101
+  - first:
+      213: 6288148745585311638
+    second: CENTRAL UI ANCHOR (1)_102
+  - first:
+      213: 3124192371821144831
+    second: CENTRAL UI ANCHOR (1)_103
+  - first:
+      213: 6585855968754717276
+    second: CENTRAL UI ANCHOR (1)_104
+  - first:
+      213: -1158177599248361076
+    second: CENTRAL UI ANCHOR (1)_105
+  - first:
+      213: 626655384311796452
+    second: CENTRAL UI ANCHOR (1)_106
+  - first:
+      213: 4086805605906590524
+    second: CENTRAL UI ANCHOR (1)_107
+  - first:
+      213: -1385541249110924573
+    second: CENTRAL UI ANCHOR (1)_108
+  - first:
+      213: 3419934718756542860
+    second: CENTRAL UI ANCHOR (1)_109
+  - first:
+      213: 2790379812189034547
+    second: CENTRAL UI ANCHOR (1)_110
+  - first:
+      213: 415478791656775025
+    second: CENTRAL UI ANCHOR (1)_111
+  - first:
+      213: 1818073585515931324
+    second: CENTRAL UI ANCHOR (1)_112
+  - first:
+      213: -1677440668507024729
+    second: CENTRAL UI ANCHOR (1)_113
+  - first:
+      213: 3851866619912416135
+    second: CENTRAL UI ANCHOR (1)_114
+  - first:
+      213: 1044066638341469596
+    second: CENTRAL UI ANCHOR (1)_115
+  - first:
+      213: -8877849055238988703
+    second: CENTRAL UI ANCHOR (1)_116
+  - first:
+      213: -8507198747235816766
+    second: CENTRAL UI ANCHOR (1)_117
+  - first:
+      213: -7731485265471997926
+    second: CENTRAL UI ANCHOR (1)_118
+  - first:
+      213: -2476091389777774181
+    second: CENTRAL UI ANCHOR (1)_119
+  - first:
+      213: 5745947965868924981
+    second: CENTRAL UI ANCHOR (1)_120
+  - first:
+      213: -6293266078230737687
+    second: CENTRAL UI ANCHOR (1)_121
+  - first:
+      213: -2572199884064411586
+    second: CENTRAL UI ANCHOR (1)_122
+  - first:
+      213: -7634947313958604607
+    second: CENTRAL UI ANCHOR (1)_123
+  - first:
+      213: -3710405855284621326
+    second: CENTRAL UI ANCHOR (1)_124
+  - first:
+      213: 3385942144063771992
+    second: CENTRAL UI ANCHOR (1)_125
+  - first:
+      213: -5381641751229386186
+    second: CENTRAL UI ANCHOR (1)_126
+  - first:
+      213: -7436513445327749736
+    second: CENTRAL UI ANCHOR (1)_127
+  - first:
+      213: 7993933224192721478
+    second: CENTRAL UI ANCHOR (1)_128
+  - first:
+      213: -4184049837094208395
+    second: CENTRAL UI ANCHOR (1)_129
+  - first:
+      213: 1225848703932009023
+    second: CENTRAL UI ANCHOR (1)_130
+  - first:
+      213: -5867380100412684738
+    second: CENTRAL UI ANCHOR (1)_131
+  - first:
+      213: 4716118327984902181
+    second: CENTRAL UI ANCHOR (1)_132
+  - first:
+      213: 3354548438038704003
+    second: CENTRAL UI ANCHOR (1)_133
+  - first:
+      213: 556058244566215833
+    second: CENTRAL UI ANCHOR (1)_134
+  - first:
+      213: -2455381589903109358
+    second: CENTRAL UI ANCHOR (1)_135
+  - first:
+      213: -3052420035437861031
+    second: CENTRAL UI ANCHOR (1)_136
+  - first:
+      213: 3927902641439940078
+    second: CENTRAL UI ANCHOR (1)_137
+  - first:
+      213: 1614525363982244199
+    second: CENTRAL UI ANCHOR (1)_138
+  - first:
+      213: 8713585588511351580
+    second: CENTRAL UI ANCHOR (1)_139
+  - first:
+      213: 1501413583268649457
+    second: CENTRAL UI ANCHOR (1)_140
+  - first:
+      213: -1713481143331933223
+    second: CENTRAL UI ANCHOR (1)_141
+  - first:
+      213: -5463247494385131169
+    second: CENTRAL UI ANCHOR (1)_142
+  - first:
+      213: 7938213155450024225
+    second: CENTRAL UI ANCHOR (1)_143
+  - first:
+      213: 2051374018304929179
+    second: CENTRAL UI ANCHOR (1)_144
+  - first:
+      213: -6514218445597985375
+    second: CENTRAL UI ANCHOR (1)_145
+  - first:
+      213: -5667734335233394753
+    second: CENTRAL UI ANCHOR (1)_146
+  - first:
+      213: -3284785307179055496
+    second: CENTRAL UI ANCHOR (1)_147
+  - first:
+      213: -3138176486418100348
+    second: CENTRAL UI ANCHOR (1)_148
+  - first:
+      213: -4587910414167911346
+    second: CENTRAL UI ANCHOR (1)_149
+  - first:
+      213: 1929458578700823963
+    second: CENTRAL UI ANCHOR (1)_150
+  - first:
+      213: 1424907779677826207
+    second: CENTRAL UI ANCHOR (1)_151
+  - first:
+      213: 8341965843820074280
+    second: CENTRAL UI ANCHOR (1)_152
+  - first:
+      213: 27877439312061030
+    second: CENTRAL UI ANCHOR (1)_153
+  - first:
+      213: 7042404040170673012
+    second: CENTRAL UI ANCHOR (1)_154
+  - first:
+      213: -3412049373165493768
+    second: CENTRAL UI ANCHOR (1)_155
+  - first:
+      213: -8168781231863792637
+    second: CENTRAL UI ANCHOR (1)_156
+  - first:
+      213: 5112983248598566807
+    second: CENTRAL UI ANCHOR (1)_157
+  - first:
+      213: -3425676758570052506
+    second: CENTRAL UI ANCHOR (1)_158
+  - first:
+      213: -3533136520211385083
+    second: CENTRAL UI ANCHOR (1)_159
+  - first:
+      213: 4812863823502379591
+    second: CENTRAL UI ANCHOR (1)_160
+  - first:
+      213: 1342727451297135787
+    second: CENTRAL UI ANCHOR (1)_161
+  - first:
+      213: 1563181072136966022
+    second: CENTRAL UI ANCHOR (1)_162
+  - first:
+      213: -5610500199098692897
+    second: CENTRAL UI ANCHOR (1)_163
+  - first:
+      213: 7238572073636163973
+    second: CENTRAL UI ANCHOR (1)_164
+  - first:
+      213: 3264268846013049576
+    second: CENTRAL UI ANCHOR (1)_165
+  - first:
+      213: -552861437389812562
+    second: CENTRAL UI ANCHOR (1)_166
+  - first:
+      213: 1523209144530991255
+    second: CENTRAL UI ANCHOR (1)_167
+  - first:
+      213: -2747651206852065816
+    second: CENTRAL UI ANCHOR (1)_168
+  - first:
+      213: -666359443794638196
+    second: CENTRAL UI ANCHOR (1)_169
+  - first:
+      213: 5050212146737621094
+    second: CENTRAL UI ANCHOR (1)_170
+  - first:
+      213: -2147797345803615084
+    second: CENTRAL UI ANCHOR (1)_171
+  - first:
+      213: 8111262008194185786
+    second: CENTRAL UI ANCHOR (1)_172
+  - first:
+      213: -6706155536804362709
+    second: CENTRAL UI ANCHOR (1)_173
+  - first:
+      213: -4785871639869757582
+    second: CENTRAL UI ANCHOR (1)_174
+  - first:
+      213: 7484053315907359056
+    second: CENTRAL UI ANCHOR (1)_175
+  - first:
+      213: -9188394373223225936
+    second: CENTRAL UI ANCHOR (1)_176
+  - first:
+      213: -566589107285392632
+    second: CENTRAL UI ANCHOR (1)_177
+  - first:
+      213: 6385238622853840176
+    second: CENTRAL UI ANCHOR (1)_178
+  - first:
+      213: 7654233675874578763
+    second: CENTRAL UI ANCHOR (1)_179
+  - first:
+      213: -4875833363576084623
+    second: CENTRAL UI ANCHOR (1)_180
+  - first:
+      213: 4367458555936939157
+    second: CENTRAL UI ANCHOR (1)_181
+  - first:
+      213: 3632382389983785331
+    second: CENTRAL UI ANCHOR (1)_182
+  - first:
+      213: 8277689544465652217
+    second: CENTRAL UI ANCHOR (1)_183
+  - first:
+      213: -3187137743109625545
+    second: CENTRAL UI ANCHOR (1)_184
+  - first:
+      213: -3031243766340275480
+    second: CENTRAL UI ANCHOR (1)_185
+  - first:
+      213: 266636447293654399
+    second: CENTRAL UI ANCHOR (1)_186
+  - first:
+      213: 5048466999139444893
+    second: CENTRAL UI ANCHOR (1)_187
+  - first:
+      213: -4129021707337936465
+    second: CENTRAL UI ANCHOR (1)_188
+  - first:
+      213: 1822658234699822580
+    second: CENTRAL UI ANCHOR (1)_189
+  - first:
+      213: -1311853732671110586
+    second: CENTRAL UI ANCHOR (1)_190
+  - first:
+      213: -363227102003605851
+    second: CENTRAL UI ANCHOR (1)_191
+  - first:
+      213: -3700442813785629434
+    second: CENTRAL UI ANCHOR (1)_192
+  - first:
+      213: -2692021698454297956
+    second: CENTRAL UI ANCHOR (1)_193
+  - first:
+      213: -2632128350489775553
+    second: CENTRAL UI ANCHOR (1)_194
+  - first:
+      213: 584501938280903270
+    second: CENTRAL UI ANCHOR (1)_195
+  - first:
+      213: 945782471881306586
+    second: CENTRAL UI ANCHOR (1)_196
+  - first:
+      213: -6436155030242012561
+    second: CENTRAL UI ANCHOR (1)_197
+  - first:
+      213: 1311719591938084610
+    second: CENTRAL UI ANCHOR (1)_198
+  - first:
+      213: 5556168341304080569
+    second: CENTRAL UI ANCHOR (1)_199
+  - first:
+      213: 5306323623864808003
+    second: CENTRAL UI ANCHOR (1)_200
+  - first:
+      213: 6835335372870030763
+    second: CENTRAL UI ANCHOR (1)_201
+  - first:
+      213: 7973667368500117669
+    second: CENTRAL UI ANCHOR (1)_202
+  - first:
+      213: -773016136966308826
+    second: CENTRAL UI ANCHOR (1)_203
+  - first:
+      213: 7882569101744114766
+    second: CENTRAL UI ANCHOR (1)_204
+  - first:
+      213: -1186539032491944409
+    second: CENTRAL UI ANCHOR (1)_205
+  - first:
+      213: 8508359679279593612
+    second: CENTRAL UI ANCHOR (1)_206
+  - first:
+      213: 6025014805454180979
+    second: CENTRAL UI ANCHOR (1)_207
+  - first:
+      213: -2723848329929078436
+    second: CENTRAL UI ANCHOR (1)_208
+  - first:
+      213: 5419404116118034893
+    second: CENTRAL UI ANCHOR (1)_209
+  - first:
+      213: 986695792393945596
+    second: CENTRAL UI ANCHOR (1)_210
+  - first:
+      213: -3852309217517802462
+    second: CENTRAL UI ANCHOR (1)_211
+  - first:
+      213: -7406927486698313867
+    second: CENTRAL UI ANCHOR (1)_212
+  - first:
+      213: 4771181111699463533
+    second: CENTRAL UI ANCHOR (1)_213
+  - first:
+      213: -931462662841792940
+    second: CENTRAL UI ANCHOR (1)_214
+  - first:
+      213: 7558283118887880544
+    second: CENTRAL UI ANCHOR (1)_215
+  - first:
+      213: 1221102586774878304
+    second: CENTRAL UI ANCHOR (1)_216
+  - first:
+      213: -5961825981926139466
+    second: CENTRAL UI ANCHOR (1)_217
+  - first:
+      213: -1634856135983711641
+    second: CENTRAL UI ANCHOR (1)_218
+  - first:
+      213: -2176942075441868357
+    second: CENTRAL UI ANCHOR (1)_219
+  - first:
+      213: -7777486073846468227
+    second: CENTRAL UI ANCHOR (1)_220
+  - first:
+      213: -3907864041191051429
+    second: CENTRAL UI ANCHOR (1)_221
+  - first:
+      213: 5515897621009494924
+    second: CENTRAL UI ANCHOR (1)_222
+  - first:
+      213: 562411402069089495
+    second: CENTRAL UI ANCHOR (1)_223
+  - first:
+      213: -915805858449760753
+    second: CENTRAL UI ANCHOR (1)_224
+  - first:
+      213: 2585102133165540994
+    second: CENTRAL UI ANCHOR (1)_225
+  - first:
+      213: 9084111290435196918
+    second: CENTRAL UI ANCHOR (1)_226
+  - first:
+      213: -3684497499225278384
+    second: CENTRAL UI ANCHOR (1)_227
+  - first:
+      213: -6665183819902709414
+    second: CENTRAL UI ANCHOR (1)_228
+  - first:
+      213: -6774726955058104729
+    second: CENTRAL UI ANCHOR (1)_229
+  - first:
+      213: -6811534222569966599
+    second: CENTRAL UI ANCHOR (1)_230
+  - first:
+      213: 288693487992113907
+    second: CENTRAL UI ANCHOR (1)_231
+  - first:
+      213: 1477286884336004032
+    second: CENTRAL UI ANCHOR (1)_232
+  - first:
+      213: 4203947755588681150
+    second: CENTRAL UI ANCHOR (1)_233
+  - first:
+      213: 7374711299480328409
+    second: CENTRAL UI ANCHOR (1)_234
+  - first:
+      213: -3497206667867928940
+    second: CENTRAL UI ANCHOR (1)_235
+  - first:
+      213: 4839239036209647945
+    second: CENTRAL UI ANCHOR (1)_236
+  - first:
+      213: 5835905181222591870
+    second: CENTRAL UI ANCHOR (1)_237
+  - first:
+      213: 7296600580065415710
+    second: CENTRAL UI ANCHOR (1)_238
+  - first:
+      213: 338128277700164052
+    second: CENTRAL UI ANCHOR (1)_239
+  - first:
+      213: -234276242121715952
+    second: CENTRAL UI ANCHOR (1)_240
+  - first:
+      213: -5685132083949217292
+    second: CENTRAL UI ANCHOR (1)_241
+  - first:
+      213: -8614621291309213977
+    second: CENTRAL UI ANCHOR (1)_242
+  - first:
+      213: -5222776186347912767
+    second: CENTRAL UI ANCHOR (1)_243
+  - first:
+      213: 2949518105729586415
+    second: CENTRAL UI ANCHOR (1)_244
+  - first:
+      213: -8806792714541638252
+    second: CENTRAL UI ANCHOR (1)_245
+  - first:
+      213: -3284334930084127156
+    second: CENTRAL UI ANCHOR (1)_246
+  - first:
+      213: 4113806472648759500
+    second: CENTRAL UI ANCHOR (1)_247
+  - first:
+      213: 9068875727732284414
+    second: CENTRAL UI ANCHOR (1)_248
+  - first:
+      213: -7039824731911884672
+    second: CENTRAL UI ANCHOR (1)_249
+  - first:
+      213: -4746075322979825905
+    second: CENTRAL UI ANCHOR (1)_250
+  - first:
+      213: 7996748219737352110
+    second: CENTRAL UI ANCHOR (1)_251
+  - first:
+      213: 3981407867834398970
+    second: CENTRAL UI ANCHOR (1)_252
+  - first:
+      213: 3126527295208215966
+    second: CENTRAL UI ANCHOR (1)_253
+  - first:
+      213: -221549907739978400
+    second: CENTRAL UI ANCHOR (1)_254
+  - first:
+      213: -3081479590351367698
+    second: CENTRAL UI ANCHOR (1)_255
+  - first:
+      213: 6998336571310027362
+    second: CENTRAL UI ANCHOR (1)_256
+  - first:
+      213: 8677620353975872874
+    second: CENTRAL UI ANCHOR (1)_257
+  - first:
+      213: 53851075136480368
+    second: CENTRAL UI ANCHOR (1)_258
+  - first:
+      213: -7816185016279206111
+    second: CENTRAL UI ANCHOR (1)_259
+  - first:
+      213: 5084464805353323744
+    second: CENTRAL UI ANCHOR (1)_260
+  - first:
+      213: -1943044471032156720
+    second: CENTRAL UI ANCHOR (1)_261
+  - first:
+      213: 2086581600741287230
+    second: CENTRAL UI ANCHOR (1)_262
+  - first:
+      213: -514057203856502030
+    second: CENTRAL UI ANCHOR (1)_263
+  - first:
+      213: 5383151454436581540
+    second: CENTRAL UI ANCHOR (1)_264
+  - first:
+      213: 4554057491352764785
+    second: CENTRAL UI ANCHOR (1)_265
+  - first:
+      213: 1086477424645960875
+    second: CENTRAL UI ANCHOR (1)_266
+  - first:
+      213: 3099874013511071781
+    second: CENTRAL UI ANCHOR (1)_267
+  - first:
+      213: -693336220715616509
+    second: CENTRAL UI ANCHOR (1)_268
+  - first:
+      213: 5321128271818029860
+    second: CENTRAL UI ANCHOR (1)_269
+  - first:
+      213: -4054372790303061596
+    second: CENTRAL UI ANCHOR (1)_270
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1188
+        height: 1188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1fec111d2eccae80800000000000000
+      internalID: -8165925331373592804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_1
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1172
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bfce23235a506ac0800000000000000
+      internalID: -3863989167164829771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1143
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbfd304473522f70800000000000000
+      internalID: 9160976350784125942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1162
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3caf8be50bb0aa1a0800000000000000
+      internalID: -6797607835431011645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1148
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe19394e236af7e0800000000000000
+      internalID: -1730962056322408772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 1146
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3efaf8d5161e52740800000000000000
+      internalID: 5126751559128952803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_6
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1126
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e40ed97a91df3a60800000000000000
+      internalID: 7656068352952894694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_7
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1150
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e54ea3dd949c25b0800000000000000
+      internalID: -5391771248287136283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1127
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4959d50796a9ab60800000000000000
+      internalID: 7757915000690792782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1134
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2614d5e1d32f5b0800000000000000
+      internalID: -5336135407857736969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1110
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bb3e03e934577b0800000000000000
+      internalID: -5227197445789467761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_11
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1108
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443bbec755d36a120800000000000000
+      internalID: 2424692886762926916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_12
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1105
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6889a027d9bfb0d10800000000000000
+      internalID: 2093043105485461638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_13
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1096
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e540b5a65aa80620800000000000000
+      internalID: 2740627662378649059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_14
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1099
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62080ffb5c1b6710800000000000000
+      internalID: 1687473666826699374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_15
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 1092
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82305aadf317734e0800000000000000
+      internalID: -2002006990277770456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1078
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1bbb997d0a56d10800000000000000
+      internalID: 2118276047605313969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1072
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36114d51a8450ccb0800000000000000
+      internalID: -4845780247002214045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 1078
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65862552b27343d20800000000000000
+      internalID: 3257289088944990294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_19
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1067
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b641c9bf3837fadb0800000000000000
+      internalID: -4778473668917586837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1057
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5309bb35b920b9d20800000000000000
+      internalID: 3286223219244896309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_21
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 1064
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da63d43021c24960800000000000000
+      internalID: 7584837066514721492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1055
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38aecbdcb549672d0800000000000000
+      internalID: -3281272156478182781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1049
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbbd9f6c9ae85750800000000000000
+      internalID: 6294038436858674100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 1046
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce7dc9c0f9be39b0800000000000000
+      internalID: -5098433284307845438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_25
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1049
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d4030a70fb989b0800000000000000
+      internalID: -5077317065410327290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_26
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 1030
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c847ac89b9188c9c0800000000000000
+      internalID: -3906730171460586356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_27
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1027
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66c68cf4eca44340800000000000000
+      internalID: 4847189198446708333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1037
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0f8401bf8fecbe0800000000000000
+      internalID: -1454951872400396060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1026
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 323664b874cc3ecf0800000000000000
+      internalID: -224110948787002589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1018
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf13f06fba9b5b20800000000000000
+      internalID: 3124260913267548079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1022
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efdd9cc40c968a920800000000000000
+      internalID: 3001765426285370878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1004
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7feae526a82ac42a0800000000000000
+      internalID: -6751843026095657225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_33
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 997
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc8db98e7689c580800000000000000
+      internalID: -8806359718311392033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_34
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1008
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ece35808e2c28d60800000000000000
+      internalID: 7891083798934449384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_35
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1009
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37382f63a4e9113f0800000000000000
+      internalID: -931789606302350477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 998
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 565b52747621b3ed0800000000000000
+      internalID: -2433330938879036059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_37
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 1002
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4907ee4168ffcb990800000000000000
+      internalID: -7368733938943102828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 993
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d724fede8233090800000000000000
+      internalID: -8056050306049213048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_39
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 989
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd14128cb4f676a0800000000000000
+      internalID: -6451700325688271440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 986
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959a449267bfad9e0800000000000000
+      internalID: -1595686633032341159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_41
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 980
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4e90d3dea03093d0800000000000000
+      internalID: -3202005807624315314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_42
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 969
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185fc9cb079230250800000000000000
+      internalID: 5909612700217701761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_43
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 965
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4ae56e70daf1d50800000000000000
+      internalID: 6710272219246666988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 947
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fdae276c91e59b50800000000000000
+      internalID: 6599428890843590129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_45
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 957
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f06346c774a33590800000000000000
+      internalID: -7695626503911677708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_46
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 937
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2e47668ea85b8b0800000000000000
+      internalID: -5137047069190200656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_47
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 951
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d80c506d01f7a70800000000000000
+      internalID: 8826792306075012352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 939
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57ab139dc4ae0930800000000000000
+      internalID: 4111404712679155550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_49
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 933
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77937f04033923960800000000000000
+      internalID: 7580282958275623287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 917
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8e717524457cba0800000000000000
+      internalID: -6068789328952694571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_51
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 912
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628f3d6c4add56ac0800000000000000
+      internalID: -3862437405620176858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_52
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 927
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bbe5ccb255687100800000000000000
+      internalID: 105945997272017844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_53
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 920
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 583b5ed9696e9c780800000000000000
+      internalID: -8662138873701878907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 907
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5bc8a8ebe623f00800000000000000
+      internalID: 1095059424051770836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 912
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cb3062d57087dc0800000000000000
+      internalID: -3641152202077914111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_56
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 909
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699b026390cff8e40800000000000000
+      internalID: 5661020373121022358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 887
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e2e671b88a55220800000000000000
+      internalID: 2474068885656972871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_58
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 900
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa3b5714bc1742e0800000000000000
+      internalID: -2141711537979835660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_59
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 878
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8c5ea103f3d69460800000000000000
+      internalID: 7248213690958109836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_60
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 878
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 235e75d7cba903e40800000000000000
+      internalID: 5634173268187931954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_61
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 887
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bbd16fe58533e20800000000000000
+      internalID: 3329101714436242192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 871
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620ad2f7ea71555a0800000000000000
+      internalID: -6533289646205591514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_63
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 868
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364d8a77174207830800000000000000
+      internalID: 4066790533273015395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_64
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 870
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d338318a6e0807b0800000000000000
+      internalID: -5257936714357787692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_65
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 857
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7556ead7c8a6139c0800000000000000
+      internalID: -3949258246590667433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_66
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 857
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66342e1369dd29520800000000000000
+      internalID: 2707469963154834278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_67
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 859
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea963cf8bd247dc0800000000000000
+      internalID: -3642235926107219223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_68
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 852
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f99d3c8f99632c80800000000000000
+      internalID: -8348713150241203723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_69
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 840
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31e9ae0b99442660800000000000000
+      internalID: 7360088621345005884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_70
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 843
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8728acb666100160800000000000000
+      internalID: 6989611252186621837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 822
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5c7715bc9949560800000000000000
+      internalID: 7319644392908113381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_72
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 836
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cc94de47bf0f530800000000000000
+      internalID: 3886882958036552821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 816
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f17303b6972703e0800000000000000
+      internalID: -2087656374061010443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_74
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 808
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27dea47f678717520800000000000000
+      internalID: 2698070104121994610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_75
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 811
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ef918158acf8430800000000000000
+      internalID: 3787468484625694295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_76
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 801
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b09c0ed4c07f97d0800000000000000
+      internalID: -2909482843416784720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_77
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 799
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6bd4a5a0202f630800000000000000
+      internalID: 3959229265900058313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_78
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 805
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b1d3a54818aa430800000000000000
+      internalID: 3794988041462684502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 793
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31fce246b8f89fe60800000000000000
+      internalID: 7996580442217041683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_80
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 790
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2a5ef877d0e1000800000000000000
+      internalID: 8459056467780329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_81
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 793
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4a253b768ad06e0800000000000000
+      internalID: -1869653106945252104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_82
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 773
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6f8f673ce743340800000000000000
+      internalID: 4842634877309875877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_83
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 771
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e67a54859367970800000000000000
+      internalID: 8752245977129643646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_84
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 781
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7726efa14cd2dc190800000000000000
+      internalID: -7940640247694597513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1008b692e1a8e3a0800000000000000
+      internalID: -6635876056367103971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_86
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 766
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a971f7d74fb9ee450800000000000000
+      internalID: 6120000418022889370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_87
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 766
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4443241c26f858d20800000000000000
+      internalID: 3280185557921182788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_88
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 758
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98fca47fd8d1e5d0800000000000000
+      internalID: -3034906219624204129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_89
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 762
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3c1f115c35554b0800000000000000
+      internalID: -5452359667987397700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_90
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 753
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e41388b52f0c9b0800000000000000
+      internalID: -5061779506223559168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6b3fad5e45a22a0800000000000000
+      internalID: -6761498544345729335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 742
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf16c3f8a2758d300800000000000000
+      internalID: 277067217386627579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_93
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 743
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a40b9d2a5cf1250800000000000000
+      internalID: 5917665738615704134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_94
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 746
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 359fb0ee2360c1630800000000000000
+      internalID: 3898998193207900499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 737
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9275c77558731c0800000000000000
+      internalID: -4524000689875637833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_96
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 733
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795401ce79ea0a9c0800000000000000
+      internalID: -3917939708288547433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 730
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3380cceebf65ed0800000000000000
+      internalID: -2425474346248555565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_98
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 713
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21a2e3ed309bd620800000000000000
+      internalID: 2799990188831580459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_99
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 701
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffb7fe5df6fd85e0800000000000000
+      internalID: -1905595499227398153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_100
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 709
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b687ce618bea25d0800000000000000
+      internalID: -3086395653467175241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 691
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afbf254ceac5ea40800000000000000
+      internalID: 5396942844595257252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_102
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 681
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f3e63d7fdf34750800000000000000
+      internalID: 6288148745585311638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_103
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 695
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa6264d86c5b5b20800000000000000
+      internalID: 3124192371821144831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 677
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52d2873c19a56b50800000000000000
+      internalID: 6585855968754717276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_105
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 671
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c899cf91c935defe0800000000000000
+      internalID: -1158177599248361076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_106
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e29d7a70c352b800800000000000000
+      internalID: 626655384311796452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_107
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 656
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b2326bb0047b830800000000000000
+      internalID: 4086805605906590524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_108
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 664
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2a719239195cce0800000000000000
+      internalID: -1385541249110924573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 651
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c895282d18c067f20800000000000000
+      internalID: 3419934718756542860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_110
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 656
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338d2f5b7ab69b620800000000000000
+      internalID: 2790379812189034547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_111
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 653
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d196c72c314c500800000000000000
+      internalID: 415478791656775025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 631
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6a2302b481b3910800000000000000
+      internalID: 1818073585515931324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_113
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 644
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a258d5799888b8e0800000000000000
+      internalID: -1677440668507024729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_114
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 622
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b60126844947530800000000000000
+      internalID: 3851866619912416135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_115
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 622
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c95fd2c63154d7e00800000000000000
+      internalID: 1044066638341469596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_116
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 631
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c51f4325b8bc480800000000000000
+      internalID: -8877849055238988703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 615
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca6c5dffcb50f980800000000000000
+      internalID: -8507198747235816766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_118
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 612
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18ff5d3d1f34b490800000000000000
+      internalID: -7731485265471997926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_119
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 614
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9974e8fff723add0800000000000000
+      internalID: -2476091389777774181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_120
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 601
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530ee7b4b35bdbf40800000000000000
+      internalID: 5745947965868924981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_121
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 601
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec8a0258d3d9a8a0800000000000000
+      internalID: -6293266078230737687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_122
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 603
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e303a0365d5bd4cd0800000000000000
+      internalID: -2572199884064411586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_123
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 596
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0bca0aed73b0690800000000000000
+      internalID: -7634947313958604607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_124
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 584
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff0b3f788df18cc0800000000000000
+      internalID: -3710405855284621326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_125
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 587
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85512f6c0784dfe20800000000000000
+      internalID: 3385942144063771992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 632bf8527519055b0800000000000000
+      internalID: -5381641751229386186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_127
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 580
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89db2dbfb623cc890800000000000000
+      internalID: -7436513445327749736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 560
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 642433ae9e720fe60800000000000000
+      internalID: 7993933224192721478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_129
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 552
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cf77957d44fe5c0800000000000000
+      internalID: -4184049837094208395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_130
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 555
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3a8d32c6e6130110800000000000000
+      internalID: 1225848703932009023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_131
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 545
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36c4b8a2e0e29ea0800000000000000
+      internalID: -5867380100412684738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_132
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 543
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520df3ad1a4037140800000000000000
+      internalID: 4716118327984902181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_133
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 549
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f632ff700cd8e20800000000000000
+      internalID: 3354548438038704003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 537
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cebcdf60487b700800000000000000
+      internalID: 556058244566215833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_135
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 534
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2139ac1047bbcedd0800000000000000
+      internalID: -2455381589903109358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_136
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 537
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957e0727620a3a5d0800000000000000
+      internalID: -3052420035437861031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_137
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 517
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed985734a6b28630800000000000000
+      internalID: 3927902641439940078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_138
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 515
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7691501b342f76610800000000000000
+      internalID: 1614525363982244199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_139
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 525
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13ae2b1defdce870800000000000000
+      internalID: 8713585588511351580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f99cabf2b716d410800000000000000
+      internalID: 1501413583268649457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_141
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 510
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3be528afd7838e0800000000000000
+      internalID: -1713481143331933223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_142
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 510
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51a1217955ae24b0800000000000000
+      internalID: -5463247494385131169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_143
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 502
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1217ee17ec23a2e60800000000000000
+      internalID: 7938213155450024225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_144
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 506
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9de78e0dc1f77c10800000000000000
+      internalID: 2051374018304929179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_145
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 497
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5b5d866d8d895a0800000000000000
+      internalID: -6514218445597985375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_146
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 492
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7f02ba6a92851b0800000000000000
+      internalID: -5667734335233394753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8768b2aaa291a62d0800000000000000
+      internalID: -3284785307179055496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_148
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 487
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fc094cc15f274d0800000000000000
+      internalID: -3138176486418100348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_149
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 490
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e44d43e39c77450c0800000000000000
+      internalID: -4587910414167911346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_150
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 481
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9dea48ca50d6ca10800000000000000
+      internalID: 1929458578700823963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_151
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 477
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c236d731a46c310800000000000000
+      internalID: 1424907779677826207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 474
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8255651ccbd94c370800000000000000
+      internalID: 8341965843820074280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_153
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 457
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6626173226a036000800000000000000
+      internalID: 27877439312061030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_154
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 445
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473162b8925abb160800000000000000
+      internalID: 7042404040170673012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_155
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 453
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f160644c27f5a0d0800000000000000
+      internalID: -3412049373165493768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 435
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c71eaefb8a2ae80800000000000000
+      internalID: -8168781231863792637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_157
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 425
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7978d33cc27f4f640800000000000000
+      internalID: 5112983248598566807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_158
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 439
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664de1a532d8570d0800000000000000
+      internalID: -3425676758570052506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_159
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50537d1ed07c7fec0800000000000000
+      internalID: -3533136520211385083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_160
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 415
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a0038d52abac240800000000000000
+      internalID: 4812863823502379591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_161
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac3bbcb08352a210800000000000000
+      internalID: 1342727451297135787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_162
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 400
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68f865c27e881b510800000000000000
+      internalID: 1563181072136966022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_163
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 408
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdac67c6bcf7322b0800000000000000
+      internalID: -5610500199098692897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_164
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 395
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581752a03f2947460800000000000000
+      internalID: 7238572073636163973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_165
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 400
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea6bf978330d4d20800000000000000
+      internalID: 3264268846013049576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_166
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 397
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac4e5ea377d358f0800000000000000
+      internalID: -552861437389812562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_167
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 375
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798756a85a6832510800000000000000
+      internalID: 1523209144530991255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_168
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 388
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5c8e8f8c16ed9d0800000000000000
+      internalID: -2747651206852065816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_169
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 366
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ac4ebcd9d90c6f0800000000000000
+      internalID: -666359443794638196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_170
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 366
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668a8a6b035f51640800000000000000
+      internalID: 5050212146737621094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_171
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 375
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49449d981bd7132e0800000000000000
+      internalID: -2147797345803615084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_172
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 359
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a398632ddf09070800000000000000
+      internalID: 8111262008194185786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_173
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 356
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26c14ce113fee2a0800000000000000
+      internalID: -6706155536804362709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_174
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 358
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27762f4a91b259db0800000000000000
+      internalID: -4785871639869757582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_175
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 345
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0511ebea6d2bcd760800000000000000
+      internalID: 7484053315907359056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_176
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 345
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5e4dfeff34c7080800000000000000
+      internalID: -9188394373223225936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_177
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 347
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80306a675321328f0800000000000000
+      internalID: -566589107285392632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_178
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 340
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03dbe4172bcec9850800000000000000
+      internalID: 6385238622853840176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_179
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 328
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41365e69fc493a60800000000000000
+      internalID: 7654233675874578763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_180
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 331
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 177ac0c936f855cb0800000000000000
+      internalID: -4875833363576084623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_181
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c9cd5ba645c9c30800000000000000
+      internalID: 4367458555936939157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_182
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 324
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3713e5bd980d86230800000000000000
+      internalID: 3632382389983785331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_183
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f917da98c240e270800000000000000
+      internalID: 8277689544465652217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_184
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 296
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 739e5bbdb1305c3d0800000000000000
+      internalID: -3187137743109625545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_185
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 299
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2bbafcadbdee5d0800000000000000
+      internalID: -3031243766340275480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_186
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 289
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f754c15af6843b300800000000000000
+      internalID: 266636447293654399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_187
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 287
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d982dffdcf1cf0640800000000000000
+      internalID: 5048466999139444893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_188
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 293
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1de3832a4c2b6c0800000000000000
+      internalID: -4129021707337936465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_189
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 281
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f53932f1026b4910800000000000000
+      internalID: 1822658234699822580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_190
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 282
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6424eda0bfb5bcde0800000000000000
+      internalID: -1311853732671110586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_191
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 281
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aec74c00ee85faf0800000000000000
+      internalID: -363227102003605851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_192
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 261
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d19acddd265acc0800000000000000
+      internalID: -3700442813785629434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_193
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 259
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92ecf7378404aad0800000000000000
+      internalID: -2692021698454297956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_194
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 269
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3272d9f53dc87bd0800000000000000
+      internalID: -2632128350489775553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_195
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 662b2c18a619c1800800000000000000
+      internalID: 584501938280903270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_196
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 254
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad1b64fa528102d00800000000000000
+      internalID: 945782471881306586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_197
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 254
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62d417a91f2ea6a0800000000000000
+      internalID: -6436155030242012561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_198
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 246
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20fc362e40a243210800000000000000
+      internalID: 1311719591938084610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_199
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 250
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b873b72ba97b1d40800000000000000
+      internalID: 5556168341304080569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_200
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 241
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342b9b7c839d3a940800000000000000
+      internalID: 5306323623864808003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_201
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 236
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba594947e4dfbde50800000000000000
+      internalID: 6835335372870030763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_202
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0c290b93828ae60800000000000000
+      internalID: 7973667368500117669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_203
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 231
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c7a764be1b545f0800000000000000
+      internalID: -773016136966308826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_204
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 234
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4c8dea95d2846d60800000000000000
+      internalID: 7882569101744114766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_205
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 225
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7269e285901988fe0800000000000000
+      internalID: -1186539032491944409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_206
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 221
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8877b09c04c31670800000000000000
+      internalID: 8508359679279593612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_207
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372d09d2b072d9350800000000000000
+      internalID: 6025014805454180979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_208
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 212
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5949802062f23ad0800000000000000
+      internalID: -2723848329929078436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_209
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 200
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc951839457953b40800000000000000
+      internalID: 5419404116118034893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_210
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 197
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf1830f689271bd00800000000000000
+      internalID: 986695792393945596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_211
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 191
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22c63e45d29d98ac0800000000000000
+      internalID: -3852309217517802462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_212
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 183
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5772546c1be453990800000000000000
+      internalID: -7406927486698313867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_213
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d56e931f3a63240800000000000000
+      internalID: 4771181111699463533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_214
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45686cba4a7c213f0800000000000000
+      internalID: -931462662841792940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_215
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 169
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 067c42d737a64e860800000000000000
+      internalID: 7558283118887880544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_216
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 149
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068f60f355a32f010800000000000000
+      internalID: 1221102586774878304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_217
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 144
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b919964bd6534da0800000000000000
+      internalID: -5961825981926139466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_218
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 159
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ab2d39103df49e0800000000000000
+      internalID: -1634856135983711641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_219
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 152
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb19fa067b2f9c1e0800000000000000
+      internalID: -2176942075441868357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7175da6f91d01490800000000000000
+      internalID: -7777486073846468227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_221
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 144
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5fe84afb5a74c9c0800000000000000
+      internalID: -3907864041191051429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_222
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 139
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8371bd69a76c8c40800000000000000
+      internalID: 5515897621009494924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_223
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 113
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc15fdb0361ec700800000000000000
+      internalID: 562411402069089495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_224
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 132
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e51e38c676a43f0800000000000000
+      internalID: -915805858449760753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_225
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 110
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286cf6391b020e320800000000000000
+      internalID: 2585102133165540994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_226
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 109
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f75186c61f311e70800000000000000
+      internalID: 9084111290435196918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_227
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 122
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058bcd6bb090edcc0800000000000000
+      internalID: -3684497499225278384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_228
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a51940421a28083a0800000000000000
+      internalID: -6665183819902709414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_229
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 102
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7667f797ab55bf1a0800000000000000
+      internalID: -6774726955058104729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_230
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3fc40b6b19871a0800000000000000
+      internalID: -6811534222569966599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_231
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 90
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa0db0a235a10400800000000000000
+      internalID: 288693487992113907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_232
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 81
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cbe0342890608410800000000000000
+      internalID: 1477286884336004032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_233
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 75
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdf922d53c675a30800000000000000
+      internalID: 4203947755588681150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_234
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8959e9adc385660800000000000000
+      internalID: 7374711299480328409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_235
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 68
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496ca97801d677fc0800000000000000
+      internalID: -3497206667867928940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_236
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941da78934e682340800000000000000
+      internalID: 4839239036209647945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_237
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 54
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d52a5a7dc4df050800000000000000
+      internalID: 5835905181222591870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_238
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 63
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1255ba819bb24560800000000000000
+      internalID: 7296600580065415710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_239
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d935d880e541b400800000000000000
+      internalID: 338128277700164052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_240
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 43
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f8501cffeafbcf0800000000000000
+      internalID: -234276242121715952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_241
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9d703ad7a5a11b0800000000000000
+      internalID: -5685132083949217292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_242
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e65ff8e397b27880800000000000000
+      internalID: -8614621291309213977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_243
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 22
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c10d5fdab8f487b0800000000000000
+      internalID: -5222776186347912767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_244
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 31
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe45896071bcee820800000000000000
+      internalID: 2949518105729586415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_245
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49d5f3fbfacf7c580800000000000000
+      internalID: -8806792714541638252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_246
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e9de048c2bb62d0800000000000000
+      internalID: -3284334930084127156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_247
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc89ee4e03d271930800000000000000
+      internalID: 4113806472648759500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_248
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 15
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb15a7ec6e1bdd70800000000000000
+      internalID: 9068875727732284414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_249
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080f16574b48d4e90800000000000000
+      internalID: -7039824731911884672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_250
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f074a88b3ad822eb0800000000000000
+      internalID: -4746075322979825905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_251
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7aea323282afe60800000000000000
+      internalID: 7996748219737352110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_252
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8f6348c5dc04730800000000000000
+      internalID: 3981407867834398970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_253
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 0
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95d27b8208a36b20800000000000000
+      internalID: 3126527295208215966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_254
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06553216885ececf0800000000000000
+      internalID: -221549907739978400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_255
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee19d7293a26c35d0800000000000000
+      internalID: -3081479590351367698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_256
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2623f8768061f1160800000000000000
+      internalID: 6998336571310027362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_257
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d6e666cb91d6870800000000000000
+      internalID: 8677620353975872874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_258
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 074684c74415fb000800000000000000
+      internalID: 53851075136480368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_259
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12772fdb325578390800000000000000
+      internalID: -7816185016279206111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_260
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec7f044dc5af8640800000000000000
+      internalID: 5084464805353323744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_261
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd6759295be805e0800000000000000
+      internalID: -1943044471032156720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_262
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35ec0329e605fc10800000000000000
+      internalID: 2086581600741287230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_263
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 0
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f217e952b3bdd8f0800000000000000
+      internalID: -514057203856502030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_264
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0e1d50abbc4ba40800000000000000
+      internalID: 5383151454436581540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_265
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171c9c2f823433f30800000000000000
+      internalID: 4554057491352764785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_266
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4f0881671f31f00800000000000000
+      internalID: 1086477424645960875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_267
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 528bacfcdf6f40b20800000000000000
+      internalID: 3099874013511071781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_268
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30775567166c066f0800000000000000
+      internalID: -693336220715616509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_269
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b700e78f178d940800000000000000
+      internalID: 5321128271818029860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CENTRAL UI ANCHOR (1)_270
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a90afe9d69fbb7c0800000000000000
+      internalID: -4054372790303061596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CENTRAL UI ANCHOR (1)_0: -8165925331373592804
+      CENTRAL UI ANCHOR (1)_1: -3863989167164829771
+      CENTRAL UI ANCHOR (1)_10: -5227197445789467761
+      CENTRAL UI ANCHOR (1)_100: -3086395653467175241
+      CENTRAL UI ANCHOR (1)_101: 5396942844595257252
+      CENTRAL UI ANCHOR (1)_102: 6288148745585311638
+      CENTRAL UI ANCHOR (1)_103: 3124192371821144831
+      CENTRAL UI ANCHOR (1)_104: 6585855968754717276
+      CENTRAL UI ANCHOR (1)_105: -1158177599248361076
+      CENTRAL UI ANCHOR (1)_106: 626655384311796452
+      CENTRAL UI ANCHOR (1)_107: 4086805605906590524
+      CENTRAL UI ANCHOR (1)_108: -1385541249110924573
+      CENTRAL UI ANCHOR (1)_109: 3419934718756542860
+      CENTRAL UI ANCHOR (1)_11: 2424692886762926916
+      CENTRAL UI ANCHOR (1)_110: 2790379812189034547
+      CENTRAL UI ANCHOR (1)_111: 415478791656775025
+      CENTRAL UI ANCHOR (1)_112: 1818073585515931324
+      CENTRAL UI ANCHOR (1)_113: -1677440668507024729
+      CENTRAL UI ANCHOR (1)_114: 3851866619912416135
+      CENTRAL UI ANCHOR (1)_115: 1044066638341469596
+      CENTRAL UI ANCHOR (1)_116: -8877849055238988703
+      CENTRAL UI ANCHOR (1)_117: -8507198747235816766
+      CENTRAL UI ANCHOR (1)_118: -7731485265471997926
+      CENTRAL UI ANCHOR (1)_119: -2476091389777774181
+      CENTRAL UI ANCHOR (1)_12: 2093043105485461638
+      CENTRAL UI ANCHOR (1)_120: 5745947965868924981
+      CENTRAL UI ANCHOR (1)_121: -6293266078230737687
+      CENTRAL UI ANCHOR (1)_122: -2572199884064411586
+      CENTRAL UI ANCHOR (1)_123: -7634947313958604607
+      CENTRAL UI ANCHOR (1)_124: -3710405855284621326
+      CENTRAL UI ANCHOR (1)_125: 3385942144063771992
+      CENTRAL UI ANCHOR (1)_126: -5381641751229386186
+      CENTRAL UI ANCHOR (1)_127: -7436513445327749736
+      CENTRAL UI ANCHOR (1)_128: 7993933224192721478
+      CENTRAL UI ANCHOR (1)_129: -4184049837094208395
+      CENTRAL UI ANCHOR (1)_13: 2740627662378649059
+      CENTRAL UI ANCHOR (1)_130: 1225848703932009023
+      CENTRAL UI ANCHOR (1)_131: -5867380100412684738
+      CENTRAL UI ANCHOR (1)_132: 4716118327984902181
+      CENTRAL UI ANCHOR (1)_133: 3354548438038704003
+      CENTRAL UI ANCHOR (1)_134: 556058244566215833
+      CENTRAL UI ANCHOR (1)_135: -2455381589903109358
+      CENTRAL UI ANCHOR (1)_136: -3052420035437861031
+      CENTRAL UI ANCHOR (1)_137: 3927902641439940078
+      CENTRAL UI ANCHOR (1)_138: 1614525363982244199
+      CENTRAL UI ANCHOR (1)_139: 8713585588511351580
+      CENTRAL UI ANCHOR (1)_14: 1687473666826699374
+      CENTRAL UI ANCHOR (1)_140: 1501413583268649457
+      CENTRAL UI ANCHOR (1)_141: -1713481143331933223
+      CENTRAL UI ANCHOR (1)_142: -5463247494385131169
+      CENTRAL UI ANCHOR (1)_143: 7938213155450024225
+      CENTRAL UI ANCHOR (1)_144: 2051374018304929179
+      CENTRAL UI ANCHOR (1)_145: -6514218445597985375
+      CENTRAL UI ANCHOR (1)_146: -5667734335233394753
+      CENTRAL UI ANCHOR (1)_147: -3284785307179055496
+      CENTRAL UI ANCHOR (1)_148: -3138176486418100348
+      CENTRAL UI ANCHOR (1)_149: -4587910414167911346
+      CENTRAL UI ANCHOR (1)_15: -2002006990277770456
+      CENTRAL UI ANCHOR (1)_150: 1929458578700823963
+      CENTRAL UI ANCHOR (1)_151: 1424907779677826207
+      CENTRAL UI ANCHOR (1)_152: 8341965843820074280
+      CENTRAL UI ANCHOR (1)_153: 27877439312061030
+      CENTRAL UI ANCHOR (1)_154: 7042404040170673012
+      CENTRAL UI ANCHOR (1)_155: -3412049373165493768
+      CENTRAL UI ANCHOR (1)_156: -8168781231863792637
+      CENTRAL UI ANCHOR (1)_157: 5112983248598566807
+      CENTRAL UI ANCHOR (1)_158: -3425676758570052506
+      CENTRAL UI ANCHOR (1)_159: -3533136520211385083
+      CENTRAL UI ANCHOR (1)_16: 2118276047605313969
+      CENTRAL UI ANCHOR (1)_160: 4812863823502379591
+      CENTRAL UI ANCHOR (1)_161: 1342727451297135787
+      CENTRAL UI ANCHOR (1)_162: 1563181072136966022
+      CENTRAL UI ANCHOR (1)_163: -5610500199098692897
+      CENTRAL UI ANCHOR (1)_164: 7238572073636163973
+      CENTRAL UI ANCHOR (1)_165: 3264268846013049576
+      CENTRAL UI ANCHOR (1)_166: -552861437389812562
+      CENTRAL UI ANCHOR (1)_167: 1523209144530991255
+      CENTRAL UI ANCHOR (1)_168: -2747651206852065816
+      CENTRAL UI ANCHOR (1)_169: -666359443794638196
+      CENTRAL UI ANCHOR (1)_17: -4845780247002214045
+      CENTRAL UI ANCHOR (1)_170: 5050212146737621094
+      CENTRAL UI ANCHOR (1)_171: -2147797345803615084
+      CENTRAL UI ANCHOR (1)_172: 8111262008194185786
+      CENTRAL UI ANCHOR (1)_173: -6706155536804362709
+      CENTRAL UI ANCHOR (1)_174: -4785871639869757582
+      CENTRAL UI ANCHOR (1)_175: 7484053315907359056
+      CENTRAL UI ANCHOR (1)_176: -9188394373223225936
+      CENTRAL UI ANCHOR (1)_177: -566589107285392632
+      CENTRAL UI ANCHOR (1)_178: 6385238622853840176
+      CENTRAL UI ANCHOR (1)_179: 7654233675874578763
+      CENTRAL UI ANCHOR (1)_18: 3257289088944990294
+      CENTRAL UI ANCHOR (1)_180: -4875833363576084623
+      CENTRAL UI ANCHOR (1)_181: 4367458555936939157
+      CENTRAL UI ANCHOR (1)_182: 3632382389983785331
+      CENTRAL UI ANCHOR (1)_183: 8277689544465652217
+      CENTRAL UI ANCHOR (1)_184: -3187137743109625545
+      CENTRAL UI ANCHOR (1)_185: -3031243766340275480
+      CENTRAL UI ANCHOR (1)_186: 266636447293654399
+      CENTRAL UI ANCHOR (1)_187: 5048466999139444893
+      CENTRAL UI ANCHOR (1)_188: -4129021707337936465
+      CENTRAL UI ANCHOR (1)_189: 1822658234699822580
+      CENTRAL UI ANCHOR (1)_19: -4778473668917586837
+      CENTRAL UI ANCHOR (1)_190: -1311853732671110586
+      CENTRAL UI ANCHOR (1)_191: -363227102003605851
+      CENTRAL UI ANCHOR (1)_192: -3700442813785629434
+      CENTRAL UI ANCHOR (1)_193: -2692021698454297956
+      CENTRAL UI ANCHOR (1)_194: -2632128350489775553
+      CENTRAL UI ANCHOR (1)_195: 584501938280903270
+      CENTRAL UI ANCHOR (1)_196: 945782471881306586
+      CENTRAL UI ANCHOR (1)_197: -6436155030242012561
+      CENTRAL UI ANCHOR (1)_198: 1311719591938084610
+      CENTRAL UI ANCHOR (1)_199: 5556168341304080569
+      CENTRAL UI ANCHOR (1)_2: 9160976350784125942
+      CENTRAL UI ANCHOR (1)_20: 3286223219244896309
+      CENTRAL UI ANCHOR (1)_200: 5306323623864808003
+      CENTRAL UI ANCHOR (1)_201: 6835335372870030763
+      CENTRAL UI ANCHOR (1)_202: 7973667368500117669
+      CENTRAL UI ANCHOR (1)_203: -773016136966308826
+      CENTRAL UI ANCHOR (1)_204: 7882569101744114766
+      CENTRAL UI ANCHOR (1)_205: -1186539032491944409
+      CENTRAL UI ANCHOR (1)_206: 8508359679279593612
+      CENTRAL UI ANCHOR (1)_207: 6025014805454180979
+      CENTRAL UI ANCHOR (1)_208: -2723848329929078436
+      CENTRAL UI ANCHOR (1)_209: 5419404116118034893
+      CENTRAL UI ANCHOR (1)_21: 7584837066514721492
+      CENTRAL UI ANCHOR (1)_210: 986695792393945596
+      CENTRAL UI ANCHOR (1)_211: -3852309217517802462
+      CENTRAL UI ANCHOR (1)_212: -7406927486698313867
+      CENTRAL UI ANCHOR (1)_213: 4771181111699463533
+      CENTRAL UI ANCHOR (1)_214: -931462662841792940
+      CENTRAL UI ANCHOR (1)_215: 7558283118887880544
+      CENTRAL UI ANCHOR (1)_216: 1221102586774878304
+      CENTRAL UI ANCHOR (1)_217: -5961825981926139466
+      CENTRAL UI ANCHOR (1)_218: -1634856135983711641
+      CENTRAL UI ANCHOR (1)_219: -2176942075441868357
+      CENTRAL UI ANCHOR (1)_22: -3281272156478182781
+      CENTRAL UI ANCHOR (1)_220: -7777486073846468227
+      CENTRAL UI ANCHOR (1)_221: -3907864041191051429
+      CENTRAL UI ANCHOR (1)_222: 5515897621009494924
+      CENTRAL UI ANCHOR (1)_223: 562411402069089495
+      CENTRAL UI ANCHOR (1)_224: -915805858449760753
+      CENTRAL UI ANCHOR (1)_225: 2585102133165540994
+      CENTRAL UI ANCHOR (1)_226: 9084111290435196918
+      CENTRAL UI ANCHOR (1)_227: -3684497499225278384
+      CENTRAL UI ANCHOR (1)_228: -6665183819902709414
+      CENTRAL UI ANCHOR (1)_229: -6774726955058104729
+      CENTRAL UI ANCHOR (1)_23: 6294038436858674100
+      CENTRAL UI ANCHOR (1)_230: -6811534222569966599
+      CENTRAL UI ANCHOR (1)_231: 288693487992113907
+      CENTRAL UI ANCHOR (1)_232: 1477286884336004032
+      CENTRAL UI ANCHOR (1)_233: 4203947755588681150
+      CENTRAL UI ANCHOR (1)_234: 7374711299480328409
+      CENTRAL UI ANCHOR (1)_235: -3497206667867928940
+      CENTRAL UI ANCHOR (1)_236: 4839239036209647945
+      CENTRAL UI ANCHOR (1)_237: 5835905181222591870
+      CENTRAL UI ANCHOR (1)_238: 7296600580065415710
+      CENTRAL UI ANCHOR (1)_239: 338128277700164052
+      CENTRAL UI ANCHOR (1)_24: -5098433284307845438
+      CENTRAL UI ANCHOR (1)_240: -234276242121715952
+      CENTRAL UI ANCHOR (1)_241: -5685132083949217292
+      CENTRAL UI ANCHOR (1)_242: -8614621291309213977
+      CENTRAL UI ANCHOR (1)_243: -5222776186347912767
+      CENTRAL UI ANCHOR (1)_244: 2949518105729586415
+      CENTRAL UI ANCHOR (1)_245: -8806792714541638252
+      CENTRAL UI ANCHOR (1)_246: -3284334930084127156
+      CENTRAL UI ANCHOR (1)_247: 4113806472648759500
+      CENTRAL UI ANCHOR (1)_248: 9068875727732284414
+      CENTRAL UI ANCHOR (1)_249: -7039824731911884672
+      CENTRAL UI ANCHOR (1)_25: -5077317065410327290
+      CENTRAL UI ANCHOR (1)_250: -4746075322979825905
+      CENTRAL UI ANCHOR (1)_251: 7996748219737352110
+      CENTRAL UI ANCHOR (1)_252: 3981407867834398970
+      CENTRAL UI ANCHOR (1)_253: 3126527295208215966
+      CENTRAL UI ANCHOR (1)_254: -221549907739978400
+      CENTRAL UI ANCHOR (1)_255: -3081479590351367698
+      CENTRAL UI ANCHOR (1)_256: 6998336571310027362
+      CENTRAL UI ANCHOR (1)_257: 8677620353975872874
+      CENTRAL UI ANCHOR (1)_258: 53851075136480368
+      CENTRAL UI ANCHOR (1)_259: -7816185016279206111
+      CENTRAL UI ANCHOR (1)_26: -3906730171460586356
+      CENTRAL UI ANCHOR (1)_260: 5084464805353323744
+      CENTRAL UI ANCHOR (1)_261: -1943044471032156720
+      CENTRAL UI ANCHOR (1)_262: 2086581600741287230
+      CENTRAL UI ANCHOR (1)_263: -514057203856502030
+      CENTRAL UI ANCHOR (1)_264: 5383151454436581540
+      CENTRAL UI ANCHOR (1)_265: 4554057491352764785
+      CENTRAL UI ANCHOR (1)_266: 1086477424645960875
+      CENTRAL UI ANCHOR (1)_267: 3099874013511071781
+      CENTRAL UI ANCHOR (1)_268: -693336220715616509
+      CENTRAL UI ANCHOR (1)_269: 5321128271818029860
+      CENTRAL UI ANCHOR (1)_27: 4847189198446708333
+      CENTRAL UI ANCHOR (1)_270: -4054372790303061596
+      CENTRAL UI ANCHOR (1)_28: -1454951872400396060
+      CENTRAL UI ANCHOR (1)_29: -224110948787002589
+      CENTRAL UI ANCHOR (1)_3: -6797607835431011645
+      CENTRAL UI ANCHOR (1)_30: 3124260913267548079
+      CENTRAL UI ANCHOR (1)_31: 3001765426285370878
+      CENTRAL UI ANCHOR (1)_32: -6751843026095657225
+      CENTRAL UI ANCHOR (1)_33: -8806359718311392033
+      CENTRAL UI ANCHOR (1)_34: 7891083798934449384
+      CENTRAL UI ANCHOR (1)_35: -931789606302350477
+      CENTRAL UI ANCHOR (1)_36: -2433330938879036059
+      CENTRAL UI ANCHOR (1)_37: -7368733938943102828
+      CENTRAL UI ANCHOR (1)_38: -8056050306049213048
+      CENTRAL UI ANCHOR (1)_39: -6451700325688271440
+      CENTRAL UI ANCHOR (1)_4: -1730962056322408772
+      CENTRAL UI ANCHOR (1)_40: -1595686633032341159
+      CENTRAL UI ANCHOR (1)_41: -3202005807624315314
+      CENTRAL UI ANCHOR (1)_42: 5909612700217701761
+      CENTRAL UI ANCHOR (1)_43: 6710272219246666988
+      CENTRAL UI ANCHOR (1)_44: 6599428890843590129
+      CENTRAL UI ANCHOR (1)_45: -7695626503911677708
+      CENTRAL UI ANCHOR (1)_46: -5137047069190200656
+      CENTRAL UI ANCHOR (1)_47: 8826792306075012352
+      CENTRAL UI ANCHOR (1)_48: 4111404712679155550
+      CENTRAL UI ANCHOR (1)_49: 7580282958275623287
+      CENTRAL UI ANCHOR (1)_5: 5126751559128952803
+      CENTRAL UI ANCHOR (1)_50: -6068789328952694571
+      CENTRAL UI ANCHOR (1)_51: -3862437405620176858
+      CENTRAL UI ANCHOR (1)_52: 105945997272017844
+      CENTRAL UI ANCHOR (1)_53: -8662138873701878907
+      CENTRAL UI ANCHOR (1)_54: 1095059424051770836
+      CENTRAL UI ANCHOR (1)_55: -3641152202077914111
+      CENTRAL UI ANCHOR (1)_56: 5661020373121022358
+      CENTRAL UI ANCHOR (1)_57: 2474068885656972871
+      CENTRAL UI ANCHOR (1)_58: -2141711537979835660
+      CENTRAL UI ANCHOR (1)_59: 7248213690958109836
+      CENTRAL UI ANCHOR (1)_6: 7656068352952894694
+      CENTRAL UI ANCHOR (1)_60: 5634173268187931954
+      CENTRAL UI ANCHOR (1)_61: 3329101714436242192
+      CENTRAL UI ANCHOR (1)_62: -6533289646205591514
+      CENTRAL UI ANCHOR (1)_63: 4066790533273015395
+      CENTRAL UI ANCHOR (1)_64: -5257936714357787692
+      CENTRAL UI ANCHOR (1)_65: -3949258246590667433
+      CENTRAL UI ANCHOR (1)_66: 2707469963154834278
+      CENTRAL UI ANCHOR (1)_67: -3642235926107219223
+      CENTRAL UI ANCHOR (1)_68: -8348713150241203723
+      CENTRAL UI ANCHOR (1)_69: 7360088621345005884
+      CENTRAL UI ANCHOR (1)_7: -5391771248287136283
+      CENTRAL UI ANCHOR (1)_70: 6989611252186621837
+      CENTRAL UI ANCHOR (1)_71: 7319644392908113381
+      CENTRAL UI ANCHOR (1)_72: 3886882958036552821
+      CENTRAL UI ANCHOR (1)_73: -2087656374061010443
+      CENTRAL UI ANCHOR (1)_74: 2698070104121994610
+      CENTRAL UI ANCHOR (1)_75: 3787468484625694295
+      CENTRAL UI ANCHOR (1)_76: -2909482843416784720
+      CENTRAL UI ANCHOR (1)_77: 3959229265900058313
+      CENTRAL UI ANCHOR (1)_78: 3794988041462684502
+      CENTRAL UI ANCHOR (1)_79: 7996580442217041683
+      CENTRAL UI ANCHOR (1)_8: 7757915000690792782
+      CENTRAL UI ANCHOR (1)_80: 8459056467780329
+      CENTRAL UI ANCHOR (1)_81: -1869653106945252104
+      CENTRAL UI ANCHOR (1)_82: 4842634877309875877
+      CENTRAL UI ANCHOR (1)_83: 8752245977129643646
+      CENTRAL UI ANCHOR (1)_84: -7940640247694597513
+      CENTRAL UI ANCHOR (1)_85: -6635876056367103971
+      CENTRAL UI ANCHOR (1)_86: 6120000418022889370
+      CENTRAL UI ANCHOR (1)_87: 3280185557921182788
+      CENTRAL UI ANCHOR (1)_88: -3034906219624204129
+      CENTRAL UI ANCHOR (1)_89: -5452359667987397700
+      CENTRAL UI ANCHOR (1)_9: -5336135407857736969
+      CENTRAL UI ANCHOR (1)_90: -5061779506223559168
+      CENTRAL UI ANCHOR (1)_91: -6761498544345729335
+      CENTRAL UI ANCHOR (1)_92: 277067217386627579
+      CENTRAL UI ANCHOR (1)_93: 5917665738615704134
+      CENTRAL UI ANCHOR (1)_94: 3898998193207900499
+      CENTRAL UI ANCHOR (1)_95: -4524000689875637833
+      CENTRAL UI ANCHOR (1)_96: -3917939708288547433
+      CENTRAL UI ANCHOR (1)_97: -2425474346248555565
+      CENTRAL UI ANCHOR (1)_98: 2799990188831580459
+      CENTRAL UI ANCHOR (1)_99: -1905595499227398153
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
