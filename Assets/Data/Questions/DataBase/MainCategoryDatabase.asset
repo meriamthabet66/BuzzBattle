@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.CategoryDatabase
   categories:
   - {fileID: 11400000, guid: ce2047e4b3345fa4daa9f0cbf6207af4, type: 2}
+  - {fileID: 11400000, guid: f8bf5de88b1f1be4fbb946d23274fa3d, type: 2}

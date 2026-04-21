@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using GamePlay.Questions;
 using UnityEngine;
+using Data.Data; // Needed to read MatchSetupData
 
-namespace Managers {
+namespace Managers 
+{
     public class MatchManager : MonoBehaviour
     {
         public static MatchManager Instance { get; private set; }
@@ -15,11 +17,6 @@ namespace Managers {
         
         [SerializeField] private RoundManager roundManager;
 
-        // --- ADDED FOR SPRINT 2 TESTING ---
-        [Header("Sprint 2 Test Data")]
-        public Category testCategory; // Drag one of your Category ScriptableObjects here in Unity!
-        // ----------------------------------
-
         private void Awake()
         {
             if (Instance != null && Instance != this)
@@ -30,35 +27,18 @@ namespace Managers {
             Instance = this;
         }
 
-        // --- ADDED FOR SPRINT 2 TESTING ---
-        private void Start()
-        {
-            if (testCategory != null)
-            {
-                Debug.Log("Starting Sprint 2 Test Match...");
-                StartMatch(GameMode.Normal, 3, 5); // 3 rounds, 5 questions
-                
-                List<Category> testList = new List<Category> { testCategory };
-                StartRound(testList, QuestionType.MultipleChoice);
-            }
-            else
-            {
-                Debug.LogWarning("Please drag a Test Category into MatchManager to start the game!");
-            }
-        }
-        // ----------------------------------
-
+        // Called by CategoryPanelUI when you click the final "Start" button
         public void StartMatch(GameMode mode, int rounds, int questions)
         {
             currentMode = mode;
             totalRounds = rounds;
             questionsPerRound = questions;
-
             CurrentRoundIndex = 0;
 
-            Debug.Log($"Match started | Mode: {mode} | Rounds: {rounds}");
+            Debug.Log($"Match started | Mode: {mode} | Rounds: {rounds} | Questions: {questions}");
         }
         
+        // Starts the actual question loop
         public void StartRound(List<Category> categories, QuestionType type)
         {
             if (roundManager == null)
@@ -74,22 +54,22 @@ namespace Managers {
             return CurrentRoundIndex >= totalRounds - 1;
         }
 
-        public void AdvanceRound()
-        {
-            CurrentRoundIndex++;
-        }
-        
+        // RoundManager calls this when it runs out of questions
         public void OnRoundFinished()
         {
-            AdvanceRound();
+            Debug.Log($"Round {CurrentRoundIndex + 1} Finished!");
 
             if (!IsLastRound())
             {
-                // NOTE: Make sure your GameManager actually exists in the scene to avoid NullReferenceErrors here!
-                GameManager.Instance.ChangeState(GameState.CategorySelection);
+                CurrentRoundIndex++;
+                Debug.Log($"Starting Round {CurrentRoundIndex + 1} automatically!");
+                
+                // Automatically grab the saved categories/type and start the next round!
+                StartRound(MatchSetupData.SelectedCategories, MatchSetupData.QType);
             }
             else
             {
+                Debug.Log("All rounds completed! Game Over. Going to Results.");
                 GameManager.Instance.ChangeState(GameState.Results);
             }
         }

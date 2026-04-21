@@ -162,8 +162,17 @@ namespace Managers {
             
             currentlyAnsweringPlayer = -1;  // Unblock the buzzer system so OTHERS can answer
 
-            bool isTrueFalse = questionLoader.CurrentQuestion is TrueOrFalseQuestion;
+            // --- THE FIX: Bulletproof True/False check ---
+            bool isTrueFalse = false;
+            if (questionLoader.CurrentQuestion != null)
+            {
+                // We check the Enum type (GetQuestionType) just in case the Unity asset was created as an MCQ by mistake!
+                isTrueFalse = (questionLoader.CurrentQuestion is TrueOrFalseQuestion) || 
+                              (questionLoader.CurrentQuestion.GetQuestionType() == QuestionType.TrueOrFalse);
+            }
 
+            // Rule 1: If it's True/False, skip immediately. 
+            // Rule 2: If it's MCQ and we reached 2 attempts, skip immediately.
             if (isTrueFalse || currentQuestionAttempts >= MaxAttemptsPerMCQ)
             {
                 Debug.Log("Question failed! No more chances. Moving to next question.");

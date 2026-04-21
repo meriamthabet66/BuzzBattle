@@ -18,7 +18,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CategoryDatabase categoryDatabase;
 
     public CategoryDatabase CategoryDatabase => categoryDatabase;
-
+    
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)

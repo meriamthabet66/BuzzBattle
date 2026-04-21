@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436758f8209144bb82e37aa2d558dffb, type: 3}
+  m_Name: MCQ_ChoufliHal_01 3
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.MultipleChoiceQuestion
+  questionText: "\u0645\u0627 \u0647\u0648 \u0627\u0633\u0645 \u0627\u0644\u0634\u0631\u0643\u0629
+    \u0627\u0644\u062A\u064A \u0643\u0627\u0646 \u064A\u0639\u0645\u0644 \u0641\u064A\u0647\u0627
+    \"\u0627\u0644\u0633\u0628\u0648\u0639\u064A\" \u0642\u0628\u0644 \u0623\u0646
+    \u064A\u0637\u0631\u062F\u0647 \"\u0634\u0643\u064A\u0628\"\u061F"
+  voiceClip: {fileID: 0}
+  difficulty: 1
+  answers:
+  - text: "\u0634\u0631\u0643\u0629 \u0627\u0644\u0646\u0633\u064A\u062C"
+    voiceClip: {fileID: 0}
+    isCorrect: 0
+  - text: "\u0627\u0644\u0634\u0631\u0643\u0629 \u0627\u0644\u0639\u0627\u0645\u0629
+      \u0644\u0644\u0643\u0647\u0631\u0628\u0627\u0621"
+    voiceClip: {fileID: 0}
+    isCorrect: 1
+  - text: "\u0634\u0631\u0643\u0629 \u0627\u0644\u062D\u0644\u064A\u0628"
+    voiceClip: {fileID: 0}
+    isCorrect: 0
+  - text: "\u0628\u0646\u0643 \u062A\u0648\u0646\u0633"
+    voiceClip: {fileID: 0}
+    isCorrect: 0

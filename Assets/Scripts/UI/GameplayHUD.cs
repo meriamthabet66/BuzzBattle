@@ -39,10 +39,7 @@ namespace UI
         private void OnEnable()
         {
             QuestionLoader.OnQuestionLoaded += UpdateQuestion;
-            
-            // --- Listen to RoundManager instead of BuzzerSystem! ---
             RoundManager.OnValidPlayerBuzzed += OnPlayerBuzzed; 
-            
             RoundManager.OnTimerUpdated += UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI += ForceClosePanel;
         }
@@ -50,9 +47,7 @@ namespace UI
         private void OnDisable()
         {
             QuestionLoader.OnQuestionLoaded -= UpdateQuestion;
-            
             RoundManager.OnValidPlayerBuzzed -= OnPlayerBuzzed;
-            
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
         }
@@ -122,7 +117,6 @@ namespace UI
 
         void OnPlayerBuzzed(int playerIndex)
         {
-            // We no longer need to check if they are blocked, RoundManager already did it!
             currentPlayer = playerIndex;
             
             if (answerPanel != null)
@@ -156,8 +150,10 @@ namespace UI
 
             if (isCorrect)
             {
+                // --- THE FIX ---
                 OnAnswerEvaluated?.Invoke(currentPlayer, true);
-                if (answerPanel != null) answerPanel.SetActive(false);
+                
+                // (Removed the line that hides the panel here so the green button stays visible!)
             }
             else
             {
@@ -165,6 +161,8 @@ namespace UI
                 removedAnswers.Add(selectedOption); // Remove the wrong button
                 
                 currentPlayer = -1;
+                
+                // For a WRONG answer, we DO hide it instantly so the other players can see the screen and buzz!
                 if (answerPanel != null) answerPanel.SetActive(false); 
             }
         }
