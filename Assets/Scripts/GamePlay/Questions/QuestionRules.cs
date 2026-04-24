@@ -2,8 +2,9 @@
 {
     public static class QuestionRules
     {
-        public const int MultipleChoiceTime = 5; // Time to answer MCQ
-        public const int VerbalTime = 10;        // Time to answer Verbal
-        public const int BuzzTimeLimit = 5;      // Time to press the buzzer initially
+        public const int MultipleChoiceTime = 5;
+        public const int VerbalTime = 10;
+        public const int BuzzTimeLimit = 5;
+        public const int VerbalStealTime = 5; // --- NEW: The 5 second steal window ---
     }
 }

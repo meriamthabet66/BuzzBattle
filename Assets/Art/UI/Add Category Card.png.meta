@@ -1,0 +1,1638 @@
+fileFormatVersion: 2
+guid: fedba15b5e3786d4698412837fa5c5e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9016280136729492983
+    second: Add Category Card_0
+  - first:
+      213: 5997112469560196465
+    second: Add Category Card_1
+  - first:
+      213: 7508073269333688166
+    second: Add Category Card_2
+  - first:
+      213: -10417387146292914
+    second: Add Category Card_3
+  - first:
+      213: 8785107566606546089
+    second: Add Category Card_4
+  - first:
+      213: -1138119810864185574
+    second: Add Category Card_5
+  - first:
+      213: 3831876703269902148
+    second: Add Category Card_6
+  - first:
+      213: 3538283463684112258
+    second: Add Category Card_7
+  - first:
+      213: 8699183588933420540
+    second: Add Category Card_8
+  - first:
+      213: -4212656639191394490
+    second: Add Category Card_9
+  - first:
+      213: 5971574163753601204
+    second: Add Category Card_10
+  - first:
+      213: -2312006498079173325
+    second: Add Category Card_11
+  - first:
+      213: -6464908293241646560
+    second: Add Category Card_12
+  - first:
+      213: -4093039059268772953
+    second: Add Category Card_13
+  - first:
+      213: -729167152645494333
+    second: Add Category Card_14
+  - first:
+      213: -2862828487617187543
+    second: Add Category Card_15
+  - first:
+      213: 149688127613417427
+    second: Add Category Card_16
+  - first:
+      213: -9105879132634463343
+    second: Add Category Card_17
+  - first:
+      213: -7709071199280637462
+    second: Add Category Card_18
+  - first:
+      213: 4980327239553579970
+    second: Add Category Card_19
+  - first:
+      213: 4015254679179132639
+    second: Add Category Card_20
+  - first:
+      213: 1103981778355587945
+    second: Add Category Card_21
+  - first:
+      213: -5843850984003168619
+    second: Add Category Card_22
+  - first:
+      213: -8723614421505606420
+    second: Add Category Card_23
+  - first:
+      213: -6725591043442390625
+    second: Add Category Card_24
+  - first:
+      213: 3436991453371632832
+    second: Add Category Card_25
+  - first:
+      213: 4308223955942091264
+    second: Add Category Card_26
+  - first:
+      213: 5083551586771457707
+    second: Add Category Card_27
+  - first:
+      213: -8080937512128392200
+    second: Add Category Card_28
+  - first:
+      213: 8118912006666561735
+    second: Add Category Card_29
+  - first:
+      213: 1120120569387727447
+    second: Add Category Card_30
+  - first:
+      213: 4035546132107540823
+    second: Add Category Card_31
+  - first:
+      213: -8212223863834630104
+    second: Add Category Card_32
+  - first:
+      213: 3681509835712379943
+    second: Add Category Card_33
+  - first:
+      213: -8318634349858042387
+    second: Add Category Card_34
+  - first:
+      213: 2455042635293599384
+    second: Add Category Card_35
+  - first:
+      213: -5739881217789769722
+    second: Add Category Card_36
+  - first:
+      213: -3802187910157286086
+    second: Add Category Card_37
+  - first:
+      213: 1294571289042541960
+    second: Add Category Card_38
+  - first:
+      213: -5204789401162993533
+    second: Add Category Card_39
+  - first:
+      213: -3289650618829907742
+    second: Add Category Card_40
+  - first:
+      213: 6160135996382393804
+    second: Add Category Card_41
+  - first:
+      213: -8636539989755659474
+    second: Add Category Card_42
+  - first:
+      213: -7824655694424997373
+    second: Add Category Card_43
+  - first:
+      213: 8042342278258989954
+    second: Add Category Card_44
+  - first:
+      213: 5724139454262310020
+    second: Add Category Card_45
+  - first:
+      213: 1227756592909780605
+    second: Add Category Card_46
+  - first:
+      213: -5749111316514613956
+    second: Add Category Card_47
+  - first:
+      213: 133791130258134998
+    second: Add Category Card_48
+  - first:
+      213: 7114447773159017396
+    second: Add Category Card_49
+  - first:
+      213: -6008584240998071052
+    second: Add Category Card_50
+  - first:
+      213: -6638619630055848582
+    second: Add Category Card_51
+  - first:
+      213: -269528463681571889
+    second: Add Category Card_52
+  - first:
+      213: 3357831387979168567
+    second: Add Category Card_53
+  - first:
+      213: 1321551968809391364
+    second: Add Category Card_54
+  - first:
+      213: -2003393927143956330
+    second: Add Category Card_55
+  - first:
+      213: 8915522923358849425
+    second: Add Category Card_56
+  - first:
+      213: 3616960662064355620
+    second: Add Category Card_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Add Category Card_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 453
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90204d66cfcbfd280800000000000000
+      internalID: -9016280136729492983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d733a54060a3350800000000000000
+      internalID: 5997112469560196465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f7d36ebd8023860800000000000000
+      internalID: 7508073269333688166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4158ab017dfadff0800000000000000
+      internalID: -10417387146292914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4fd2d49c8fae970800000000000000
+      internalID: 8785107566606546089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ffa91ef069430f0800000000000000
+      internalID: -1138119810864185574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_6
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4475f793f8f8d2530800000000000000
+      internalID: 3831876703269902148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28fb78740128a1130800000000000000
+      internalID: 3538283463684112258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_8
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5c8464265b9b870800000000000000
+      internalID: 8699183588933420540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_9
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6475e443b13a985c0800000000000000
+      internalID: -4212656639191394490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_10
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 455
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b80f6c201b4fd250800000000000000
+      internalID: 5971574163753601204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_11
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 455
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 335989be65a1aefd0800000000000000
+      internalID: -2312006498079173325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_12
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 455
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022dadbe8280846a0800000000000000
+      internalID: -6464908293241646560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 453
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab5c7459aa9237c0800000000000000
+      internalID: -4093039059268772953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9aea4865a71e5f0800000000000000
+      internalID: -729167152645494333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_15
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 428
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92175be88a03548d0800000000000000
+      internalID: -2862828487617187543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 398
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7bd791f8cc31200800000000000000
+      internalID: 149688127613417427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_17
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 398
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1934ea38c2b61a180800000000000000
+      internalID: -9105879132634463343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 369
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae9dea2b690e30590800000000000000
+      internalID: -7709071199280637462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_19
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 369
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cbfacacc3dad1540800000000000000
+      internalID: 4980327239553579970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fde72336bdc09b730800000000000000
+      internalID: 4015254679179132639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_21
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 339
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b83690491225f00800000000000000
+      internalID: 1103981778355587945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 309
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5969c2afd7876eea0800000000000000
+      internalID: -5843850984003168619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_23
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 309
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cecfea047ee7fe680800000000000000
+      internalID: -8723614421505606420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9941176496e9a2a0800000000000000
+      internalID: -6725591043442390625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_25
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 280
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc05425485a2bf20800000000000000
+      internalID: 3436991453371632832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aa1caacd2e9cb30800000000000000
+      internalID: 4308223955942091264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 250
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6d2eefb376c8640800000000000000
+      internalID: 5083551586771457707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f35579b52ebadf80800000000000000
+      internalID: -8080937512128392200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_29
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 221
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8a308447b2ca070800000000000000
+      internalID: 8118912006666561735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ab6f329b77b8f00800000000000000
+      internalID: 1120120569387727447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_31
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 191
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759b8fe63d3210830800000000000000
+      internalID: 4035546132107540823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828a624f7e1580e80800000000000000
+      internalID: -8212223863834630104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_33
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 162
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c3ebaa0b9571330800000000000000
+      internalID: 3681509835712379943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded495002264e8c80800000000000000
+      internalID: -8318634349858042387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_35
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 132
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8962d19f440121220800000000000000
+      internalID: 2455042635293599384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60844b09178d750b0800000000000000
+      internalID: -5739881217789769722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_37
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 102
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a354ac59d3aeb3bc0800000000000000
+      internalID: -3802187910157286086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 73
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ddccb7abd37f110800000000000000
+      internalID: 1294571289042541960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_39
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 73
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38036f4ad9fd4c7b0800000000000000
+      internalID: -5204789401162993533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8df750130d852d0800000000000000
+      internalID: -3289650618829907742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_41
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 43
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc538780d033d7550800000000000000
+      internalID: 6160135996382393804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 9
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b782e33a8d42880800000000000000
+      internalID: -8636539989755659474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_43
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 12
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3028f0c4a1d396390800000000000000
+      internalID: -7824655694424997373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_44
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 0
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28b9bb121b32c9f60800000000000000
+      internalID: 8042342278258989954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_45
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4847a10818a307f40800000000000000
+      internalID: 5724139454262310020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_46
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d760807cd1ed90110800000000000000
+      internalID: 1227756592909780605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_47
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c35d7fcb7bd0730b0800000000000000
+      internalID: -5749111316514613956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_48
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d75229f2525bd100800000000000000
+      internalID: 133791130258134998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_49
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bb46344e889bb260800000000000000
+      internalID: 7114447773159017396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_50
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4cc48b7783d9ca0800000000000000
+      internalID: -6008584240998071052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_51
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75069f8e92eed3a0800000000000000
+      internalID: -6638619630055848582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_52
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc337615a41724cf0800000000000000
+      internalID: -269528463681571889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_53
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bb7285bd9699e20800000000000000
+      internalID: 3357831387979168567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_54
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 0
+        width: 20
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4051a158388175210800000000000000
+      internalID: 1321551968809391364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_55
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690e86376d38234e0800000000000000
+      internalID: -2003393927143956330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_56
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 0
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19908a1ccdc4abb70800000000000000
+      internalID: 8915522923358849425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Add Category Card_57
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42958e40f86023230800000000000000
+      internalID: 3616960662064355620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Add Category Card_0: -9016280136729492983
+      Add Category Card_1: 5997112469560196465
+      Add Category Card_10: 5971574163753601204
+      Add Category Card_11: -2312006498079173325
+      Add Category Card_12: -6464908293241646560
+      Add Category Card_13: -4093039059268772953
+      Add Category Card_14: -729167152645494333
+      Add Category Card_15: -2862828487617187543
+      Add Category Card_16: 149688127613417427
+      Add Category Card_17: -9105879132634463343
+      Add Category Card_18: -7709071199280637462
+      Add Category Card_19: 4980327239553579970
+      Add Category Card_2: 7508073269333688166
+      Add Category Card_20: 4015254679179132639
+      Add Category Card_21: 1103981778355587945
+      Add Category Card_22: -5843850984003168619
+      Add Category Card_23: -8723614421505606420
+      Add Category Card_24: -6725591043442390625
+      Add Category Card_25: 3436991453371632832
+      Add Category Card_26: 4308223955942091264
+      Add Category Card_27: 5083551586771457707
+      Add Category Card_28: -8080937512128392200
+      Add Category Card_29: 8118912006666561735
+      Add Category Card_3: -10417387146292914
+      Add Category Card_30: 1120120569387727447
+      Add Category Card_31: 4035546132107540823
+      Add Category Card_32: -8212223863834630104
+      Add Category Card_33: 3681509835712379943
+      Add Category Card_34: -8318634349858042387
+      Add Category Card_35: 2455042635293599384
+      Add Category Card_36: -5739881217789769722
+      Add Category Card_37: -3802187910157286086
+      Add Category Card_38: 1294571289042541960
+      Add Category Card_39: -5204789401162993533
+      Add Category Card_4: 8785107566606546089
+      Add Category Card_40: -3289650618829907742
+      Add Category Card_41: 6160135996382393804
+      Add Category Card_42: -8636539989755659474
+      Add Category Card_43: -7824655694424997373
+      Add Category Card_44: 8042342278258989954
+      Add Category Card_45: 5724139454262310020
+      Add Category Card_46: 1227756592909780605
+      Add Category Card_47: -5749111316514613956
+      Add Category Card_48: 133791130258134998
+      Add Category Card_49: 7114447773159017396
+      Add Category Card_5: -1138119810864185574
+      Add Category Card_50: -6008584240998071052
+      Add Category Card_51: -6638619630055848582
+      Add Category Card_52: -269528463681571889
+      Add Category Card_53: 3357831387979168567
+      Add Category Card_54: 1321551968809391364
+      Add Category Card_55: -2003393927143956330
+      Add Category Card_56: 8915522923358849425
+      Add Category Card_57: 3616960662064355620
+      Add Category Card_6: 3831876703269902148
+      Add Category Card_7: 3538283463684112258
+      Add Category Card_8: 8699183588933420540
+      Add Category Card_9: -4212656639191394490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

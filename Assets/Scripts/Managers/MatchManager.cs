@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using GamePlay.Questions;
 using UnityEngine;
+using Data.Data;
 
-namespace Managers {
+namespace Managers 
+{
     public class MatchManager : MonoBehaviour
     {
         public static MatchManager Instance { get; private set; }
@@ -13,59 +15,35 @@ namespace Managers {
 
         public int CurrentRoundIndex { get; private set; }
         
+        // --- NEW: Tracks if we are mid-game! ---
+        public bool IsMatchActive { get; private set; } 
+        
         [SerializeField] private RoundManager roundManager;
-
-        // --- ADDED FOR SPRINT 2 TESTING ---
-        [Header("Sprint 2 Test Data")]
-        public Category testCategory; // Drag one of your Category ScriptableObjects here in Unity!
-        // ----------------------------------
 
         private void Awake()
         {
-            if (Instance != null && Instance != this)
-            {
-                Destroy(gameObject);
-                return;
-            }
+            if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
+            IsMatchActive = false; // Match hasn't started yet
         }
-
-        // --- ADDED FOR SPRINT 2 TESTING ---
-        private void Start()
-        {
-            if (testCategory != null)
-            {
-                Debug.Log("Starting Sprint 2 Test Match...");
-                StartMatch(GameMode.Normal, 3, 5); // 3 rounds, 5 questions
-                
-                List<Category> testList = new List<Category> { testCategory };
-                StartRound(testList, QuestionType.MultipleChoice);
-            }
-            else
-            {
-                Debug.LogWarning("Please drag a Test Category into MatchManager to start the game!");
-            }
-        }
-        // ----------------------------------
 
         public void StartMatch(GameMode mode, int rounds, int questions)
         {
             currentMode = mode;
             totalRounds = rounds;
             questionsPerRound = questions;
-
             CurrentRoundIndex = 0;
+            IsMatchActive = true; 
+
+            // --- NEW: Tell RoundManager to clear the question memory! ---
+            if (roundManager != null) roundManager.ClearQuestionMemory();
 
             Debug.Log($"Match started | Mode: {mode} | Rounds: {rounds}");
         }
         
         public void StartRound(List<Category> categories, QuestionType type)
         {
-            if (roundManager == null)
-            {
-                Debug.LogError("RoundManager missing in MatchManager");
-                return;
-            }
+            if (roundManager == null) return;
             roundManager.InitializeRound(categories, type);
         }
 
@@ -74,22 +52,21 @@ namespace Managers {
             return CurrentRoundIndex >= totalRounds - 1;
         }
 
-        public void AdvanceRound()
-        {
-            CurrentRoundIndex++;
-        }
-        
+        // --- UPDATED: Stop auto-starting the round! ---
         public void OnRoundFinished()
         {
-            AdvanceRound();
-
             if (!IsLastRound())
             {
-                // NOTE: Make sure your GameManager actually exists in the scene to avoid NullReferenceErrors here!
+                CurrentRoundIndex++;
+                Debug.Log($"Round finished! Going back to UI to setup Round {CurrentRoundIndex + 1}");
+                
+                // Tell GameManager to open the Selection UI again!
                 GameManager.Instance.ChangeState(GameState.CategorySelection);
             }
             else
             {
+                IsMatchActive = false; // Match is completely over
+                Debug.Log("All rounds completed! Game Over. Going to Results.");
                 GameManager.Instance.ChangeState(GameState.Results);
             }
         }

@@ -1,0 +1,6006 @@
+fileFormatVersion: 2
+guid: 793a33fd76f00df4ab04dd25c83d7fff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4503114844202020947
+    second: Centered Modal Card (4)_0
+  - first:
+      213: -105872917901304596
+    second: Centered Modal Card (4)_1
+  - first:
+      213: -5630685051695100700
+    second: Centered Modal Card (4)_2
+  - first:
+      213: 4935925163502558963
+    second: Centered Modal Card (4)_3
+  - first:
+      213: 5537591894550240022
+    second: Centered Modal Card (4)_4
+  - first:
+      213: 2085411034540902384
+    second: Centered Modal Card (4)_5
+  - first:
+      213: 5211763630832693403
+    second: Centered Modal Card (4)_6
+  - first:
+      213: 3408253118916495269
+    second: Centered Modal Card (4)_7
+  - first:
+      213: 259881543918622514
+    second: Centered Modal Card (4)_8
+  - first:
+      213: 8382109063043358723
+    second: Centered Modal Card (4)_9
+  - first:
+      213: -998356896456332958
+    second: Centered Modal Card (4)_10
+  - first:
+      213: 2029254774482572215
+    second: Centered Modal Card (4)_11
+  - first:
+      213: 8300386163320802222
+    second: Centered Modal Card (4)_12
+  - first:
+      213: -1441568146645921469
+    second: Centered Modal Card (4)_13
+  - first:
+      213: 3439066151803989346
+    second: Centered Modal Card (4)_14
+  - first:
+      213: -7605858029226965146
+    second: Centered Modal Card (4)_15
+  - first:
+      213: 5121689662230475090
+    second: Centered Modal Card (4)_16
+  - first:
+      213: 6615189766290678012
+    second: Centered Modal Card (4)_17
+  - first:
+      213: 3536346996439859199
+    second: Centered Modal Card (4)_18
+  - first:
+      213: 3481764622566865615
+    second: Centered Modal Card (4)_19
+  - first:
+      213: -2189650840329613154
+    second: Centered Modal Card (4)_20
+  - first:
+      213: 5041733956484671895
+    second: Centered Modal Card (4)_21
+  - first:
+      213: -1204821221749906929
+    second: Centered Modal Card (4)_22
+  - first:
+      213: -3621581671323773369
+    second: Centered Modal Card (4)_23
+  - first:
+      213: 3440579129435747616
+    second: Centered Modal Card (4)_24
+  - first:
+      213: 2926077396680069379
+    second: Centered Modal Card (4)_25
+  - first:
+      213: -4002244309095237702
+    second: Centered Modal Card (4)_26
+  - first:
+      213: 4347746289186053774
+    second: Centered Modal Card (4)_27
+  - first:
+      213: 2523371252067795688
+    second: Centered Modal Card (4)_28
+  - first:
+      213: -1335314432285348989
+    second: Centered Modal Card (4)_29
+  - first:
+      213: -6447395337009966308
+    second: Centered Modal Card (4)_30
+  - first:
+      213: 7423869431940828268
+    second: Centered Modal Card (4)_31
+  - first:
+      213: -474936812533047878
+    second: Centered Modal Card (4)_32
+  - first:
+      213: 362693814478579886
+    second: Centered Modal Card (4)_33
+  - first:
+      213: -7330762914688240964
+    second: Centered Modal Card (4)_34
+  - first:
+      213: -30019633705210954
+    second: Centered Modal Card (4)_35
+  - first:
+      213: 7831467500188055
+    second: Centered Modal Card (4)_36
+  - first:
+      213: 855230760478300260
+    second: Centered Modal Card (4)_37
+  - first:
+      213: 495704352759570961
+    second: Centered Modal Card (4)_38
+  - first:
+      213: -7055912612387226013
+    second: Centered Modal Card (4)_39
+  - first:
+      213: 1431213873865298796
+    second: Centered Modal Card (4)_40
+  - first:
+      213: 5104043972376362501
+    second: Centered Modal Card (4)_41
+  - first:
+      213: -1219363362273579138
+    second: Centered Modal Card (4)_42
+  - first:
+      213: -7236339340167384407
+    second: Centered Modal Card (4)_43
+  - first:
+      213: 6836411783167500561
+    second: Centered Modal Card (4)_44
+  - first:
+      213: 9132932939589243933
+    second: Centered Modal Card (4)_45
+  - first:
+      213: 696591651850469312
+    second: Centered Modal Card (4)_46
+  - first:
+      213: 6768951131667910890
+    second: Centered Modal Card (4)_47
+  - first:
+      213: 2318108864388391375
+    second: Centered Modal Card (4)_48
+  - first:
+      213: -8761449408600994637
+    second: Centered Modal Card (4)_49
+  - first:
+      213: 1255724554011916672
+    second: Centered Modal Card (4)_50
+  - first:
+      213: -3076689687199014158
+    second: Centered Modal Card (4)_51
+  - first:
+      213: 239535404505557183
+    second: Centered Modal Card (4)_52
+  - first:
+      213: -6638317581966252510
+    second: Centered Modal Card (4)_53
+  - first:
+      213: 3279349489214062452
+    second: Centered Modal Card (4)_54
+  - first:
+      213: 8994347791310446823
+    second: Centered Modal Card (4)_55
+  - first:
+      213: -1715591050233486449
+    second: Centered Modal Card (4)_56
+  - first:
+      213: -4645277226867171003
+    second: Centered Modal Card (4)_57
+  - first:
+      213: 7632422886919756674
+    second: Centered Modal Card (4)_58
+  - first:
+      213: -6176181893775860785
+    second: Centered Modal Card (4)_59
+  - first:
+      213: 5329551792789243807
+    second: Centered Modal Card (4)_60
+  - first:
+      213: -721285128049174450
+    second: Centered Modal Card (4)_61
+  - first:
+      213: 6907098003906812988
+    second: Centered Modal Card (4)_62
+  - first:
+      213: 2503512709312876907
+    second: Centered Modal Card (4)_63
+  - first:
+      213: -5174663685310518553
+    second: Centered Modal Card (4)_64
+  - first:
+      213: 5025642996413362460
+    second: Centered Modal Card (4)_65
+  - first:
+      213: -7121066362442356689
+    second: Centered Modal Card (4)_66
+  - first:
+      213: 2716115038873388097
+    second: Centered Modal Card (4)_67
+  - first:
+      213: -7244506655036248559
+    second: Centered Modal Card (4)_68
+  - first:
+      213: -5285599953917728150
+    second: Centered Modal Card (4)_69
+  - first:
+      213: 5384108536594259224
+    second: Centered Modal Card (4)_70
+  - first:
+      213: -120455960636453519
+    second: Centered Modal Card (4)_71
+  - first:
+      213: 668625242740684619
+    second: Centered Modal Card (4)_72
+  - first:
+      213: -778272708557625715
+    second: Centered Modal Card (4)_73
+  - first:
+      213: 8085456226047456951
+    second: Centered Modal Card (4)_74
+  - first:
+      213: -5696635914485970762
+    second: Centered Modal Card (4)_75
+  - first:
+      213: 8195867062944336778
+    second: Centered Modal Card (4)_76
+  - first:
+      213: 4009224796469758039
+    second: Centered Modal Card (4)_77
+  - first:
+      213: 6870959385548080907
+    second: Centered Modal Card (4)_78
+  - first:
+      213: -5215278281710635366
+    second: Centered Modal Card (4)_79
+  - first:
+      213: -2279702129058663791
+    second: Centered Modal Card (4)_80
+  - first:
+      213: 7080099798603485347
+    second: Centered Modal Card (4)_81
+  - first:
+      213: -493767572548849821
+    second: Centered Modal Card (4)_82
+  - first:
+      213: 315353772448914326
+    second: Centered Modal Card (4)_83
+  - first:
+      213: -4239076947765812410
+    second: Centered Modal Card (4)_84
+  - first:
+      213: 4441721696749237519
+    second: Centered Modal Card (4)_85
+  - first:
+      213: -919197316333405380
+    second: Centered Modal Card (4)_86
+  - first:
+      213: -8640812114147482666
+    second: Centered Modal Card (4)_87
+  - first:
+      213: -7921853623665587710
+    second: Centered Modal Card (4)_88
+  - first:
+      213: 7978045840254456433
+    second: Centered Modal Card (4)_89
+  - first:
+      213: 3554086027678864511
+    second: Centered Modal Card (4)_90
+  - first:
+      213: 6146047824365921334
+    second: Centered Modal Card (4)_91
+  - first:
+      213: -6313322004041763803
+    second: Centered Modal Card (4)_92
+  - first:
+      213: 8054703212114243897
+    second: Centered Modal Card (4)_93
+  - first:
+      213: -529663960429999951
+    second: Centered Modal Card (4)_94
+  - first:
+      213: -1208796226352626536
+    second: Centered Modal Card (4)_95
+  - first:
+      213: 2581987892243965309
+    second: Centered Modal Card (4)_96
+  - first:
+      213: 335096371446356936
+    second: Centered Modal Card (4)_97
+  - first:
+      213: -7153826112979585347
+    second: Centered Modal Card (4)_98
+  - first:
+      213: 7839273181461004071
+    second: Centered Modal Card (4)_99
+  - first:
+      213: -5214025036440188417
+    second: Centered Modal Card (4)_100
+  - first:
+      213: -3433775456192322986
+    second: Centered Modal Card (4)_101
+  - first:
+      213: -2866280824111432085
+    second: Centered Modal Card (4)_102
+  - first:
+      213: -7808681319220548494
+    second: Centered Modal Card (4)_103
+  - first:
+      213: -3172804215557306501
+    second: Centered Modal Card (4)_104
+  - first:
+      213: 5351588081011399074
+    second: Centered Modal Card (4)_105
+  - first:
+      213: -9217734123600519139
+    second: Centered Modal Card (4)_106
+  - first:
+      213: 40426943475152220
+    second: Centered Modal Card (4)_107
+  - first:
+      213: -8918994660145789496
+    second: Centered Modal Card (4)_108
+  - first:
+      213: -3783584587282293371
+    second: Centered Modal Card (4)_109
+  - first:
+      213: -4981942648858588297
+    second: Centered Modal Card (4)_110
+  - first:
+      213: -4354000327218345439
+    second: Centered Modal Card (4)_111
+  - first:
+      213: -5441471893063250117
+    second: Centered Modal Card (4)_112
+  - first:
+      213: -4086293021989140831
+    second: Centered Modal Card (4)_113
+  - first:
+      213: -4895177889532488800
+    second: Centered Modal Card (4)_114
+  - first:
+      213: -2584719136054823239
+    second: Centered Modal Card (4)_115
+  - first:
+      213: -5043341969098076725
+    second: Centered Modal Card (4)_116
+  - first:
+      213: -5592531752945954276
+    second: Centered Modal Card (4)_117
+  - first:
+      213: 2559211440042938695
+    second: Centered Modal Card (4)_118
+  - first:
+      213: -1928746704477556992
+    second: Centered Modal Card (4)_119
+  - first:
+      213: 6568208435451732963
+    second: Centered Modal Card (4)_120
+  - first:
+      213: 8085126527651379253
+    second: Centered Modal Card (4)_121
+  - first:
+      213: -6578582853912358376
+    second: Centered Modal Card (4)_122
+  - first:
+      213: 3024880644723537525
+    second: Centered Modal Card (4)_123
+  - first:
+      213: 4933988569114105798
+    second: Centered Modal Card (4)_124
+  - first:
+      213: 6983109511086246586
+    second: Centered Modal Card (4)_125
+  - first:
+      213: 3806522228974994691
+    second: Centered Modal Card (4)_126
+  - first:
+      213: 7453161554135478403
+    second: Centered Modal Card (4)_127
+  - first:
+      213: -4683355307435011489
+    second: Centered Modal Card (4)_128
+  - first:
+      213: 7149833280156547610
+    second: Centered Modal Card (4)_129
+  - first:
+      213: -838638919992100642
+    second: Centered Modal Card (4)_130
+  - first:
+      213: 7270059600225088744
+    second: Centered Modal Card (4)_131
+  - first:
+      213: -2307859297427326497
+    second: Centered Modal Card (4)_132
+  - first:
+      213: -9179504115991700343
+    second: Centered Modal Card (4)_133
+  - first:
+      213: 922429110926178359
+    second: Centered Modal Card (4)_134
+  - first:
+      213: -2522627672369924908
+    second: Centered Modal Card (4)_135
+  - first:
+      213: -8328175582245552228
+    second: Centered Modal Card (4)_136
+  - first:
+      213: 4090156083511479050
+    second: Centered Modal Card (4)_137
+  - first:
+      213: -3157181408786268563
+    second: Centered Modal Card (4)_138
+  - first:
+      213: 8502393266815126754
+    second: Centered Modal Card (4)_139
+  - first:
+      213: 8152765789145564657
+    second: Centered Modal Card (4)_140
+  - first:
+      213: 6756094482950161699
+    second: Centered Modal Card (4)_141
+  - first:
+      213: -8338372642213816638
+    second: Centered Modal Card (4)_142
+  - first:
+      213: 3467592694847759011
+    second: Centered Modal Card (4)_143
+  - first:
+      213: -8465131952889674031
+    second: Centered Modal Card (4)_144
+  - first:
+      213: -3321328036696176017
+    second: Centered Modal Card (4)_145
+  - first:
+      213: -3139812411299723650
+    second: Centered Modal Card (4)_146
+  - first:
+      213: 493319587634533750
+    second: Centered Modal Card (4)_147
+  - first:
+      213: 3830081773317769163
+    second: Centered Modal Card (4)_148
+  - first:
+      213: -3981368136916026351
+    second: Centered Modal Card (4)_149
+  - first:
+      213: -6200980237347450931
+    second: Centered Modal Card (4)_150
+  - first:
+      213: -1609397095153424349
+    second: Centered Modal Card (4)_151
+  - first:
+      213: -1697042243403012305
+    second: Centered Modal Card (4)_152
+  - first:
+      213: -9158809755075382562
+    second: Centered Modal Card (4)_153
+  - first:
+      213: 4105319184369609965
+    second: Centered Modal Card (4)_154
+  - first:
+      213: -3178173718141697495
+    second: Centered Modal Card (4)_155
+  - first:
+      213: -4644544272359319288
+    second: Centered Modal Card (4)_156
+  - first:
+      213: -1023908542013540834
+    second: Centered Modal Card (4)_157
+  - first:
+      213: -6305855416686320827
+    second: Centered Modal Card (4)_158
+  - first:
+      213: -4254705922371130964
+    second: Centered Modal Card (4)_159
+  - first:
+      213: -7823588003033399392
+    second: Centered Modal Card (4)_160
+  - first:
+      213: 8782071136568629180
+    second: Centered Modal Card (4)_161
+  - first:
+      213: 622576677664480864
+    second: Centered Modal Card (4)_162
+  - first:
+      213: -1521383900946645876
+    second: Centered Modal Card (4)_163
+  - first:
+      213: 2725270996088687455
+    second: Centered Modal Card (4)_164
+  - first:
+      213: -1026855098716942793
+    second: Centered Modal Card (4)_165
+  - first:
+      213: 5191106340878617782
+    second: Centered Modal Card (4)_166
+  - first:
+      213: 4772471790064148377
+    second: Centered Modal Card (4)_167
+  - first:
+      213: -5924562443408520841
+    second: Centered Modal Card (4)_168
+  - first:
+      213: 6109624207548955615
+    second: Centered Modal Card (4)_169
+  - first:
+      213: -366649462050550497
+    second: Centered Modal Card (4)_170
+  - first:
+      213: 4173304585961105071
+    second: Centered Modal Card (4)_171
+  - first:
+      213: -8805566937631847130
+    second: Centered Modal Card (4)_172
+  - first:
+      213: 8974033057588400099
+    second: Centered Modal Card (4)_173
+  - first:
+      213: -3731815235899405701
+    second: Centered Modal Card (4)_174
+  - first:
+      213: -1389435758942379135
+    second: Centered Modal Card (4)_175
+  - first:
+      213: 2566268387597706370
+    second: Centered Modal Card (4)_176
+  - first:
+      213: 3971584695812764907
+    second: Centered Modal Card (4)_177
+  - first:
+      213: 6731785774615177474
+    second: Centered Modal Card (4)_178
+  - first:
+      213: -2543989611412548142
+    second: Centered Modal Card (4)_179
+  - first:
+      213: 3950216196919818470
+    second: Centered Modal Card (4)_180
+  - first:
+      213: -6060789976279468193
+    second: Centered Modal Card (4)_181
+  - first:
+      213: -3511081724433638700
+    second: Centered Modal Card (4)_182
+  - first:
+      213: -714075827726767050
+    second: Centered Modal Card (4)_183
+  - first:
+      213: 581380586490010424
+    second: Centered Modal Card (4)_184
+  - first:
+      213: 3762338519838827746
+    second: Centered Modal Card (4)_185
+  - first:
+      213: -8392834961500029665
+    second: Centered Modal Card (4)_186
+  - first:
+      213: 3467384679088330981
+    second: Centered Modal Card (4)_187
+  - first:
+      213: 3744320303485220229
+    second: Centered Modal Card (4)_188
+  - first:
+      213: 7967765170411954240
+    second: Centered Modal Card (4)_189
+  - first:
+      213: -7121106438248339058
+    second: Centered Modal Card (4)_190
+  - first:
+      213: 4611365418809823183
+    second: Centered Modal Card (4)_191
+  - first:
+      213: -9185458309409148246
+    second: Centered Modal Card (4)_192
+  - first:
+      213: 381003825456408146
+    second: Centered Modal Card (4)_193
+  - first:
+      213: -2378258942890631722
+    second: Centered Modal Card (4)_194
+  - first:
+      213: -8401123571128578181
+    second: Centered Modal Card (4)_195
+  - first:
+      213: 1290509254549161277
+    second: Centered Modal Card (4)_196
+  - first:
+      213: -2066015215008581245
+    second: Centered Modal Card (4)_197
+  - first:
+      213: 7734931543918276090
+    second: Centered Modal Card (4)_198
+  - first:
+      213: 3605570028632230890
+    second: Centered Modal Card (4)_199
+  - first:
+      213: 303919499525175212
+    second: Centered Modal Card (4)_200
+  - first:
+      213: -2380457483183233971
+    second: Centered Modal Card (4)_201
+  - first:
+      213: 4985042212327367350
+    second: Centered Modal Card (4)_202
+  - first:
+      213: 4832138475780531188
+    second: Centered Modal Card (4)_203
+  - first:
+      213: -8824987107428625321
+    second: Centered Modal Card (4)_204
+  - first:
+      213: -8421757071210234567
+    second: Centered Modal Card (4)_205
+  - first:
+      213: -7804386020668901867
+    second: Centered Modal Card (4)_206
+  - first:
+      213: 3078007896237315345
+    second: Centered Modal Card (4)_207
+  - first:
+      213: -1674156366695602352
+    second: Centered Modal Card (4)_208
+  - first:
+      213: -5593626279747518217
+    second: Centered Modal Card (4)_209
+  - first:
+      213: -2883700469044370158
+    second: Centered Modal Card (4)_210
+  - first:
+      213: -8327613558511265767
+    second: Centered Modal Card (4)_211
+  - first:
+      213: -3135066336764999180
+    second: Centered Modal Card (4)_212
+  - first:
+      213: 8177697722929271666
+    second: Centered Modal Card (4)_213
+  - first:
+      213: 5715902975176551922
+    second: Centered Modal Card (4)_214
+  - first:
+      213: 7231497027244263538
+    second: Centered Modal Card (4)_215
+  - first:
+      213: -268421179290019694
+    second: Centered Modal Card (4)_216
+  - first:
+      213: -7281221148389940327
+    second: Centered Modal Card (4)_217
+  - first:
+      213: -7172923320594079559
+    second: Centered Modal Card (4)_218
+  - first:
+      213: 1766814019553014055
+    second: Centered Modal Card (4)_219
+  - first:
+      213: 1867137225024887654
+    second: Centered Modal Card (4)_220
+  - first:
+      213: -1421113924217254268
+    second: Centered Modal Card (4)_221
+  - first:
+      213: 3386518194663859463
+    second: Centered Modal Card (4)_222
+  - first:
+      213: 3576182719710600904
+    second: Centered Modal Card (4)_223
+  - first:
+      213: 6259816586757998182
+    second: Centered Modal Card (4)_224
+  - first:
+      213: -1807994456077780170
+    second: Centered Modal Card (4)_225
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1284
+        height: 2049
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dafcc8068e8b181c0800000000000000
+      internalID: -4503114844202020947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 2039
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec9821642dd78ef0800000000000000
+      internalID: -105872917901304596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2036
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec8c9337c9cbd1b0800000000000000
+      internalID: -5630685051695100700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2036
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe5b78d8cdef7440800000000000000
+      internalID: 4935925163502558963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_4
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2044
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61bdfb91d7a79dc40800000000000000
+      internalID: 5537591894550240022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_5
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2034
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f78d74794ed0fc10800000000000000
+      internalID: 2085411034540902384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2041
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90351db867e35840800000000000000
+      internalID: 5211763630832693403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_7
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a782a9672c8c4f20800000000000000
+      internalID: 3408253118916495269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_8
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 2044
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23713f423e84b9300800000000000000
+      internalID: 259881543918622514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_9
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 2043
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300284358cb335470800000000000000
+      internalID: 8382109063043358723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269a8a331bf1522f0800000000000000
+      internalID: -998356896456332958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_11
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 2044
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b39cc7477c592c10800000000000000
+      internalID: 2029254774482572215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_12
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2040
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabcd4bfc35e03370800000000000000
+      internalID: 8300386163320802222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_13
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2031
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 341d6ab88658efbe0800000000000000
+      internalID: -1441568146645921469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_14
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 2034
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26da851b1740abf20800000000000000
+      internalID: 3439066151803989346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_15
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 2042
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667cfd38b60927690800000000000000
+      internalID: -7605858029226965146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 2042
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251b907ac95e31740800000000000000
+      internalID: 5121689662230475090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_17
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2039
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf02e8d2b00edcb50800000000000000
+      internalID: 6615189766290678012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_18
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 2037
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff315d5bd0a31130800000000000000
+      internalID: 3536346996439859199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_19
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2034
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcabe9f1a76b15030800000000000000
+      internalID: 3481764622566865615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_20
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 2043
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e909408792ccc91e0800000000000000
+      internalID: -2189650840329613154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2036
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7992b483256d7f540800000000000000
+      internalID: 5041733956484671895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_22
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 2040
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02aeb37b7d974fe0800000000000000
+      internalID: -1204821221749906929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_23
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 2043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7465eab68ae8dbdc0800000000000000
+      internalID: -3621581671323773369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2044
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025f3af3d746fbf20800000000000000
+      internalID: 3440579129435747616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_25
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3015a66a3e38b9820800000000000000
+      internalID: 2926077396680069379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_26
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7bc04710c2578c0800000000000000
+      internalID: -4002244309095237702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_27
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2044
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e1574f63c465c30800000000000000
+      internalID: 4347746289186053774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_28
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2041
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e20febc8c0d40320800000000000000
+      internalID: 2523371252067795688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_29
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2031
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bed204992087de0800000000000000
+      internalID: -1335314432285348989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_30
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2031
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13d20bc9104686a0800000000000000
+      internalID: -6447395337009966308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_31
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2042
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cc6bd3ae1e60760800000000000000
+      internalID: 7423869431940828268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_32
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2042
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd163e3c7fa869f0800000000000000
+      internalID: -474936812533047878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_33
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 2039
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82a364a1c880500800000000000000
+      internalID: 362693814478579886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_34
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 2037
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2766918f5e34a90800000000000000
+      internalID: -7330762914688240964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_35
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 2034
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bba6bc5d49559ff0800000000000000
+      internalID: -30019633705210954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_36
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 2043
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7913b6e9da2db1000800000000000000
+      internalID: 7831467500188055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_37
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 2036
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468db4f68d36edb00800000000000000
+      internalID: 855230760478300260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_38
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2040
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11269d38b7811e600800000000000000
+      internalID: 495704352759570961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_39
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ef574ecdc541e90800000000000000
+      internalID: -7055912612387226013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_40
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 2044
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c631a557f61bcd310800000000000000
+      internalID: 1431213873865298796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_41
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e777353f435d640800000000000000
+      internalID: 5104043972376362501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_42
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7fae838b73f31fe0800000000000000
+      internalID: -1219363362273579138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_43
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 2044
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2732bb5bb539b90800000000000000
+      internalID: -7236339340167384407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_44
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 2041
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1116ef1cb40dfde50800000000000000
+      internalID: 6836411783167500561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_45
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2031
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d145ea5ce12bebe70800000000000000
+      internalID: 9132932939589243933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_46
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 2031
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfbc0aaa6acaa900800000000000000
+      internalID: 696591651850469312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_47
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 2042
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae05b09d03520fd50800000000000000
+      internalID: 6768951131667910890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_48
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 2042
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc1ed84fab39b2020800000000000000
+      internalID: 2318108864388391375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_49
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 2039
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc08cade24196680800000000000000
+      internalID: -8761449408600994637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_50
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2037
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089bd9924da3d6110800000000000000
+      internalID: 1255724554011916672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_51
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 2034
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f2256ec7076d45d0800000000000000
+      internalID: -3076689687199014158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_52
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 2043
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8eea86e20035300800000000000000
+      internalID: 239535404505557183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_53
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 2036
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226ebac9455ffd3a0800000000000000
+      internalID: -6638317581966252510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_54
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 2040
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f76f65cf6928d20800000000000000
+      internalID: 3279349489214062452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_55
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 2043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0e06f79a752dc70800000000000000
+      internalID: 8994347791310446823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_56
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2044
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f836ef6870ff038e0800000000000000
+      internalID: -1715591050233486449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_57
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541ee5159f8a88fb0800000000000000
+      internalID: -4645277226867171003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_58
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 2044
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28bd9666d20dbe960800000000000000
+      internalID: 7632422886919756674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_59
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2044
+        width: 14
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb5a495a4bc94aa0800000000000000
+      internalID: -6176181893775860785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_60
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 2040
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97cf3d4e1f56f940800000000000000
+      internalID: 5329551792789243807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_61
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 2031
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e485bd06ffa7df5f0800000000000000
+      internalID: -721285128049174450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_62
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 2034
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cdca70a01fadf50800000000000000
+      internalID: 6907098003906812988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_63
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2042
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6115418b834eb220800000000000000
+      internalID: 2503512709312876907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_64
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 2042
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eae3f47bc6ef28b0800000000000000
+      internalID: -5174663685310518553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_65
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 2039
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c11f521adabaeb540800000000000000
+      internalID: 5025642996413362460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_66
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2036
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28e3a45fd3ec2d90800000000000000
+      internalID: -7121066362442356689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_67
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 2033
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144052dbc3491b520800000000000000
+      internalID: 2716115038873388097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_68
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 2043
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e6c9d8497567b90800000000000000
+      internalID: -7244506655036248559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_69
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 2033
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6aa9e1a8d6c5a6b0800000000000000
+      internalID: -5285599953917728150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_70
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 2041
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d59d3103238ba40800000000000000
+      internalID: 5384108536594259224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_71
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2043
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17d8f2721fd045ef0800000000000000
+      internalID: -120455960636453519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_72
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 2044
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47fa61ad1f674900800000000000000
+      internalID: 668625242740684619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_73
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2042
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d86aa0458150335f0800000000000000
+      internalID: -778272708557625715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_74
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 6
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b67788599f453070800000000000000
+      internalID: 8085456226047456951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_75
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8c45e51db71f0b0800000000000000
+      internalID: -5696635914485970762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_76
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b0f119ba19db170800000000000000
+      internalID: 8195867062944336778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_77
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 3
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758844ae5b0a3a730800000000000000
+      internalID: 4009224796469758039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_78
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07cab1482d8a5f50800000000000000
+      internalID: 6870959385548080907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_79
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 5
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96f3d5d80c9f97b0800000000000000
+      internalID: -5215278281710635366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_80
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192b1c3fdfedc50e0800000000000000
+      internalID: -2279702129058663791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_81
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a0531e3141914260800000000000000
+      internalID: 7080099798603485347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_82
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 0
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f6e944209c529f0800000000000000
+      internalID: -493767572548849821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_83
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b9561d59c506400800000000000000
+      internalID: 315353772448914326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_84
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6432fd0c9f5cb25c0800000000000000
+      internalID: -4239076947765812410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_85
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0532e5995a24ad30800000000000000
+      internalID: 4441721696749237519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_86
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b747139ea5e33f0800000000000000
+      internalID: -919197316333405380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_87
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 4
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3e855c92ba51880800000000000000
+      internalID: -8640812114147482666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_88
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a85ced91cef0290800000000000000
+      internalID: -7921853623665587710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_89
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 5
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17256261c66b7be60800000000000000
+      internalID: 7978045840254456433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_90
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f745afc6966a25130800000000000000
+      internalID: 3554086027678864511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_91
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634a4efdee52b4550800000000000000
+      internalID: 6146047824365921334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_92
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 524fe6436139268a0800000000000000
+      internalID: -6313322004041763803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_93
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 7
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 931744155ed08cf60800000000000000
+      internalID: 8054703212114243897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_94
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 4
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b84e3c2f6146a8f0800000000000000
+      internalID: -529663960429999951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_95
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8944b629c3e793fe0800000000000000
+      internalID: -1208796226352626536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_96
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 0
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75af8bde4015d320800000000000000
+      internalID: 2581987892243965309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_97
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb1599df5086a400800000000000000
+      internalID: 335096371446356936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_98
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db630f68d0188bc90800000000000000
+      internalID: -7153826112979585347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_99
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 6
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fba3e9c61bacc60800000000000000
+      internalID: 7839273181461004071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_100
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff94dfcbadf04a7b0800000000000000
+      internalID: -5214025036440188417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_101
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 7
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652a33f5a67c850d0800000000000000
+      internalID: -3433775456192322986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_102
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ef254d6cce838d0800000000000000
+      internalID: -2866280824111432085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_103
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c61ab56bdf1a390800000000000000
+      internalID: -7808681319220548494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_104
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7748dd406fe7f3d0800000000000000
+      internalID: -3172804215557306501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_105
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a916e87109a44a40800000000000000
+      internalID: 5351588081011399074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_106
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d106bc8f6a7041080800000000000000
+      internalID: -9217734123600519139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_107
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55f0354710af8000800000000000000
+      internalID: 40426943475152220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_108
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c587688c9d593480800000000000000
+      internalID: -8918994660145789496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_109
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d55693dd10e7bc0800000000000000
+      internalID: -3783584587282293371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_110
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b4a6b6e859cdab0800000000000000
+      internalID: -4981942648858588297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_111
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 2
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a473855cb7393c0800000000000000
+      internalID: -4354000327218345439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_112
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f41b6b4220c74b0800000000000000
+      internalID: -5441471893063250117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_113
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a60e2885229a47c0800000000000000
+      internalID: -4086293021989140831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_114
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 0
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3d11e25a5d01cb0800000000000000
+      internalID: -4895177889532488800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_115
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 6
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b63c43e3ab312cd0800000000000000
+      internalID: -2584719136054823239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_116
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 4
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd071b2333720ab0800000000000000
+      internalID: -5043341969098076725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_117
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 2
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12509e40065362b0800000000000000
+      internalID: -5592531752945954276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_118
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74110e4de35248320800000000000000
+      internalID: 2559211440042938695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_119
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fe8e95717bb35e0800000000000000
+      internalID: -1928746704477556992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_120
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e323dda5c6f62b50800000000000000
+      internalID: 6568208435451732963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_121
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5387fb47db3243070800000000000000
+      internalID: 8085126527651379253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_122
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 812141bcfbd24b4a0800000000000000
+      internalID: -6578582853912358376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_123
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 5
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57673bc7be88af920800000000000000
+      internalID: 3024880644723537525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_124
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c752e3567c097440800000000000000
+      internalID: 4933988569114105798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_125
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 6
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aba82fb2a1df8e060800000000000000
+      internalID: 6983109511086246586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_126
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305cea7accb73d430800000000000000
+      internalID: 3806522228974994691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_127
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 7
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380f7d7e1f2fe6760800000000000000
+      internalID: 7453161554135478403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_128
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f52556f4921610fb0800000000000000
+      internalID: -4683355307435011489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_129
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 0
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1a3ff2ac7f493360800000000000000
+      internalID: 7149833280156547610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_130
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8bd07785e8c54f0800000000000000
+      internalID: -838638919992100642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_131
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 4
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4b55f10b074e460800000000000000
+      internalID: 7270059600225088744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_132
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9f2415236d8ffd0800000000000000
+      internalID: -2307859297427326497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_133
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c141044a9db9080800000000000000
+      internalID: -9179504115991700343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_134
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 738fb3f93602dcc00800000000000000
+      internalID: 922429110926178359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_135
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 0
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d4f1d75f73ddfcd0800000000000000
+      internalID: -2522627672369924908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_136
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ffb29be606c6c80800000000000000
+      internalID: -8328175582245552228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_137
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0bca91994723c830800000000000000
+      internalID: 4090156083511479050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_138
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eb3d57c307f24d0800000000000000
+      internalID: -3157181408786268563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_139
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ec4039e0a19ef570800000000000000
+      internalID: 8502393266815126754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_140
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 0
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f58afe3a41742170800000000000000
+      internalID: 8152765789145564657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_141
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 6
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325883d032872cd50800000000000000
+      internalID: 6756094482950161699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_142
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 4
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c69200b246284c80800000000000000
+      internalID: -8338372642213816638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_143
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 2
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2e3221f2d5f1030800000000000000
+      internalID: 3467592694847759011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_144
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6c33bc65fc58a80800000000000000
+      internalID: -8465131952889674031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_145
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6acd2e6fb548e1d0800000000000000
+      internalID: -3321328036696176017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_146
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e760e135f352d64d0800000000000000
+      internalID: -3139812411299723650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_147
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 0
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675d2bd1d8f98d600800000000000000
+      internalID: 493319587634533750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_148
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc7cd47841f272530800000000000000
+      internalID: 3830081773317769163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_149
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 5
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11cbf0f06c65fb8c0800000000000000
+      internalID: -3981368136916026351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_150
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 7
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf00bd0451b1f9a0800000000000000
+      internalID: -6200980237347450931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_151
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 6
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 328a5d07ed54aa9e0800000000000000
+      internalID: -1609397095153424349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_152
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27a1292215e278e0800000000000000
+      internalID: -1697042243403012305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_153
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 7
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2795f9d0f55e080800000000000000
+      internalID: -9158809755075382562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_154
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec62f91c0609f830800000000000000
+      internalID: 4105319184369609965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_155
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 0
+        width: 18
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9228eaf87dbd4e3d0800000000000000
+      internalID: -3178173718141697495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_156
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 0
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 809927697934b8fb0800000000000000
+      internalID: -4644544272359319288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_157
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 4
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e167bce1b985ac1f0800000000000000
+      internalID: -1023908542013540834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_158
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 0
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543607b88e91d78a0800000000000000
+      internalID: -6305855416686320827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_159
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca96159818f34f4c0800000000000000
+      internalID: -4254705922371130964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_160
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afbf2299280d6390800000000000000
+      internalID: -7823588003033399392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_161
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 0
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb752675b2f20e970800000000000000
+      internalID: 8782071136568629180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_162
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e52a59036d3a800800000000000000
+      internalID: 622576677664480864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_163
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 2
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8cb3191765f2eae0800000000000000
+      internalID: -1521383900946645876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_164
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 4
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b8a86288b12d520800000000000000
+      internalID: 2725270996088687455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_165
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73e8d2d6ab0efb1f0800000000000000
+      internalID: -1026855098716942793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_166
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 0
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc095f96b38a0840800000000000000
+      internalID: 5191106340878617782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_167
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 6
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f9853bec93b3240800000000000000
+      internalID: 4772471790064148377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_168
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 4
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779c30fe8d9b7cda0800000000000000
+      internalID: -5924562443408520841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_169
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb351ab8deb9c450800000000000000
+      internalID: 6109624207548955615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_170
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 6
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d8361c14669eaf0800000000000000
+      internalID: -366649462050550497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_171
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 0
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa668b9e86e8ae930800000000000000
+      internalID: 4173304585961105071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_172
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 0
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d878c26875cc580800000000000000
+      internalID: -8805566937631847130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_173
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef4b28f48b2a8c70800000000000000
+      internalID: 8974033057588400099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_174
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 0
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a43d0a0dde53cc0800000000000000
+      internalID: -3731815235899405701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_175
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 5
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183a30ee98bb7bce0800000000000000
+      internalID: -1389435758942379135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_176
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 6
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284631970873d9320800000000000000
+      internalID: 2566268387597706370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_177
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be43c4d0d37ed1730800000000000000
+      internalID: 3971584695812764907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_178
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 7
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20927f7de7b1c6d50800000000000000
+      internalID: 6731785774615177474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_179
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 0
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d598735deee1bcd0800000000000000
+      internalID: -2543989611412548142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_180
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e87663b3bcf1d630800000000000000
+      internalID: 3950216196919818470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_181
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 5
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f573d95c0afb3eba0800000000000000
+      internalID: -6060789976279468193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_182
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 4
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da54cd26c1264fc0800000000000000
+      internalID: -3511081724433638700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_183
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 3
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c27a961d71716f0800000000000000
+      internalID: -714075827726767050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_184
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b9b09209a711800800000000000000
+      internalID: 581380586490010424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_185
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 5
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e423c733f2863430800000000000000
+      internalID: 3762338519838827746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_186
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dbf45d119a68b80800000000000000
+      internalID: -8392834961500029665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_187
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e811b0aeff9e1030800000000000000
+      internalID: 3467384679088330981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_188
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585f48e4a7f76f330800000000000000
+      internalID: 3744320303485220229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_189
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 1
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040622c1530339e60800000000000000
+      internalID: 7967765170411954240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_190
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 2
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89e5747c6fbc2d90800000000000000
+      internalID: -7121106438248339058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_191
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 0
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf0ea59a6cdeff30800000000000000
+      internalID: 4611365418809823183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_192
+      rect:
+        serializedVersion: 2
+        x: 1144
+        y: 4
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2f1809552b68080800000000000000
+      internalID: -9185458309409148246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_193
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256e46ae5f8994500800000000000000
+      internalID: 381003825456408146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_194
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 4
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd9b1d871abefed0800000000000000
+      internalID: -2378258942890631722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_195
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f48b48f96396b80800000000000000
+      internalID: -8401123571128578181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_196
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 0
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d35c1c0645fc8e110800000000000000
+      internalID: 1290509254549161277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_197
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 6
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3897cd0bb1a0453e0800000000000000
+      internalID: -2066015215008581245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_198
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1
+        width: 43
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd663df14ff75b60800000000000000
+      internalID: 7734931543918276090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_199
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 0
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb4b6186de890230800000000000000
+      internalID: 3605570028632230890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_200
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca73381bc2db73400800000000000000
+      internalID: 303919499525175212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_201
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4461fff78ae6fed0800000000000000
+      internalID: -2380457483183233971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_202
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b2a910fa7d6e2540800000000000000
+      internalID: 4985042212327367350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_203
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3656a87543f0340800000000000000
+      internalID: 4832138475780531188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_204
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754905a8bf8578580800000000000000
+      internalID: -8824987107428625321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_205
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d31e96098ef1b80800000000000000
+      internalID: -8421757071210234567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_206
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516710c734041b390800000000000000
+      internalID: -7804386020668901867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_207
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1159217afd747ba20800000000000000
+      internalID: 3078007896237315345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_208
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05766a097a334c8e0800000000000000
+      internalID: -1674156366695602352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_209
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f00c5de8827f52b0800000000000000
+      internalID: -5593626279747518217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_210
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 215abffa3b90bf7d0800000000000000
+      internalID: -2883700469044370158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_211
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9189532179f5e6c80800000000000000
+      internalID: -8327613558511265767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_212
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f946d9e6c10e74d0800000000000000
+      internalID: -3135066336764999180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_213
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27358bf60c40d7170800000000000000
+      internalID: 8177697722929271666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_214
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd2ff5c877f25f40800000000000000
+      internalID: 5715902975176551922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_215
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 278003f6b307b5460800000000000000
+      internalID: 7231497027244263538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_216
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2981a3e0c50664cf0800000000000000
+      internalID: -268421179290019694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_217
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993e72f61f7e3fa90800000000000000
+      internalID: -7281221148389940327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_218
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 0
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0efd26e38a47c90800000000000000
+      internalID: -7172923320594079559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_219
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72133a36dfbf48810800000000000000
+      internalID: 1766814019553014055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_220
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66b5484e96769e910800000000000000
+      internalID: 1867137225024887654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_221
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e4ba15a60374ce0800000000000000
+      internalID: -1421113924217254268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_222
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 0
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70526520b545ffe20800000000000000
+      internalID: 3386518194663859463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_223
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ce9d347c3721a130800000000000000
+      internalID: 3576182719710600904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_224
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6660fcc05065fd650800000000000000
+      internalID: 6259816586757998182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Centered Modal Card (4)_225
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 0
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63bbb911f96b8e6e0800000000000000
+      internalID: -1807994456077780170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Centered Modal Card (4)_0: -4503114844202020947
+      Centered Modal Card (4)_1: -105872917901304596
+      Centered Modal Card (4)_10: -998356896456332958
+      Centered Modal Card (4)_100: -5214025036440188417
+      Centered Modal Card (4)_101: -3433775456192322986
+      Centered Modal Card (4)_102: -2866280824111432085
+      Centered Modal Card (4)_103: -7808681319220548494
+      Centered Modal Card (4)_104: -3172804215557306501
+      Centered Modal Card (4)_105: 5351588081011399074
+      Centered Modal Card (4)_106: -9217734123600519139
+      Centered Modal Card (4)_107: 40426943475152220
+      Centered Modal Card (4)_108: -8918994660145789496
+      Centered Modal Card (4)_109: -3783584587282293371
+      Centered Modal Card (4)_11: 2029254774482572215
+      Centered Modal Card (4)_110: -4981942648858588297
+      Centered Modal Card (4)_111: -4354000327218345439
+      Centered Modal Card (4)_112: -5441471893063250117
+      Centered Modal Card (4)_113: -4086293021989140831
+      Centered Modal Card (4)_114: -4895177889532488800
+      Centered Modal Card (4)_115: -2584719136054823239
+      Centered Modal Card (4)_116: -5043341969098076725
+      Centered Modal Card (4)_117: -5592531752945954276
+      Centered Modal Card (4)_118: 2559211440042938695
+      Centered Modal Card (4)_119: -1928746704477556992
+      Centered Modal Card (4)_12: 8300386163320802222
+      Centered Modal Card (4)_120: 6568208435451732963
+      Centered Modal Card (4)_121: 8085126527651379253
+      Centered Modal Card (4)_122: -6578582853912358376
+      Centered Modal Card (4)_123: 3024880644723537525
+      Centered Modal Card (4)_124: 4933988569114105798
+      Centered Modal Card (4)_125: 6983109511086246586
+      Centered Modal Card (4)_126: 3806522228974994691
+      Centered Modal Card (4)_127: 7453161554135478403
+      Centered Modal Card (4)_128: -4683355307435011489
+      Centered Modal Card (4)_129: 7149833280156547610
+      Centered Modal Card (4)_13: -1441568146645921469
+      Centered Modal Card (4)_130: -838638919992100642
+      Centered Modal Card (4)_131: 7270059600225088744
+      Centered Modal Card (4)_132: -2307859297427326497
+      Centered Modal Card (4)_133: -9179504115991700343
+      Centered Modal Card (4)_134: 922429110926178359
+      Centered Modal Card (4)_135: -2522627672369924908
+      Centered Modal Card (4)_136: -8328175582245552228
+      Centered Modal Card (4)_137: 4090156083511479050
+      Centered Modal Card (4)_138: -3157181408786268563
+      Centered Modal Card (4)_139: 8502393266815126754
+      Centered Modal Card (4)_14: 3439066151803989346
+      Centered Modal Card (4)_140: 8152765789145564657
+      Centered Modal Card (4)_141: 6756094482950161699
+      Centered Modal Card (4)_142: -8338372642213816638
+      Centered Modal Card (4)_143: 3467592694847759011
+      Centered Modal Card (4)_144: -8465131952889674031
+      Centered Modal Card (4)_145: -3321328036696176017
+      Centered Modal Card (4)_146: -3139812411299723650
+      Centered Modal Card (4)_147: 493319587634533750
+      Centered Modal Card (4)_148: 3830081773317769163
+      Centered Modal Card (4)_149: -3981368136916026351
+      Centered Modal Card (4)_15: -7605858029226965146
+      Centered Modal Card (4)_150: -6200980237347450931
+      Centered Modal Card (4)_151: -1609397095153424349
+      Centered Modal Card (4)_152: -1697042243403012305
+      Centered Modal Card (4)_153: -9158809755075382562
+      Centered Modal Card (4)_154: 4105319184369609965
+      Centered Modal Card (4)_155: -3178173718141697495
+      Centered Modal Card (4)_156: -4644544272359319288
+      Centered Modal Card (4)_157: -1023908542013540834
+      Centered Modal Card (4)_158: -6305855416686320827
+      Centered Modal Card (4)_159: -4254705922371130964
+      Centered Modal Card (4)_16: 5121689662230475090
+      Centered Modal Card (4)_160: -7823588003033399392
+      Centered Modal Card (4)_161: 8782071136568629180
+      Centered Modal Card (4)_162: 622576677664480864
+      Centered Modal Card (4)_163: -1521383900946645876
+      Centered Modal Card (4)_164: 2725270996088687455
+      Centered Modal Card (4)_165: -1026855098716942793
+      Centered Modal Card (4)_166: 5191106340878617782
+      Centered Modal Card (4)_167: 4772471790064148377
+      Centered Modal Card (4)_168: -5924562443408520841
+      Centered Modal Card (4)_169: 6109624207548955615
+      Centered Modal Card (4)_17: 6615189766290678012
+      Centered Modal Card (4)_170: -366649462050550497
+      Centered Modal Card (4)_171: 4173304585961105071
+      Centered Modal Card (4)_172: -8805566937631847130
+      Centered Modal Card (4)_173: 8974033057588400099
+      Centered Modal Card (4)_174: -3731815235899405701
+      Centered Modal Card (4)_175: -1389435758942379135
+      Centered Modal Card (4)_176: 2566268387597706370
+      Centered Modal Card (4)_177: 3971584695812764907
+      Centered Modal Card (4)_178: 6731785774615177474
+      Centered Modal Card (4)_179: -2543989611412548142
+      Centered Modal Card (4)_18: 3536346996439859199
+      Centered Modal Card (4)_180: 3950216196919818470
+      Centered Modal Card (4)_181: -6060789976279468193
+      Centered Modal Card (4)_182: -3511081724433638700
+      Centered Modal Card (4)_183: -714075827726767050
+      Centered Modal Card (4)_184: 581380586490010424
+      Centered Modal Card (4)_185: 3762338519838827746
+      Centered Modal Card (4)_186: -8392834961500029665
+      Centered Modal Card (4)_187: 3467384679088330981
+      Centered Modal Card (4)_188: 3744320303485220229
+      Centered Modal Card (4)_189: 7967765170411954240
+      Centered Modal Card (4)_19: 3481764622566865615
+      Centered Modal Card (4)_190: -7121106438248339058
+      Centered Modal Card (4)_191: 4611365418809823183
+      Centered Modal Card (4)_192: -9185458309409148246
+      Centered Modal Card (4)_193: 381003825456408146
+      Centered Modal Card (4)_194: -2378258942890631722
+      Centered Modal Card (4)_195: -8401123571128578181
+      Centered Modal Card (4)_196: 1290509254549161277
+      Centered Modal Card (4)_197: -2066015215008581245
+      Centered Modal Card (4)_198: 7734931543918276090
+      Centered Modal Card (4)_199: 3605570028632230890
+      Centered Modal Card (4)_2: -5630685051695100700
+      Centered Modal Card (4)_20: -2189650840329613154
+      Centered Modal Card (4)_200: 303919499525175212
+      Centered Modal Card (4)_201: -2380457483183233971
+      Centered Modal Card (4)_202: 4985042212327367350
+      Centered Modal Card (4)_203: 4832138475780531188
+      Centered Modal Card (4)_204: -8824987107428625321
+      Centered Modal Card (4)_205: -8421757071210234567
+      Centered Modal Card (4)_206: -7804386020668901867
+      Centered Modal Card (4)_207: 3078007896237315345
+      Centered Modal Card (4)_208: -1674156366695602352
+      Centered Modal Card (4)_209: -5593626279747518217
+      Centered Modal Card (4)_21: 5041733956484671895
+      Centered Modal Card (4)_210: -2883700469044370158
+      Centered Modal Card (4)_211: -8327613558511265767
+      Centered Modal Card (4)_212: -3135066336764999180
+      Centered Modal Card (4)_213: 8177697722929271666
+      Centered Modal Card (4)_214: 5715902975176551922
+      Centered Modal Card (4)_215: 7231497027244263538
+      Centered Modal Card (4)_216: -268421179290019694
+      Centered Modal Card (4)_217: -7281221148389940327
+      Centered Modal Card (4)_218: -7172923320594079559
+      Centered Modal Card (4)_219: 1766814019553014055
+      Centered Modal Card (4)_22: -1204821221749906929
+      Centered Modal Card (4)_220: 1867137225024887654
+      Centered Modal Card (4)_221: -1421113924217254268
+      Centered Modal Card (4)_222: 3386518194663859463
+      Centered Modal Card (4)_223: 3576182719710600904
+      Centered Modal Card (4)_224: 6259816586757998182
+      Centered Modal Card (4)_225: -1807994456077780170
+      Centered Modal Card (4)_23: -3621581671323773369
+      Centered Modal Card (4)_24: 3440579129435747616
+      Centered Modal Card (4)_25: 2926077396680069379
+      Centered Modal Card (4)_26: -4002244309095237702
+      Centered Modal Card (4)_27: 4347746289186053774
+      Centered Modal Card (4)_28: 2523371252067795688
+      Centered Modal Card (4)_29: -1335314432285348989
+      Centered Modal Card (4)_3: 4935925163502558963
+      Centered Modal Card (4)_30: -6447395337009966308
+      Centered Modal Card (4)_31: 7423869431940828268
+      Centered Modal Card (4)_32: -474936812533047878
+      Centered Modal Card (4)_33: 362693814478579886
+      Centered Modal Card (4)_34: -7330762914688240964
+      Centered Modal Card (4)_35: -30019633705210954
+      Centered Modal Card (4)_36: 7831467500188055
+      Centered Modal Card (4)_37: 855230760478300260
+      Centered Modal Card (4)_38: 495704352759570961
+      Centered Modal Card (4)_39: -7055912612387226013
+      Centered Modal Card (4)_4: 5537591894550240022
+      Centered Modal Card (4)_40: 1431213873865298796
+      Centered Modal Card (4)_41: 5104043972376362501
+      Centered Modal Card (4)_42: -1219363362273579138
+      Centered Modal Card (4)_43: -7236339340167384407
+      Centered Modal Card (4)_44: 6836411783167500561
+      Centered Modal Card (4)_45: 9132932939589243933
+      Centered Modal Card (4)_46: 696591651850469312
+      Centered Modal Card (4)_47: 6768951131667910890
+      Centered Modal Card (4)_48: 2318108864388391375
+      Centered Modal Card (4)_49: -8761449408600994637
+      Centered Modal Card (4)_5: 2085411034540902384
+      Centered Modal Card (4)_50: 1255724554011916672
+      Centered Modal Card (4)_51: -3076689687199014158
+      Centered Modal Card (4)_52: 239535404505557183
+      Centered Modal Card (4)_53: -6638317581966252510
+      Centered Modal Card (4)_54: 3279349489214062452
+      Centered Modal Card (4)_55: 8994347791310446823
+      Centered Modal Card (4)_56: -1715591050233486449
+      Centered Modal Card (4)_57: -4645277226867171003
+      Centered Modal Card (4)_58: 7632422886919756674
+      Centered Modal Card (4)_59: -6176181893775860785
+      Centered Modal Card (4)_6: 5211763630832693403
+      Centered Modal Card (4)_60: 5329551792789243807
+      Centered Modal Card (4)_61: -721285128049174450
+      Centered Modal Card (4)_62: 6907098003906812988
+      Centered Modal Card (4)_63: 2503512709312876907
+      Centered Modal Card (4)_64: -5174663685310518553
+      Centered Modal Card (4)_65: 5025642996413362460
+      Centered Modal Card (4)_66: -7121066362442356689
+      Centered Modal Card (4)_67: 2716115038873388097
+      Centered Modal Card (4)_68: -7244506655036248559
+      Centered Modal Card (4)_69: -5285599953917728150
+      Centered Modal Card (4)_7: 3408253118916495269
+      Centered Modal Card (4)_70: 5384108536594259224
+      Centered Modal Card (4)_71: -120455960636453519
+      Centered Modal Card (4)_72: 668625242740684619
+      Centered Modal Card (4)_73: -778272708557625715
+      Centered Modal Card (4)_74: 8085456226047456951
+      Centered Modal Card (4)_75: -5696635914485970762
+      Centered Modal Card (4)_76: 8195867062944336778
+      Centered Modal Card (4)_77: 4009224796469758039
+      Centered Modal Card (4)_78: 6870959385548080907
+      Centered Modal Card (4)_79: -5215278281710635366
+      Centered Modal Card (4)_8: 259881543918622514
+      Centered Modal Card (4)_80: -2279702129058663791
+      Centered Modal Card (4)_81: 7080099798603485347
+      Centered Modal Card (4)_82: -493767572548849821
+      Centered Modal Card (4)_83: 315353772448914326
+      Centered Modal Card (4)_84: -4239076947765812410
+      Centered Modal Card (4)_85: 4441721696749237519
+      Centered Modal Card (4)_86: -919197316333405380
+      Centered Modal Card (4)_87: -8640812114147482666
+      Centered Modal Card (4)_88: -7921853623665587710
+      Centered Modal Card (4)_89: 7978045840254456433
+      Centered Modal Card (4)_9: 8382109063043358723
+      Centered Modal Card (4)_90: 3554086027678864511
+      Centered Modal Card (4)_91: 6146047824365921334
+      Centered Modal Card (4)_92: -6313322004041763803
+      Centered Modal Card (4)_93: 8054703212114243897
+      Centered Modal Card (4)_94: -529663960429999951
+      Centered Modal Card (4)_95: -1208796226352626536
+      Centered Modal Card (4)_96: 2581987892243965309
+      Centered Modal Card (4)_97: 335096371446356936
+      Centered Modal Card (4)_98: -7153826112979585347
+      Centered Modal Card (4)_99: 7839273181461004071
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

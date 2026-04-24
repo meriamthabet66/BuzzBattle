@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255c60e2b6e545f69096a871581b98a2, type: 3}
   m_Name: Anime
   m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.Category
-  categoryName: Anime
+  categoryName: "\u0623\u0646\u0645\u064A"
+  categoryIcon: {fileID: 874652301084959200, guid: 66cf06874a856584e9dfa32d0a62deff, type: 3}
   multipleChoiceQuestions:
   - {fileID: 11400000, guid: a6f5796006e508b4bbfe1cb55c50aec0, type: 2}
   - {fileID: 11400000, guid: 78550338329d6de49b57b5ca5fca92e4, type: 2}

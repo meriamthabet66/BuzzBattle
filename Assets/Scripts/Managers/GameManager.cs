@@ -18,7 +18,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CategoryDatabase categoryDatabase;
 
     public CategoryDatabase CategoryDatabase => categoryDatabase;
-
+    
+    public static event Action OnGameplayStart;
+    
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -33,12 +36,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        ChangeState(GameState.Menu);
-    }
-
-    public void SetVoiceEnabled(bool enabled)
-    {
-        IsVoiceEnabled = enabled;
+        // FORCE the event to fire on boot up so all UI canvases know what to do!
+        CurrentState = GameState.Menu;
+        EnterState(CurrentState);
+        OnStateChanged?.Invoke(CurrentState);
+        Debug.Log($"Game Booted! GameState is: {CurrentState}");
     }
 
     public void ChangeState(GameState newState)
@@ -46,13 +48,10 @@ public class GameManager : MonoBehaviour
         if (CurrentState == newState) return;
 
         ExitState(CurrentState);
-
         CurrentState = newState;
-
         EnterState(CurrentState);
 
         OnStateChanged?.Invoke(CurrentState);
-
         Debug.Log($"GameState changed to: {CurrentState}");
     }
 
@@ -73,6 +72,8 @@ public class GameManager : MonoBehaviour
                 break;
 
             case GameState.Gameplay:
+                // --- NEW: Fire the event! ---
+                OnGameplayStart?.Invoke();
                 break;
 
             case GameState.Steal:

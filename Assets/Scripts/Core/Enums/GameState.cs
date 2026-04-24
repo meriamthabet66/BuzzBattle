@@ -9,6 +9,7 @@ using UnityEngine;
         MiniGame,
         Gameplay,
         Steal,
+        RoundResults,
         Results
     }
 

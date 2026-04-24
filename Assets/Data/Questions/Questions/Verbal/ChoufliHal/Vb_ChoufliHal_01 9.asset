@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba6c43122c54aa39d6c8441ecee0414, type: 3}
+  m_Name: Vb_ChoufliHal_01 9
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.VerbalQuestion
+  questionText: "\u0645\u0646 \u0647\u0648 \u0645\u062E\u0631\u062C \u0645\u0633\u0644\u0633\u0644
+    \"\u0634\u0648\u0641\u0644\u064A \u062D\u0644\"\u061F"
+  voiceClip: {fileID: 0}
+  difficulty: 0
+  correctAnswer: "\u0635\u0644\u0627\u062D \u0627\u0644\u062F\u064A\u0646 \u0627\u0644\u0635\u064A\u062F."
+  correctAnswerVoice: {fileID: 0}

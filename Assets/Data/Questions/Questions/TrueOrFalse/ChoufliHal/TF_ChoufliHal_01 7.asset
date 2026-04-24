@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a129ddefd69b4edab96f4dae29ec19ed, type: 3}
+  m_Name: TF_ChoufliHal_01 7
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.TrueOrFalseQuestion
+  questionText: "\u0634\u062E\u0635\u064A\u0629 \"\u0634\u0643\u064A\u0628\" \u0647\u064A
+    \u0634\u062E\u0635\u064A\u0629 \u062A\u062D\u0628 \u0627\u0644\u0633\u0628\u0648\u0639\u064A
+    \u0648\u062A\u0633\u0627\u0639\u062F\u0647 \u062F\u0627\u0626\u0645\u0627\u064B."
+  voiceClip: {fileID: 0}
+  difficulty: 0
+  isTrue: 0
+  trueText: "\u0635\u062D\u064A\u062D"
+  falseText: "\u062E\u0637\u0623"

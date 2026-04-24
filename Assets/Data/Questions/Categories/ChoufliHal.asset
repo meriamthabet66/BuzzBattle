@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255c60e2b6e545f69096a871581b98a2, type: 3}
+  m_Name: ChoufliHal
+  m_EditorClassIdentifier: Assembly-CSharp::GamePlay.Questions.Category
+  categoryName: "\u0634\u0648\u0641\u0644\u064A \u062D\u0644"
+  categoryIcon: {fileID: -6398408671131420838, guid: 8f291f46fc40062418bba627bd0443ca, type: 3}
+  multipleChoiceQuestions:
+  - {fileID: 11400000, guid: ee6a13ae9d8481f469b6fab27c7a93a5, type: 2}
+  - {fileID: 11400000, guid: fabf2668ba699434cb5415d7504cbb0f, type: 2}
+  - {fileID: 11400000, guid: 86230d1b6a2183743917948437a792b3, type: 2}
+  - {fileID: 11400000, guid: 64448c1c9f4284e4d98c1e0b791ffd8d, type: 2}
+  - {fileID: 11400000, guid: 4e7da16b5c1fc7f4e9b12a372d23127c, type: 2}
+  - {fileID: 11400000, guid: ef0ae2de4fb0c654d868712c9e6c1b21, type: 2}
+  - {fileID: 11400000, guid: 6ab6c50e60de7794ea0b6aa6bb3eb77d, type: 2}
+  - {fileID: 11400000, guid: fa4e4dd46b238d643a718585b23edf53, type: 2}
+  - {fileID: 11400000, guid: dbbe3e43a5e3ab240ba3ac04f3c1dc3b, type: 2}
+  - {fileID: 11400000, guid: aab2e6fb3ad3dd1408791964b02ea56e, type: 2}
+  trueOrFalseQuestions:
+  - {fileID: 11400000, guid: 7a9a1ca326606684081f0c71301fffa2, type: 2}
+  - {fileID: 11400000, guid: 3b528198b7417c5438bf4ba7cc52805e, type: 2}
+  - {fileID: 11400000, guid: c9e9df3d29dd58d4e86c8e2e9baa7486, type: 2}
+  - {fileID: 11400000, guid: e094ae22ccfe8e645b742a17b1114556, type: 2}
+  - {fileID: 11400000, guid: 3a61454c0a62ef54b8785b733c69d519, type: 2}
+  - {fileID: 11400000, guid: 28be871a71475c043a1ce8ad49b035a3, type: 2}
+  - {fileID: 11400000, guid: 4ddf6ffa03b37934db17690507bf0f71, type: 2}
+  - {fileID: 11400000, guid: 7606e591456a32443b3d1608d6fc40ae, type: 2}
+  - {fileID: 11400000, guid: 6dc593ca7fa7d864998a058570178293, type: 2}
+  - {fileID: 11400000, guid: fd3ab79e7ddf81f41b46dd014fab9aeb, type: 2}
+  verbalQuestions:
+  - {fileID: 11400000, guid: 2e888a9b1b1daf34b84014c2faac7823, type: 2}
+  - {fileID: 11400000, guid: 84a0b2b2dd9159548b520cf43bd631e9, type: 2}
+  - {fileID: 11400000, guid: 6322640a948e7294f864662a5538cd3d, type: 2}
+  - {fileID: 11400000, guid: bfa7c24a3224df14e85d75d2e655e401, type: 2}
+  - {fileID: 11400000, guid: 9ea89c26626501e4cba28cb12da4b9d2, type: 2}
+  - {fileID: 11400000, guid: 57880ef6802fe274398920755e70aed5, type: 2}
+  - {fileID: 11400000, guid: b98ad1c5c62677041bfc6ab64f5db8d6, type: 2}
+  - {fileID: 11400000, guid: cf7fe3079bf9c9e449a92126dc463a89, type: 2}
+  - {fileID: 11400000, guid: fd88460e1ab334145b0c8618758ae415, type: 2}
+  - {fileID: 11400000, guid: b712ab8d57be82249b5f3e0c7d45a496, type: 2}

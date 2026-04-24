@@ -1,117 +1,128 @@
 ﻿using System;
 using System.Collections.Generic;
+using Core.Enums;
 using UnityEngine;
+using UnityEngine.UI; 
 using TMPro;
-using GamePlay.Systems;
 using GamePlay.Questions;
-using Managers; // <-- Added to listen to RoundManager's Timer!
+using GamePlay.Systems;
+using Managers;
+using RTLTMPro;
 
 namespace UI 
 {
     public class GameplayHUD : MonoBehaviour
     {
-        // Sends (PlayerIndex, IsCorrect) to the RoundManager/ScoreManager
-        public static Action<int, bool> OnAnswerEvaluated; 
+        public static Action<int, AnswerResult> OnAnswerEvaluated; 
 
-        // --- NEW TIMER LOGIC ---
-        [Header("Timer UI")]
-        [SerializeField] private TMP_Text timerText; // Drag your Timer Text object here in Unity!
-        // -----------------------
+        [Header("Player Buzzers")]
+        [SerializeField] private PlayerUI[] playerBuzzers;
+        [SerializeField] private TMP_Text timerText; 
 
-        [Header("Question Texts")]
-        [SerializeField] private TMP_Text questionTextUP;
-        [SerializeField] private TMP_Text questionTextDown;
+        [Header("Background Question Texts")]
+        [SerializeField] private RTLTextMeshPro questionTextUP;
+        [SerializeField] private RTLTextMeshPro questionTextDown;
 
-        [Header("Main Answer Panel (Parent)")]
-        [SerializeField] private GameObject answerPanel; // Drag 'AnswerPanel' here
-        [SerializeField] private RectTransform answerPanelRect; // Drag 'AnswerPanel' here too!
+        [Header("Main Answer Panel (MCQ)")]
+        [SerializeField] private GameObject answerPanel; 
+        [SerializeField] private RectTransform answerPanelRect; 
+        [SerializeField] private RTLTextMeshPro panelQuestionText; 
 
         [Header("Multiple Choice Section")]
-        [SerializeField] private GameObject mcqSection; // Drag 'MCQAnswersSection' here
-        [SerializeField] private AnswerButtonUI[] mcqButtons; // Drag the 4 AnswerBtns here
+        [SerializeField] private GameObject mcqSection; 
+        [SerializeField] private AnswerButtonUI[] mcqButtons; 
+        [SerializeField] private GameObject tfSection; 
+        [SerializeField] private AnswerButtonUI[] tfButtons; 
 
-        [Header("True/False Section")]
-        [SerializeField] private GameObject tfSection; // Drag 'TFAnswersSection' here
-        [SerializeField] private AnswerButtonUI[] tfButtons; // Drag the 2 AnswerBtns here
+        [Header("Verbal Section")]
+        [SerializeField] private GameObject verbalSection; 
+        [SerializeField] private RTLTextMeshPro verbalPanelQuestionText; 
+        [SerializeField] private RTLTextMeshPro verbalAnswerText; 
+        [SerializeField] private Button correctBtn;
+        [SerializeField] private Button almostBtn;
+        [SerializeField] private Button wrongBtn;
 
         private int currentPlayer = -1;
         private List<AnswerOption> currentAnswers;
         private HashSet<AnswerOption> removedAnswers = new HashSet<AnswerOption>();
-        private HashSet<int> blockedPlayers = new HashSet<int>();
+        
+        // --- NEW: Remembers the current question type ---
+        private BaseQuestion currentLoadedQuestion;
+
+        private void Awake()
+        {
+            if (correctBtn != null) correctBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Correct));
+            if (almostBtn != null) almostBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Almost));
+            if (wrongBtn != null) wrongBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Wrong));
+        }
 
         private void OnEnable()
         {
             QuestionLoader.OnQuestionLoaded += UpdateQuestion;
-            BuzzerSystem.OnPlayerBuzzed += OnPlayerBuzzed;
-
-            // --- NEW TIMER LOGIC: Listen for the timer changing ---
+            RoundManager.OnValidPlayerBuzzed += OnPlayerBuzzed; 
+            RoundManager.OnVerbalEvaluationStarted += OpenVerbalPanel;
             RoundManager.OnTimerUpdated += UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI += ForceClosePanel;
+            GameManager.OnGameplayStart += InitializePlayerBuzzers;
         }
 
         private void OnDisable()
         {
             QuestionLoader.OnQuestionLoaded -= UpdateQuestion;
-            BuzzerSystem.OnPlayerBuzzed -= OnPlayerBuzzed;
-
-            // --- NEW TIMER LOGIC: Stop listening ---
+            RoundManager.OnValidPlayerBuzzed -= OnPlayerBuzzed;
+            RoundManager.OnVerbalEvaluationStarted -= OpenVerbalPanel;
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
+            GameManager.OnGameplayStart -= InitializePlayerBuzzers;
         }
 
-        // --- NEW TIMER LOGIC: Update the visual number ---
+        private void InitializePlayerBuzzers() 
+        {
+            for (int i = 0; i < playerBuzzers.Length; i++)
+                if (playerBuzzers[i] != null) playerBuzzers[i].SetupForMatch(i);
+        }
+
         private void UpdateTimerUI(int secondsLeft)
         {
-            if (timerText != null)
-            {
-                timerText.text = secondsLeft.ToString();
-            }
+            if (timerText != null) timerText.text = secondsLeft.ToString();
         }
 
-        // --- NEW TIMER LOGIC: Hide panel if they run out of time ---
         private void ForceClosePanel()
         {
-            if (currentPlayer != -1)
-            {
-                blockedPlayers.Add(currentPlayer); // Block them for taking too long!
-            }
-
             currentPlayer = -1;
             if (answerPanel != null) answerPanel.SetActive(false);
+            if (verbalSection != null) verbalSection.SetActive(false);
         }
 
         void UpdateQuestion(BaseQuestion question)
         {
             currentPlayer = -1;
-            blockedPlayers.Clear();
-            removedAnswers.Clear();
-
-            // 1. Hide the entire AnswerPanel while we wait for someone to buzz
-            if (answerPanel != null) answerPanel.SetActive(false);
-
-            // 2. Set the Question Text on the screen
-            if (questionTextUP != null) 
-                questionTextUP.text = ArabicFixer.Fix(question.questionText);
-
-            if (questionTextDown != null) 
-                questionTextDown.text = ArabicFixer.Fix(question.questionText);
+            removedAnswers.Clear(); 
+            currentLoadedQuestion = question; // Save it!
             
-            // 3. Prep the right section in the background!
-            if (question is TrueOrFalseQuestion tfq)
-            {
-                // Turn ON T/F section, turn OFF MCQ section
-                if (mcqSection != null) mcqSection.SetActive(false);
-                if (tfSection != null) tfSection.SetActive(true);
+            if (answerPanel != null) answerPanel.SetActive(false);
+            if (verbalSection != null) verbalSection.SetActive(false);
 
+            string fixedQuestionText = question.questionText;
+            if (questionTextUP != null) questionTextUP.text = fixedQuestionText;
+            if (questionTextDown != null) questionTextDown.text = fixedQuestionText;
+            if (panelQuestionText != null) panelQuestionText.text = fixedQuestionText;
+            if (verbalPanelQuestionText != null) verbalPanelQuestionText.text = fixedQuestionText;
+
+            if (mcqSection != null) mcqSection.SetActive(false);
+            if (tfSection != null) tfSection.SetActive(false);
+
+            if (question is VerbalQuestion vq)
+            {
+                if (verbalAnswerText != null) verbalAnswerText.text = vq.correctAnswer;
+            }
+            else if (question is TrueOrFalseQuestion tfq)
+            {
                 currentAnswers = tfq.GetOptions(); 
                 PopulateButtons(tfButtons, currentAnswers);
             }
             else if (question is MultipleChoiceQuestion mcq)
             {
-                // Turn ON MCQ section, turn OFF T/F section
-                if (tfSection != null) tfSection.SetActive(false);
-                if (mcqSection != null) mcqSection.SetActive(true);
-
                 currentAnswers = mcq.GetShuffledAnswers();
                 PopulateButtons(mcqButtons, currentAnswers);
             }
@@ -123,11 +134,8 @@ namespace UI
             {
                 if (i < answersData.Count)
                 {
-                    // NEW: If this answer was already guessed incorrectly, hide this button completely!
                     if (removedAnswers.Contains(answersData[i]))
-                    {
                         buttonsToUse[i].gameObject.SetActive(false);
-                    }
                     else
                     {
                         buttonsToUse[i].gameObject.SetActive(true);
@@ -143,69 +151,68 @@ namespace UI
 
         void OnPlayerBuzzed(int playerIndex)
         {
-            // If someone is answering, or THIS specific player answered wrong earlier, ignore them.
-            // (Other players are NOT in blockedPlayers, so they can buzz!)
-            if (currentPlayer != -1 || blockedPlayers.Contains(playerIndex)) return;
-
             currentPlayer = playerIndex;
-            Debug.Log("Player " + playerIndex + " is answering");
+            
+            // --- THE FIX: Do NOT open the panel if it's a verbal question! ---
+            if (currentLoadedQuestion is VerbalQuestion) return; 
 
             if (answerPanel != null)
             {
-                // NEW: Refresh the buttons right before showing the panel so the wrong answer disappears!
-                if (currentAnswers.Count == 2)
-                    PopulateButtons(tfButtons, currentAnswers);
-                else
-                    PopulateButtons(mcqButtons, currentAnswers);
+                if (currentAnswers.Count == 2) PopulateButtons(tfButtons, currentAnswers);
+                else PopulateButtons(mcqButtons, currentAnswers);
 
-                RotateAnswerPanel(playerIndex); 
+                if (tfSection != null) tfSection.SetActive(currentAnswers.Count == 2);
+                if (mcqSection != null) mcqSection.SetActive(currentAnswers.Count > 2);
+
+                RotateAnswerPanel(playerIndex, answerPanelRect); 
                 answerPanel.SetActive(true);    
             }
         }
 
-        private void RotateAnswerPanel(int playerIndex)
+        private void OpenVerbalPanel(int playerIndex)
         {
-            if (answerPanelRect == null) return;
-            
-            float zRotation = 0f;
-            
-            //Players 1 & 2 are top, Players 3 & 4 are bottom
-            if (playerIndex == 1 || playerIndex == 2) 
-                zRotation = 180f; 
-            else if (playerIndex == 3 || playerIndex == 4) 
-                zRotation = 0f; 
+            currentPlayer = playerIndex;
+            if (verbalSection != null)
+            {
+                // --- THE FIX: Rotate the verbal panel toward the player being judged! ---
+                RectTransform rect = verbalSection.GetComponent<RectTransform>();
+                if (rect != null) RotateAnswerPanel(playerIndex, rect);
+                
+                verbalSection.SetActive(true);
+            }
+        }
 
-            answerPanelRect.localEulerAngles = new Vector3(0, 0, zRotation);
+        private void RotateAnswerPanel(int playerIndex, RectTransform rect)
+        {
+            if (rect == null) return;
+            float zRotation = 0f;
+            if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
+            else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
+            rect.localEulerAngles = new Vector3(0, 0, zRotation);
         }
 
         public void OnAnswerSelected(AnswerOption selectedOption)
         {
             if (currentPlayer == -1) return;
 
-            bool isCorrect = selectedOption.isCorrect;
-
-            if (isCorrect)
+            if (selectedOption.isCorrect)
             {
-                Debug.Log($"Player {currentPlayer} got it CORRECT!");
-                OnAnswerEvaluated?.Invoke(currentPlayer, true);
-                
-                // Hide panel, wait for next question
-                if (answerPanel != null) answerPanel.SetActive(false);
+                OnAnswerEvaluated?.Invoke(currentPlayer, AnswerResult.Correct);
             }
             else
             {
-                Debug.Log($"Player {currentPlayer} got it WRONG!");
-                OnAnswerEvaluated?.Invoke(currentPlayer, false);
-
-                // Block this player, remove the wrong answer from screen
-                blockedPlayers.Add(currentPlayer);
-                removedAnswers.Add(selectedOption);
-                
+                OnAnswerEvaluated?.Invoke(currentPlayer, AnswerResult.Wrong);
+                removedAnswers.Add(selectedOption); 
                 currentPlayer = -1;
-                
-                // Hide panel so someone else can buzz!
                 if (answerPanel != null) answerPanel.SetActive(false); 
             }
+        }
+
+        private void EvaluateVerbal(AnswerResult result)
+        {
+            if (currentPlayer == -1) return;
+            OnAnswerEvaluated?.Invoke(currentPlayer, result);
+            if (verbalSection != null) verbalSection.SetActive(false); 
         }
     }
 }

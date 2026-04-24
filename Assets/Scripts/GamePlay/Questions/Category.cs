@@ -8,6 +8,7 @@ namespace GamePlay.Questions {
     public class Category : ScriptableObject
     {
         public string categoryName;
+        public Sprite categoryIcon;
 
         [Header("Multiple Choice Questions")]
         public List<MultipleChoiceQuestion> multipleChoiceQuestions;
