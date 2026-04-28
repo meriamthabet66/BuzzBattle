@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using RTLTMPro;
+using UnityEngine;
 
 namespace UI {
     using UnityEngine;
@@ -7,7 +8,7 @@ namespace UI {
     public class RTLInputDisplay : MonoBehaviour
     {
         [SerializeField] private TMP_InputField inputField;
-        [SerializeField] private TMP_Text displayText;
+        [SerializeField] private RTLTextMeshPro displayText;
 
         private void OnEnable()
         {
@@ -21,7 +22,7 @@ namespace UI {
 
         void UpdateDisplay(string raw)
         {
-            displayText.text = ArabicFixer.Fix(raw);
+            displayText.text = raw;
         }
     }
 }

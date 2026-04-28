@@ -1,49 +1,43 @@
-﻿using TMPro;
+﻿using RTLTMPro;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace UI {
-    namespace UI
+namespace UI 
+{
+    public class PlayerInputSectionUI : MonoBehaviour
     {
-        public class PlayerInputSectionUI : MonoBehaviour
+        [Header("Input")]
+        public TMP_InputField nameInput;
+
+        [Header("Display (RTL Fixed)")]
+        public RTLTextMeshPro nameDisplayText; // RTLInputDisplay handles this visually!
+
+        public Button characterButton;
+        public int playerIndex; 
+        private int selectedCharacterId = 0;
+
+        public string GetPlayerName()
         {
-            [Header("Input")]
-            public TMP_InputField nameInput;
-
-            [Header("Display (RTL Fixed)")]
-            public TMP_Text nameDisplayText;
-
-            public Button characterButton;
-            
-            public int playerIndex; // 1, 2, 3, 4
-
-            private int selectedCharacterId = 0;
-
-            public string GetPlayerName()
+            // --- THE FIX: Return RAW text! ---
+            // Do NOT use ArabicFixer here anymore, because the Gameplay Buzzer is using RTLTMPro!
+            if (nameInput != null && !string.IsNullOrWhiteSpace(nameInput.text))
             {
-                // Priority 1: Display text (already Arabic fixed)
-                if (!string.IsNullOrEmpty(nameDisplayText.text))
-                    return nameDisplayText.text;
-
-                // Priority 2: Raw input (fallback)
-                if (!string.IsNullOrEmpty(nameInput.text))
-                    return ArabicFixer.Fix(nameInput.text);
-
-                // Default Arabic name with numbering
-                return $"لاعب {playerIndex}";
+                return nameInput.text; // Send raw text
             }
 
-            public int GetCharacterId()
-            {
-                return selectedCharacterId;
-            }
+            // Default raw Arabic name
+            return $"لاعب {playerIndex}";
+        }
 
-            public void SetCharacter(int characterId)
-            {
-                selectedCharacterId = characterId;
-            }
-            
-            
+        public int GetCharacterId()
+        {
+            return selectedCharacterId;
+        }
+
+        public void SetCharacter(int characterId)
+        {
+            selectedCharacterId = characterId;
         }
     }
 }

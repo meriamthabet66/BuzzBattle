@@ -12,8 +12,13 @@ namespace UI {
         [Header("Next Panel Route")]
         [SerializeField] private GameObject categoryPanel; // Drag the CategoryPanel GameObject here in Unity!
 
+<<<<<<< HEAD
         private int localRounds = 3;
         private int localQuestions = 10;
+=======
+        private int localRounds = 5;
+        private int localQuestions = 15;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
         private void OnEnable()
         {
@@ -23,11 +28,41 @@ namespace UI {
 
         // --- BUTTON METHODS (Hook these to your + and - buttons) ---
 
+<<<<<<< HEAD
         public void IncreaseRounds() { localRounds++; UpdateText(); }
         public void DecreaseRounds() { localRounds = Mathf.Max(1, localRounds - 1); UpdateText(); }
 
         public void IncreaseQuestions() { localQuestions++; UpdateText(); }
         public void DecreaseQuestions() { localQuestions = Mathf.Max(1, localQuestions - 1); UpdateText(); }
+=======
+        // --- ROUNDS (Max 5) ---
+        public void IncreaseRounds()
+        {
+            // Clamps the number between 1 and 5!
+            localRounds = Mathf.Clamp(localRounds + 1, 1, 5);
+            UpdateText();
+        }
+
+        public void DecreaseRounds()
+        {
+            localRounds = Mathf.Clamp(localRounds - 1, 1, 5);
+            UpdateText();
+        }
+
+        // --- QUESTIONS (Max 15) ---
+        public void IncreaseQuestions()
+        {
+            // Clamps the number between 1 and 15!
+            localQuestions = Mathf.Clamp(localQuestions + 1, 1, 15);
+            UpdateText();
+        }
+
+        public void DecreaseQuestions()
+        {
+            localQuestions = Mathf.Clamp(localQuestions - 1, 1, 15);
+            UpdateText();
+        }
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
         private void UpdateText()
         {

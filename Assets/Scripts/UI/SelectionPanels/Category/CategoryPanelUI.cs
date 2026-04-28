@@ -26,8 +26,20 @@ namespace UI {
 
         private void OnEnable()
         {
+<<<<<<< HEAD
             localCategories.Clear(); 
             UpdateGridDisplay();
+=======
+            // Instead of clearing the list, we LOAD the saved choices!
+            // If it's Round 1, it will be empty. If it's Round 2, it will remember!
+            localCategories = new List<Category>(MatchSetupData.SelectedCategories);
+            
+            // Also remember the Question Type they used last round
+            SelectedQuestionType = MatchSetupData.QType;
+
+            UpdateGridDisplay();
+            UpdateModeVisuals();
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
         }
 
         public void OnClickAddCategory()
@@ -101,6 +113,7 @@ namespace UI {
             MatchSetupData.SelectedCategories = new List<Category>(localCategories);
             MatchSetupData.QType = SelectedQuestionType; 
             
+<<<<<<< HEAD
             StartGame();
         }
 
@@ -111,6 +124,20 @@ namespace UI {
 
             MenuController.Instance.gameObject.SetActive(false);
             MenuController.Instance.OpenPanel(nextPanel);
+=======
+            // 1. If the match hasn't started yet, set up the rules!
+            if (!Managers.MatchManager.Instance.IsMatchActive)
+            {
+                Managers.MatchManager.Instance.StartMatch(MatchSetupData.Mode, MatchSetupData.Rounds, MatchSetupData.QuestionsPerRound);
+            }
+
+            // 2. ALWAYS start the round with the chosen categories
+            Managers.MatchManager.Instance.StartRound(MatchSetupData.SelectedCategories, MatchSetupData.QType);
+
+            // 3. ONLY TELL THE GAME MANAGER TO CHANGE STATE!
+            // Do NOT write SetActive(false) here. 
+            // The CanvasStateListeners will hear this and do it automatically!
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
             GameManager.Instance.ChangeState(GameState.Gameplay);
         }
     }

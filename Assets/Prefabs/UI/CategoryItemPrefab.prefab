@@ -142,8 +142,13 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uFE83\uFEE7\uFEE4\uFBFD"
   m_isRightToLeft: 1
+<<<<<<< HEAD
   m_fontAsset: {fileID: 11400000, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
   m_sharedMaterial: {fileID: 798517985090469651, guid: f23ce8d6c7484cd4783e3786e8cff63f, type: 2}
+=======
+  m_fontAsset: {fileID: 11400000, guid: 176b7fee7fcd3b645b99c60ec4e2998e, type: 2}
+  m_sharedMaterial: {fileID: 5839730627416576917, guid: 176b7fee7fcd3b645b99c60ec4e2998e, type: 2}
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

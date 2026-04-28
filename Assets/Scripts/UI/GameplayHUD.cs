@@ -1,15 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using Core.Enums;
 using UnityEngine;
+using UnityEngine.UI; 
 using TMPro;
 using GamePlay.Questions;
 using GamePlay.Systems;
+<<<<<<< HEAD
 using Managers; 
+=======
+using Managers;
+using RTLTMPro;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
 namespace UI 
 {
     public class GameplayHUD : MonoBehaviour
     {
+<<<<<<< HEAD
         public static Action<int, bool> OnAnswerEvaluated; 
 
         [Header("Timer UI")]
@@ -23,33 +31,91 @@ namespace UI
         [SerializeField] private GameObject answerPanel; 
         [SerializeField] private RectTransform answerPanelRect; 
         [SerializeField] private TMP_Text panelQuestionText; 
+=======
+        public static Action<int, AnswerResult> OnAnswerEvaluated; 
+
+        [Header("Player Buzzers")]
+        [SerializeField] private PlayerUI[] playerBuzzers;
+        [SerializeField] private TMP_Text timerText; 
+
+        [Header("Background Question Texts")]
+        [SerializeField] private RTLTextMeshPro questionTextUP;
+        [SerializeField] private RTLTextMeshPro questionTextDown;
+
+        [Header("Main Answer Panel (MCQ)")]
+        [SerializeField] private GameObject answerPanel; 
+        [SerializeField] private RectTransform answerPanelRect; 
+        [SerializeField] private RTLTextMeshPro panelQuestionText; 
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
         [Header("Multiple Choice Section")]
         [SerializeField] private GameObject mcqSection; 
         [SerializeField] private AnswerButtonUI[] mcqButtons; 
+<<<<<<< HEAD
 
         [Header("True/False Section")]
         [SerializeField] private GameObject tfSection; 
         [SerializeField] private AnswerButtonUI[] tfButtons; 
+=======
+        [SerializeField] private GameObject tfSection; 
+        [SerializeField] private AnswerButtonUI[] tfButtons; 
+
+        [Header("Verbal Section")]
+        [SerializeField] private GameObject verbalSection; 
+        [SerializeField] private RTLTextMeshPro verbalPanelQuestionText; 
+        [SerializeField] private RTLTextMeshPro verbalAnswerText; 
+        [SerializeField] private Button correctBtn;
+        [SerializeField] private Button almostBtn;
+        [SerializeField] private Button wrongBtn;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
         private int currentPlayer = -1;
         private List<AnswerOption> currentAnswers;
         private HashSet<AnswerOption> removedAnswers = new HashSet<AnswerOption>();
+<<<<<<< HEAD
+=======
+        
+        // --- NEW: Remembers the current question type ---
+        private BaseQuestion currentLoadedQuestion;
+
+        private void Awake()
+        {
+            if (correctBtn != null) correctBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Correct));
+            if (almostBtn != null) almostBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Almost));
+            if (wrongBtn != null) wrongBtn.onClick.AddListener(() => EvaluateVerbal(AnswerResult.Wrong));
+        }
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
         private void OnEnable()
         {
             QuestionLoader.OnQuestionLoaded += UpdateQuestion;
             RoundManager.OnValidPlayerBuzzed += OnPlayerBuzzed; 
+<<<<<<< HEAD
+=======
+            RoundManager.OnVerbalEvaluationStarted += OpenVerbalPanel;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
             RoundManager.OnTimerUpdated += UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI += ForceClosePanel;
+            GameManager.OnGameplayStart += InitializePlayerBuzzers;
         }
 
         private void OnDisable()
         {
             QuestionLoader.OnQuestionLoaded -= UpdateQuestion;
             RoundManager.OnValidPlayerBuzzed -= OnPlayerBuzzed;
+<<<<<<< HEAD
+=======
+            RoundManager.OnVerbalEvaluationStarted -= OpenVerbalPanel;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
+            GameManager.OnGameplayStart -= InitializePlayerBuzzers;
+        }
+
+        private void InitializePlayerBuzzers() 
+        {
+            for (int i = 0; i < playerBuzzers.Length; i++)
+                if (playerBuzzers[i] != null) playerBuzzers[i].SetupForMatch(i);
         }
 
         private void UpdateTimerUI(int secondsLeft)
@@ -61,11 +127,13 @@ namespace UI
         {
             currentPlayer = -1;
             if (answerPanel != null) answerPanel.SetActive(false);
+            if (verbalSection != null) verbalSection.SetActive(false);
         }
 
         void UpdateQuestion(BaseQuestion question)
         {
             currentPlayer = -1;
+<<<<<<< HEAD
             removedAnswers.Clear(); // Just clear the removed buttons!
 
             if (answerPanel != null) answerPanel.SetActive(false);
@@ -80,15 +148,40 @@ namespace UI
             {
                 if (mcqSection != null) mcqSection.SetActive(false);
                 if (tfSection != null) tfSection.SetActive(true);
+=======
+            removedAnswers.Clear(); 
+            currentLoadedQuestion = question; // Save it!
+            
+            if (answerPanel != null) answerPanel.SetActive(false);
+            if (verbalSection != null) verbalSection.SetActive(false);
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
+            string fixedQuestionText = question.questionText;
+            if (questionTextUP != null) questionTextUP.text = fixedQuestionText;
+            if (questionTextDown != null) questionTextDown.text = fixedQuestionText;
+            if (panelQuestionText != null) panelQuestionText.text = fixedQuestionText;
+            if (verbalPanelQuestionText != null) verbalPanelQuestionText.text = fixedQuestionText;
+
+            if (mcqSection != null) mcqSection.SetActive(false);
+            if (tfSection != null) tfSection.SetActive(false);
+
+            if (question is VerbalQuestion vq)
+            {
+                if (verbalAnswerText != null) verbalAnswerText.text = vq.correctAnswer;
+            }
+            else if (question is TrueOrFalseQuestion tfq)
+            {
                 currentAnswers = tfq.GetOptions(); 
                 PopulateButtons(tfButtons, currentAnswers);
             }
             else if (question is MultipleChoiceQuestion mcq)
             {
+<<<<<<< HEAD
                 if (tfSection != null) tfSection.SetActive(false);
                 if (mcqSection != null) mcqSection.SetActive(true);
 
+=======
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
                 currentAnswers = mcq.GetShuffledAnswers();
                 PopulateButtons(mcqButtons, currentAnswers);
             }
@@ -119,37 +212,68 @@ namespace UI
         {
             currentPlayer = playerIndex;
             
+<<<<<<< HEAD
             if (answerPanel != null)
             {
                 if (currentAnswers.Count == 2)
                     PopulateButtons(tfButtons, currentAnswers);
                 else
                     PopulateButtons(mcqButtons, currentAnswers);
+=======
+            // --- THE FIX: Do NOT open the panel if it's a verbal question! ---
+            if (currentLoadedQuestion is VerbalQuestion) return; 
 
-                RotateAnswerPanel(playerIndex); 
+            if (answerPanel != null)
+            {
+                if (currentAnswers.Count == 2) PopulateButtons(tfButtons, currentAnswers);
+                else PopulateButtons(mcqButtons, currentAnswers);
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
+
+                if (tfSection != null) tfSection.SetActive(currentAnswers.Count == 2);
+                if (mcqSection != null) mcqSection.SetActive(currentAnswers.Count > 2);
+
+                RotateAnswerPanel(playerIndex, answerPanelRect); 
                 answerPanel.SetActive(true);    
             }
         }
 
-        private void RotateAnswerPanel(int playerIndex)
+        private void OpenVerbalPanel(int playerIndex)
         {
+<<<<<<< HEAD
             if (answerPanelRect == null) return;
             
             float zRotation = 0f;
             if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
             else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
+=======
+            currentPlayer = playerIndex;
+            if (verbalSection != null)
+            {
+                // --- THE FIX: Rotate the verbal panel toward the player being judged! ---
+                RectTransform rect = verbalSection.GetComponent<RectTransform>();
+                if (rect != null) RotateAnswerPanel(playerIndex, rect);
+                
+                verbalSection.SetActive(true);
+            }
+        }
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
 
-            answerPanelRect.localEulerAngles = new Vector3(0, 0, zRotation);
+        private void RotateAnswerPanel(int playerIndex, RectTransform rect)
+        {
+            if (rect == null) return;
+            float zRotation = 0f;
+            if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
+            else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
+            rect.localEulerAngles = new Vector3(0, 0, zRotation);
         }
 
         public void OnAnswerSelected(AnswerOption selectedOption)
         {
             if (currentPlayer == -1) return;
 
-            bool isCorrect = selectedOption.isCorrect;
-
-            if (isCorrect)
+            if (selectedOption.isCorrect)
             {
+<<<<<<< HEAD
                 // --- THE FIX ---
                 OnAnswerEvaluated?.Invoke(currentPlayer, true);
                 
@@ -163,8 +287,24 @@ namespace UI
                 currentPlayer = -1;
                 
                 // For a WRONG answer, we DO hide it instantly so the other players can see the screen and buzz!
+=======
+                OnAnswerEvaluated?.Invoke(currentPlayer, AnswerResult.Correct);
+            }
+            else
+            {
+                OnAnswerEvaluated?.Invoke(currentPlayer, AnswerResult.Wrong);
+                removedAnswers.Add(selectedOption); 
+                currentPlayer = -1;
+>>>>>>> 1e5fdd180fcec37ecb4a88b8147f9106d99a8006
                 if (answerPanel != null) answerPanel.SetActive(false); 
             }
+        }
+
+        private void EvaluateVerbal(AnswerResult result)
+        {
+            if (currentPlayer == -1) return;
+            OnAnswerEvaluated?.Invoke(currentPlayer, result);
+            if (verbalSection != null) verbalSection.SetActive(false); 
         }
     }
 }

@@ -1,0 +1,8 @@
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/GameActivity/CMakeFiles/game.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Unity Projects/BuzzBattle_v1/.utmp/RelWithDebInfo/2g4m5s2x/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
