@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6919303409874119142}
   - component: {fileID: 7942195100307683422}
   - component: {fileID: 1649303528291738128}
+  - component: {fileID: 3241022476082825395}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -66,6 +67,20 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &3241022476082825395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4114744012228070948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7e9e334cb14c07ac76e43d68ce896e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.PlayerScoreUI
+  playerUI: {fileID: 7942195100307683422}
+  scoreText: {fileID: 4185083552211341229}
 --- !u!1 &5665672863290054549
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,6 +416,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5420140653366214097, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
   m_PrefabInstance: {fileID: 7565347037930679092}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4185083552211341229 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+  m_PrefabInstance: {fileID: 7565347037930679092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &8933299265102087359 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1370492133601079179, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}

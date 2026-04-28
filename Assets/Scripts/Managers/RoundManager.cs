@@ -56,6 +56,8 @@ namespace Managers {
         public void InitializeRound(List<Category> categories, QuestionType type)
         {
             if (roundActive) return;
+            
+            if (PlayerManager.Instance != null) PlayerManager.Instance.ResetRoundScores();
 
             roundActive = true;
             questionIndex = 0;
@@ -197,23 +199,29 @@ namespace Managers {
         {
             if (activeTimer != null) StopCoroutine(activeTimer); 
 
+            // 1. Figure out the context
+            bool isVerbal = questionLoader.CurrentQuestion is VerbalQuestion;
+            bool isSteal = isVerbal && (playerIndex != originalVerbalPlayer);
+
+            // 2. TELL THE SCORE MANAGER TO DO THE MATH!
+            if (ScoreManager.Instance != null)
+            {
+                ScoreManager.Instance.CalculateAndApplyScore(playerIndex, result, isVerbal, isSteal);
+            }
+
+            // 3. Move to the next state
             if (result == AnswerResult.Correct || result == AnswerResult.Almost)
             {
                 OnQuestionCompleted(); 
             }
             else
             {
-                // If they are evaluated WRONG in Verbal Mode, the question is just over
-                if (questionLoader.CurrentQuestion is VerbalQuestion)
-                {
-                    OnQuestionCompleted();
-                }
-                else
-                {
-                    ProcessFailedAttempt();
-                }
+                if (isVerbal) OnQuestionCompleted(); // Verbal questions end immediately on a wrong evaluation
+                else ProcessFailedAttempt();         // MCQ gives others a chance to steal
             }
         }
+
+      
         
         private void ProcessFailedAttempt()
         {

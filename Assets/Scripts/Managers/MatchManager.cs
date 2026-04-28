@@ -58,15 +58,16 @@ namespace Managers
             if (!IsLastRound())
             {
                 CurrentRoundIndex++;
-                Debug.Log($"Round finished! Going back to UI to setup Round {CurrentRoundIndex + 1}");
+                Debug.Log($"Round finished! Showing leaderboard before Round {CurrentRoundIndex + 1}");
                 
-                // Tell GameManager to open the Selection UI again!
-                GameManager.Instance.ChangeState(GameState.CategorySelection);
+                // --- CHANGED: Go to the new RoundResults state first! ---
+                GameManager.Instance.ChangeState(GameState.RoundResults); 
+                // Note: You must add `RoundResults` to your GameState enum in GameManager.cs!
             }
             else
             {
-                IsMatchActive = false; // Match is completely over
-                Debug.Log("All rounds completed! Game Over. Going to Results.");
+                IsMatchActive = false; 
+                Debug.Log("Match Over! Going to Final Results.");
                 GameManager.Instance.ChangeState(GameState.Results);
             }
         }

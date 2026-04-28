@@ -618,27 +618,27 @@ MonoBehaviour:
       m_Data: 55888
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 55364
-    - m_Data: 55366
-    - m_Data: 55368
-    - m_Data: 55370
-    - m_Data: 55372
-    - m_Data: 55374
-    - m_Data: 55376
-    - m_Data: 55378
-    - m_Data: 55380
-    - m_Data: 55382
-    - m_Data: 55384
-    - m_Data: 55386
-    - m_Data: 55388
-    - m_Data: 55390
-    - m_Data: 55392
-    - m_Data: 55394
-    - m_Data: 55396
-    - m_Data: 55398
-    - m_Data: 55400
-    - m_Data: 55402
-    - m_Data: 55404
+    - m_Data: 19896
+    - m_Data: 19898
+    - m_Data: 19900
+    - m_Data: 19908
+    - m_Data: 50238
+    - m_Data: 50286
+    - m_Data: 50350
+    - m_Data: 50394
+    - m_Data: 50442
+    - m_Data: 50616
+    - m_Data: 50736
+    - m_Data: 51618
+    - m_Data: 52200
+    - m_Data: 52734
+    - m_Data: 57050
+    - m_Data: 57052
+    - m_Data: 57054
+    - m_Data: 57056
+    - m_Data: 57058
+    - m_Data: 57060
+    - m_Data: 57062
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -671,27 +671,27 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 55364
-    - m_Data: 55366
-    - m_Data: 55368
-    - m_Data: 55370
-    - m_Data: 55372
-    - m_Data: 55374
-    - m_Data: 55376
-    - m_Data: 55378
-    - m_Data: 55380
-    - m_Data: 55382
-    - m_Data: 55384
-    - m_Data: 55386
-    - m_Data: 55388
-    - m_Data: 55390
-    - m_Data: 55392
-    - m_Data: 55394
-    - m_Data: 55396
-    - m_Data: 55398
-    - m_Data: 55400
-    - m_Data: 55402
-    - m_Data: 55404
+    - m_Data: 19896
+    - m_Data: 19898
+    - m_Data: 19900
+    - m_Data: 19908
+    - m_Data: 50238
+    - m_Data: 50286
+    - m_Data: 50350
+    - m_Data: 50394
+    - m_Data: 50442
+    - m_Data: 50616
+    - m_Data: 50736
+    - m_Data: 51618
+    - m_Data: 52200
+    - m_Data: 52734
+    - m_Data: 57050
+    - m_Data: 57052
+    - m_Data: 57054
+    - m_Data: 57056
+    - m_Data: 57058
+    - m_Data: 57060
+    - m_Data: 57062
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1518,7 +1518,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 156.48685, y: 913.8147, z: -5.006778}
+    m_Target: {x: 507.31125, y: 950.0968, z: -6.104378}
     speed: 2
     m_Value: {x: 156.48685, y: 913.8147, z: -5.006778}
   m_RenderMode: 0
@@ -1570,7 +1570,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 683.0534
+    m_Target: 1242.0884
     speed: 2
     m_Value: 683.0534
   m_Ortho:

@@ -13,6 +13,8 @@ namespace Managers
 
         // 🔥 Event for UI (HUD updates later)
         public static Action<List<PlayerData>> OnPlayersUpdated;
+        
+        public static Action<int, int> OnPlayerScoreUpdated; // Sends: ListIndex, NewTotalScore
 
         private void Awake()
         {
@@ -46,7 +48,8 @@ namespace Managers
             {
                 ID = Players.Count,
                 DisplayName = name,
-                Score = 0,
+                TotalScore = 0,
+                RoundScore =0,
                 Steals = 0,
                 SelectedCharacterID = selectedCharacterId,
                 LinkedAccount = account
@@ -76,6 +79,26 @@ namespace Managers
                 return null;
 
             return Players[index];
+        }
+        
+        public void AddScore(int index, int pointsToAdd)
+        {
+            if (index < 0 || index >= Players.Count) return;
+
+            Players[index].RoundScore += pointsToAdd;
+            Players[index].TotalScore += pointsToAdd;
+
+            // Tell the Gameplay HUD to update the number on their buzzer (showing total score)
+            OnPlayerScoreUpdated?.Invoke(index, Players[index].TotalScore);
+        }
+
+        // Add this method to clear the round score when a new round starts!
+        public void ResetRoundScores()
+        {
+            foreach (var player in Players)
+            {
+                player.RoundScore = 0;
+            }
         }
 
         // =========================

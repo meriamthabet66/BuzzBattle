@@ -174,10 +174,6 @@ namespace UI
             currentPlayer = playerIndex;
             if (verbalSection != null)
             {
-                // --- THE FIX: Rotate the verbal panel toward the player being judged! ---
-                RectTransform rect = verbalSection.GetComponent<RectTransform>();
-                if (rect != null) RotateAnswerPanel(playerIndex, rect);
-                
                 verbalSection.SetActive(true);
             }
         }
