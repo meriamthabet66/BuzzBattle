@@ -47,7 +47,6 @@ GameObject:
   - component: {fileID: 7526797674486781629}
   - component: {fileID: 9144427136167713711}
   - component: {fileID: 4140026132422089464}
-  - component: {fileID: 7331659759330743247}
   - component: {fileID: 5448890441714288365}
   m_Layer: 5
   m_Name: ElementRenderer
@@ -132,7 +131,7 @@ SpriteRenderer:
   m_Size: {x: 2.12, y: 1.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4140026132422089464
 MonoBehaviour:
@@ -164,31 +163,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7331659759330743247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4552753065019685036}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a711186c2080bf4dba53efd2d5f04a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CustomAccessories
-  _spriteRenderer: {fileID: 9144427136167713711}
-  _spriteOptions:
-  - <Sprite>k__BackingField: {fileID: 7160429211405778527, guid: 43f512196d0c4e244959337a159e6c8c, type: 3}
-    <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
-  - <Sprite>k__BackingField: {fileID: 7057801135558962131, guid: 43f512196d0c4e244959337a159e6c8c, type: 3}
-    <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
-  - <Sprite>k__BackingField: {fileID: -709529425693167831, guid: 43f512196d0c4e244959337a159e6c8c, type: 3}
-    <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
-  - <Sprite>k__BackingField: {fileID: 6306999314160741799, guid: 43f512196d0c4e244959337a159e6c8c, type: 3}
-    <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
-  - <Sprite>k__BackingField: {fileID: 2428041468874453082, guid: 43f512196d0c4e244959337a159e6c8c, type: 3}
-    <PositionModifier>k__BackingField: {x: 0, y: 0, z: 0}
-  <SpriteIndex>k__BackingField: 4
 --- !u!222 &5448890441714288365
 CanvasRenderer:
   m_ObjectHideFlags: 0

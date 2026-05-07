@@ -8,5 +8,5 @@ public class PositionedSprite
     public Sprite Sprite { get; private set; }
 
     [field: SerializeField]
-    public Vector3 PositionModifier { get; set; }
+    public Vector2 PositionModifier { get; set; }
 }

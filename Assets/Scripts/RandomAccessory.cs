@@ -2,49 +2,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class CustomAccessoriesUI : MonoBehaviour
+public class RandomAccessoryUI : MonoBehaviour
 {
-    [SerializeField]
-    private Image _image;
+    [SerializeField] private HatCustomUI _hat;
+    [SerializeField] private MustacheCustomUI _mustache;
+    [SerializeField] private MonocleCustomUI _monocle;
+    [SerializeField] private NeckCustomUI _neck;
 
-    [SerializeField]
-    private List<PositionedSprite> _spriteOptions;
-
-    [field: SerializeField]
-    public int SpriteIndex { get; private set; }
-
-    [ContextMenu("Next Sprite")]
-    public void NextSprite() 
+    private void RandomizeHat()
     {
-        SpriteIndex = Mathf.Min(SpriteIndex + 1, _spriteOptions.Count - 1);
-        UpdateSprite();
-        //return _spriteOptions[SpriteIndex];
+        if (Random.value > 0.5f) _hat.EnableRandom();
+        else _hat.Disable();
     }
 
-    [ContextMenu("Previous Sprite")]
-    public void PreviousSprite()
+    private void RandomizeMustache()
     {
-        SpriteIndex = Mathf.Max(SpriteIndex - 1, 0);
-        UpdateSprite();
-        //return _spriteOptions[SpriteIndex];
+        if (Random.value > 0.5f) _mustache.EnableRandom();
+        else _mustache.Disable();
     }
 
-    [ContextMenu("Randomize")]
-    public void Randomize()
+    private void RandomizeMonocle()
     {
-        SpriteIndex = Random.Range(0, _spriteOptions.Count);
-        UpdateSprite();
+        if (Random.value > 0.5f) _monocle.EnableRandom();
+        else _monocle.Disable();
     }
 
-    private void UpdateSprite()
+    public void RandomizeAll()
     {
-        SpriteIndex = Mathf.Clamp(SpriteIndex, 0, _spriteOptions.Count - 1);
-        var positionedSprite = _spriteOptions[SpriteIndex];
+        RandomizeHat();
+        RandomizeMustache();
+        RandomizeMonocle();
 
-        _image.sprite = positionedSprite.Sprite;
-
-        RectTransform rectTransform = _image.rectTransform;
-        rectTransform.anchoredPosition = positionedSprite.PositionModifier;
+        _neck.RandomizeNeck();
     }
 }
 
