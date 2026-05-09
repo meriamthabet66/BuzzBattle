@@ -74,6 +74,8 @@ namespace UI
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
             GameManager.OnGameplayStart -= InitializePlayerBuzzers;
+            
+            ForceClosePanel();
         }
 
         private void InitializePlayerBuzzers() 

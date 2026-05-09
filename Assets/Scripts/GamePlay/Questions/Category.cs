@@ -9,6 +9,7 @@ namespace GamePlay.Questions {
     {
         public string categoryName;
         public Sprite categoryIcon;
+        public string categoryIconUrl;
 
         [Header("Multiple Choice Questions")]
         public List<MultipleChoiceQuestion> multipleChoiceQuestions;

@@ -1,77 +1,72 @@
-﻿using Data.Data;
+﻿using UnityEngine;
 using TMPro;
-using UnityEngine;
+using Data.Data; // Ensure this matches your MatchSetupData
+using UI; 
 
-namespace UI {
+namespace UI.Panels
+{
     public class MatchConfigPanelUI : MonoBehaviour
     {
         [Header("UI References")]
         [SerializeField] private TMP_Text roundsText;
         [SerializeField] private TMP_Text questionsText;
 
-        [Header("Next Panel Route")]
-        [SerializeField] private GameObject categoryPanel; // Drag the CategoryPanel GameObject here in Unity!
+        [Header("Rounds Section Container")]
+        [Tooltip("Put the Rounds Text, +/-, and Label into an empty GameObject and drag it here")]
+        [SerializeField] private GameObject roundsUIContainer; 
 
-        private int localRounds = 5;
-        private int localQuestions = 15;
+        [Header("Next Panel Route")]
+        [SerializeField] private GameObject nextPanel; 
+
+        private int localRounds = 3;
+        private int localQuestions = 10;
 
         private void OnEnable()
         {
-            // Every time this panel opens, update the text to match the values
+            // --- NEW: Hide the Rounds UI if it's a Tournament! ---
+            if (roundsUIContainer != null)
+            {
+                bool isTournament = (MatchSetupData.Mode == GameMode.Tournament);
+                
+                // Hide it if tournament, show it if normal
+                roundsUIContainer.SetActive(!isTournament);
+            }
+
             UpdateText();
         }
 
-        // --- BUTTON METHODS (Hook these to your + and - buttons) ---
+        // --- BUTTON METHODS ---
 
-        // --- ROUNDS (Max 5) ---
-        public void IncreaseRounds()
-        {
-            // Clamps the number between 1 and 5!
-            localRounds = Mathf.Clamp(localRounds + 1, 1, 5);
-            UpdateText();
+        public void IncreaseRounds() {
+            localRounds = Mathf.Clamp(localRounds + 1, 1, 5); UpdateText();
         }
 
-        public void DecreaseRounds()
-        {
-            localRounds = Mathf.Clamp(localRounds - 1, 1, 5);
-            UpdateText();
+        public void DecreaseRounds() {
+            localRounds = Mathf.Clamp(localRounds - 1, 1, 5); UpdateText();
         }
 
-        // --- QUESTIONS (Max 15) ---
-        public void IncreaseQuestions()
-        {
-            // Clamps the number between 1 and 15!
-            localQuestions = Mathf.Clamp(localQuestions + 1, 1, 15);
-            UpdateText();
+        public void IncreaseQuestions() {
+            localQuestions = Mathf.Clamp(localQuestions + 1, 1, 15); UpdateText();
         }
 
-        public void DecreaseQuestions()
-        {
-            localQuestions = Mathf.Clamp(localQuestions - 1, 1, 15);
-            UpdateText();
+        public void DecreaseQuestions() {
+            localQuestions = Mathf.Clamp(localQuestions - 1, 1, 15); UpdateText();
         }
 
         private void UpdateText()
         {
-            roundsText.text = localRounds.ToString();
-            questionsText.text = localQuestions.ToString();
+            if (roundsText != null) roundsText.text = localRounds.ToString();
+            if (questionsText != null) questionsText.text = localQuestions.ToString();
         }
 
-        // --- NAVIGATION (Hook this to your Next/Continue button) ---
+        // --- NAVIGATION ---
         public void OnClickNext()
         {
-            // 1. Save this panel's logic into the central bucket
+            // Save data
             MatchSetupData.Rounds = localRounds;
             MatchSetupData.QuestionsPerRound = localQuestions;
 
-            // 2. Tell the Menu Controller to open the next specific panel!
-            MenuController.Instance.OpenPanel(categoryPanel);
-        }
-
-        // Hook this to your `<` Back button
-        public void OnClickBack()
-        {
-            MenuController.Instance.GoBack();
+            MenuController.Instance.OpenPanel(nextPanel);
         }
     }
 }

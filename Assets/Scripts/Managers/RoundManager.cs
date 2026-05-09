@@ -43,12 +43,14 @@ namespace Managers {
         {
             BuzzerSystem.OnPlayerBuzzed += HandlePlayerBuzzed;
             GameplayHUD.OnAnswerEvaluated += HandleAnswerEvaluated;
+            GameManager.OnStateChanged += HandleStateChange; 
         }
 
         private void OnDisable()
         {
             BuzzerSystem.OnPlayerBuzzed -= HandlePlayerBuzzed;
             GameplayHUD.OnAnswerEvaluated -= HandleAnswerEvaluated;
+            GameManager.OnStateChanged -= HandleStateChange; 
         }
 
         public void ClearQuestionMemory() { if (questionLoader != null) questionLoader.ClearMemory(); }
@@ -69,6 +71,25 @@ namespace Managers {
             OnRoundStarted?.Invoke(MatchManager.Instance.CurrentRoundIndex + 1);
             questionLoader.Initialize(currentRound);
             LoadNext();
+        }
+        
+        private void HandleStateChange(GameState state)
+        {
+            // If the player hits Replay or Main Menu, KILL everything.
+            if (state == GameState.Menu || state == GameState.Setup || state == GameState.CategorySelection)
+            {
+                roundActive = false;
+                currentlyAnsweringPlayer = -1;
+                originalVerbalPlayer = -1;
+                verbalTargetPlayer = -1;
+                currentVerbalState = VerbalState.None;
+
+                // KILL ALL GHOST TIMERS!
+                StopAllCoroutines(); 
+                CancelInvoke(); 
+                
+                Debug.Log("RoundManager wiped clean for a fresh start.");
+            }
         }
 
         private void LoadNext()

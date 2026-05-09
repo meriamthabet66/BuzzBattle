@@ -17,5 +17,9 @@ public class PlayerData
 
     // Optional link to account
     public AccountData LinkedAccount;
+    
+    // --- NEW FOR TOURNAMENTS ---
+    public bool IsEliminated = false; 
+   
 }
 

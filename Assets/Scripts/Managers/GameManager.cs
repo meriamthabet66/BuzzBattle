@@ -37,9 +37,8 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         // FORCE the event to fire on boot up so all UI canvases know what to do!
-        CurrentState = GameState.Menu;
-        EnterState(CurrentState);
-        OnStateChanged?.Invoke(CurrentState);
+        CurrentState = GameState.Authentication;
+        ChangeState(CurrentState);
         Debug.Log($"Game Booted! GameState is: {CurrentState}");
     }
 

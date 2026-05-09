@@ -23,6 +23,7 @@ namespace UI {
         [Header("Game Mode UI Buttons")]
         [SerializeField] private ModeBtn MCQBtn;
         [SerializeField] private ModeBtn VerbalBtn;
+        [SerializeField] private GameObject backButton;
 
         private void OnEnable()
         {
@@ -35,6 +36,15 @@ namespace UI {
 
             UpdateGridDisplay();
             UpdateModeVisuals();
+            
+            // --- NEW LOGIC: Hide the back button if we are mid-match! ---
+            if (backButton != null)
+            {
+                // If IsMatchActive is TRUE, it hides the button. If FALSE, it shows it!
+                bool isMidGame = Managers.MatchManager.Instance != null && Managers.MatchManager.Instance.IsMatchActive;
+                backButton.SetActive(!isMidGame);
+            }
+            
         }
 
         public void OnClickAddCategory()

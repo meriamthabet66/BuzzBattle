@@ -1,6 +1,7 @@
 ﻿using Data.Data;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI; 
 
 namespace UI 
 {
@@ -18,12 +19,17 @@ namespace UI
         [SerializeField] private ModeBtn TeamsBtn;
         [SerializeField] private ModeBtn TournBtn;
         
+        [Header("Tournament Button Reference")]
+        [SerializeField] private Button tournamentButton; 
+        [SerializeField] private CanvasGroup tournamentCanvasGroup; // --- NEW: Used to fade the button! ---
+
         private GameMode localSelectedMode = GameMode.Normal;
 
         private void OnEnable()
         {
             UpdatePlayerCountUI();
-            UpdateModeVisuals(); // Ensure the outlines are correct the moment the panel opens!
+            CheckTournamentEligibility(); // Always check rules first
+            UpdateModeVisuals(); 
         }
 
         // --- GAME MODE LOGIC ---
@@ -32,27 +38,24 @@ namespace UI
         {
             localSelectedMode = GameMode.Normal;
             UpdateModeVisuals();
-            Debug.Log("Normal Mode Selected");
         }
 
         public void SelectTeamMode()
         {
             localSelectedMode = GameMode.Teams;
             UpdateModeVisuals();
-            Debug.Log("Teams Mode Selected");
         }
 
         public void SelectTournamentMode()
         {
+            if (localPlayerCount < 3) return; // Cannot select if less than 3 players!
+
             localSelectedMode = GameMode.Tournament;
             UpdateModeVisuals();
-            Debug.Log("Tournament Mode Selected");
         }
 
-        // Helper method to keep code perfectly clean and avoid copy-pasting
         private void UpdateModeVisuals()
         {
-            // SetActive evaluates the condition. If localSelectedMode is Normal, it returns true!
             if (NrmlBtn != null && NrmlBtn.SelectedOutline != null) 
                 NrmlBtn.SelectedOutline.SetActive(localSelectedMode == GameMode.Normal);
             
@@ -63,20 +66,41 @@ namespace UI
                 TournBtn.SelectedOutline.SetActive(localSelectedMode == GameMode.Tournament);
         }
 
+        private void CheckTournamentEligibility()
+        {
+            if (tournamentButton != null && tournamentCanvasGroup != null)
+            {
+                bool isAllowed = localPlayerCount >= 3;
+                tournamentButton.interactable = isAllowed;
+                
+                // --- NEW: Fade the button to 50% opacity if not allowed! ---
+                tournamentCanvasGroup.alpha = isAllowed ? 1.0f : 0.5f;
+
+                // --- THE HACK PREVENTION ---
+                // If they previously selected Tournament, but then clicked the [-] button 
+                // to drop to 2 players, we FORCE them back to Normal mode immediately!
+                if (!isAllowed && localSelectedMode == GameMode.Tournament)
+                {
+                    Debug.Log("Tournament no longer allowed for 2 players. Forcing Normal Mode.");
+                    SelectNormalMode();
+                }
+            }
+        }
 
         // --- PLAYER COUNT LOGIC ---
 
         public void IncreasePlayers()
         {
-            // Mathf.Clamp keeps the number strictly between 2 and 4 in one clean line
             localPlayerCount = Mathf.Clamp(localPlayerCount + 1, 2, 4);
             UpdatePlayerCountUI();
+            CheckTournamentEligibility(); // Verify rules after changing number!
         }
 
         public void DecreasePlayers()
         {
             localPlayerCount = Mathf.Clamp(localPlayerCount - 1, 2, 4);
             UpdatePlayerCountUI();
+            CheckTournamentEligibility(); // Verify rules after changing number!
         }
 
         private void UpdatePlayerCountUI()
@@ -84,7 +108,6 @@ namespace UI
             if (playerCountText != null)
                 playerCountText.text = localPlayerCount.ToString();
         }
-
 
         // --- NAVIGATION ---
         
