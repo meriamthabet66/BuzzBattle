@@ -153,9 +153,13 @@ namespace UI
 
         void OnPlayerBuzzed(int playerIndex)
         {
+            if (currentLoadedQuestion == null) {
+                Debug.LogWarning("Buzzer pressed but no question is loaded!");
+                return;
+            }
+
             currentPlayer = playerIndex;
             
-            // --- THE FIX: Do NOT open the panel if it's a verbal question! ---
             if (currentLoadedQuestion is VerbalQuestion) return; 
 
             if (answerPanel != null)

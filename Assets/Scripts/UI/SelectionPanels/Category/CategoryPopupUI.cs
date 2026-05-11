@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using GamePlay.Questions;
 using UnityEngine;
+using System.Threading.Tasks;
 
 namespace UI {
     public class CategoryPopupUI : MonoBehaviour
@@ -8,43 +9,71 @@ namespace UI {
         [Header("References")]
         [SerializeField] private Transform contentContainer; 
         [SerializeField] private GameObject categoryItemPrefab; 
-        [SerializeField] private CategoryDatabase database; 
 
         private CategoryPanelUI parentPanel;
         private List<Category> temporarySelections = new List<Category>();
 
-        public void OpenPopup(CategoryPanelUI parent, List<Category> currentlySelected)
-        {
-            parentPanel = parent;
-            temporarySelections = new List<Category>(currentlySelected);
-            PopulateList();
-            gameObject.SetActive(true);
-        }
+        // Update the OpenPopup method in CategoryPopupUI.cs
 
-        private void PopulateList()
-        {
-            foreach (Transform child in contentContainer) Destroy(child.gameObject);
+public async void OpenPopup(CategoryPanelUI parent, List<Category> currentlySelected) {
+    parentPanel = parent;
+    temporarySelections = new List<Category>(currentlySelected);
+    gameObject.SetActive(true);
 
-            foreach (Category cat in database.categories)
+    foreach (Transform child in contentContainer) Destroy(child.gameObject);
+
+    // --- NEW LOGIC: MERGE LOCAL AND CLOUD ---
+    
+    // 1. Always load what is on the phone first (Works Offline!)
+    List<Category> displayedCategories = Managers.CategoryCloudManager.Instance.GetLocalDownloadedCategories();
+    Debug.Log($"Found {displayedCategories.Count} categories offline.");
+
+    // 2. If we have internet, fetch new ones from Supabase
+    if (Application.internetReachability != NetworkReachability.NotReachable) 
+    {
+        List<Category> cloudCategories = await Managers.CategoryCloudManager.Instance.GetCategoryList();
+        
+        // Add cloud categories to the list, but avoid duplicates
+        foreach (var cloudCat in cloudCategories) 
+        {
+            if (!displayedCategories.Exists(x => x.id == cloudCat.id)) 
             {
-                GameObject newObj = Instantiate(categoryItemPrefab, contentContainer);
-                CategoryItemUI itemUI = newObj.GetComponent<CategoryItemUI>();
-
-                bool isAlreadySelected = temporarySelections.Contains(cat);
-                itemUI.Setup(cat, this, isAlreadySelected);
+                displayedCategories.Add(cloudCat);
             }
         }
+    }
+
+    // 3. Fetch Unlocks (only if online)
+    List<long> unlockedIds = new List<long>();
+    if (Application.internetReachability != NetworkReachability.NotReachable) 
+    {
+        unlockedIds = await Managers.SupabaseManager.Instance.GetUnlockedCategoryIds();
+    }
+
+    // 4. Fill the UI
+    foreach (Category cat in displayedCategories) {
+        GameObject newObj = Instantiate(categoryItemPrefab, contentContainer);
+        CategoryItemUI itemUI = newObj.GetComponent<CategoryItemUI>();
+
+        // Logic: If it's on the disk, it's definitely unlocked!
+        bool isDownloaded = Managers.CategoryCloudManager.Instance.IsCategoryDownloaded(cat.id);
+        bool isUnlocked = isDownloaded || unlockedIds.Contains(cat.id);
+        bool isAlreadySelected = temporarySelections.Exists(x => x.id == cat.id);
+
+        itemUI.SetupWithState(cat, this, isUnlocked, isDownloaded, isAlreadySelected);
+    }
+}
 
         public void OnCategoryToggled(Category cat, bool isSelected)
         {
-            // NO LIMITS! Just add or remove from the list
-            if (isSelected && !temporarySelections.Contains(cat))
+            if (isSelected)
             {
-                temporarySelections.Add(cat);
+                if (!temporarySelections.Exists(x => x.id == cat.id))
+                    temporarySelections.Add(cat);
             }
-            else if (!isSelected && temporarySelections.Contains(cat))
+            else
             {
-                temporarySelections.Remove(cat);
+                temporarySelections.RemoveAll(x => x.id == cat.id);
             }
         }
 

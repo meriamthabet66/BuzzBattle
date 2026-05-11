@@ -1,162 +1,143 @@
 ﻿using UnityEngine;
 using Supabase;
 using System.Threading.Tasks;
-using Data.DTO; // Ensure this matches your ProfileDTO namespace
+using Data.DTO;
 using System.Collections.Generic;
 
 namespace Managers {
     public class SupabaseManager : MonoBehaviour {
         public static SupabaseManager Instance { get; private set; }
 
-        [Header("Supabase Credentials")]
-        [SerializeField] private string supabaseUrl = "https://aahjaarfkajqlbxubzld.supabase.co";
-        [SerializeField] private string supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhaGphYXJma2FqcWxieHViemxkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5OTAzMTUsImV4cCI6MjA5MzU2NjMxNX0._0oLFxsXgwvMRSVymoN7SAuuOLPaGq5SLNyJP927SF8";
+        [Header("Connection")]
+        [SerializeField] private string supabaseUrl = "https://your-url.supabase.co";
+        [SerializeField] private string supabaseKey = "your-key";
 
-        private Supabase.Client supabase;
+        // THIS IS YOUR VARIABLE NAME -> Client
+        public Supabase.Client Client { get; private set; }
 
         private void Awake() {
-            if (Instance != null && Instance != this) {
-                Destroy(gameObject);
-                return;
-            }
+            if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Initialize
-            var options = new SupabaseOptions {
-                AutoRefreshToken = true,
-                AutoConnectRealtime = true
-            };
-            supabase = new Supabase.Client(supabaseUrl, supabaseKey, options);
+            var options = new SupabaseOptions { AutoRefreshToken = true, AutoConnectRealtime = true };
+            
+            // Initialization
+            Client = new Supabase.Client(supabaseUrl, supabaseKey, options);
         }
+        
+        private async void Start() 
+        {
+            await Task.Delay(100);
 
-        // =========================
-        // SIGN UP
-        // =========================
-        public async Task<bool> SignUp(string email, string password, string username) {
-            try {
-                // We pack the username into "UserMetadata" so the SQL Trigger can find it
-                var signupOptions = new Supabase.Gotrue.SignUpOptions {
-                    Data = new Dictionary<string, object> { { "username", username } }
-                };
-
-                // Create the account. The SQL Trigger handles the 'profiles' table for us!
-                var session = await supabase.Auth.SignUp(email, password, signupOptions);
-
-                if (session != null && session.User != null) {
-                    Debug.Log("<color=green>SUCCESS! Account and Profile created via Trigger.</color>");
-                    return true;
+            // --- FIXED: Changed 'supabase' to 'Client' ---
+            if (Client.Auth.CurrentSession != null) 
+            {
+                Debug.Log("<color=green>Session found! Attempting auto-login...</color>");
+        
+                ProfileDTO profile = await GetMyProfile();
+                
+                if (profile != null) 
+                {
+                    PlayerManager.Instance.SetMainAccount(profile);
+                    GameManager.Instance.ChangeState(GameState.Menu);
+                    return;
                 }
-                return false;
-            } catch (System.Exception e) {
-                // If it says "User already registered", delete them from the Auth tab and try again
-                Debug.LogError($"Signup Error: {e.Message}");
-                return false;
+            }
+
+            Debug.Log("No session found. Stay on Authentication.");
+        }
+        
+        public async Task<ProfileDTO> GetMyProfile() 
+        {
+            try 
+            {
+                // --- FIXED: Changed 'supabase' to 'Client' ---
+                if (Client.Auth.CurrentUser == null) return null;
+
+                var response = await Client
+                    .From<ProfileDTO>()
+                    .Where(x => x.id == Client.Auth.CurrentUser.Id)
+                    .Get();
+
+                return response.Model;
+            }
+            catch (System.Exception e) 
+            {
+                Debug.LogError($"Failed to fetch profile: {e.Message}");
+                return null;
             }
         }
 
-        // =========================
-        // LOGIN
-        // =========================
-        // =========================
-        // LOGIN & FETCH PROFILE
-        // =========================
         public async Task<ProfileDTO> Login(string email, string password) {
             try {
-                var session = await supabase.Auth.SignIn(email, password);
-
-                if (session != null && session.User != null) {
-                    Debug.Log("<color=green>Auth Successful! ID: " + session.User.Id + "</color>");
-
-                    // We use the ID directly from the session we just got
-                    var response = await supabase
-                        .From<ProfileDTO>()
-                        .Filter("id", Postgrest.Constants.Operator.Equals, session.User.Id)
-                        .Get();
-
-                    if (response.Model != null) {
-                        return response.Model;
-                    } else {
-                        // If we reach here, Step 1 (the Repair SQL) wasn't run or failed
-                        Debug.LogError("Auth worked, but NO PROFILE ROW found for ID: " + session.User.Id);
-                        return null;
-                    }
+                var session = await Client.Auth.SignIn(email, password);
+                if (session?.User != null) {
+                    var response = await Client.From<ProfileDTO>().Filter("id", Postgrest.Constants.Operator.Equals, session.User.Id).Get();
+                    return response.Model;
                 }
                 return null;
-            } catch (System.Exception e) {
-                Debug.LogError($"Login Error: {e.Message}");
-                return null;
-            }
+            } catch { return null; }
         }
 
-        // =========================
-        // GET CURRENT PROFILE
-        // =========================
-        public async Task<ProfileDTO> GetMyProfile() {
-            if (supabase.Auth.CurrentUser == null) return null;
-
-            var response = await supabase
-                .From<ProfileDTO>()
-                .Where(x => x.id == supabase.Auth.CurrentUser.Id)
-                .Get();
-
-            return response.Model;
+        public async Task<bool> SignUp(string email, string password, string username) {
+            try {
+                var options = new Supabase.Gotrue.SignUpOptions { Data = new Dictionary<string, object> { { "username", username } } };
+                var session = await Client.Auth.SignUp(email, password, options);
+                return session?.User != null;
+            } catch { return false; }
         }
 
         public async Task<ProfileDTO> SearchPlayerByEmail(string targetEmail) {
+            var response = await Client.From<ProfileDTO>().Where(x => x.email == targetEmail.Trim().ToLower()).Get();
+            return response.Model;
+        }
+        
+        public async Task<bool> UnlockCategory(long categoryId, int price) {
             try {
-                // We clean the input to avoid invisible space errors
-                string cleanEmail = targetEmail.Trim().ToLower();
+                var user = Client.Auth.CurrentUser;
+                if (user == null) return false;
 
-                // We ask the profiles table: "Who has this email?"
-                var response = await supabase
-                    .From<ProfileDTO>()
-                    .Where(x => x.email == cleanEmail)
+                if (PlayerManager.Instance.HostAccount.Stars < price) return false;
+
+                int newStars = PlayerManager.Instance.HostAccount.Stars - price;
+                await Client.From<Data.DTO.ProfileDTO>()
+                    .Where(x => x.id == user.Id)
+                    .Set(x => x.stars, newStars)
+                    .Update();
+
+                var unlockData = new Data.DTO.ProfileCategoryDTO {
+                    profile_id = user.Id,
+                    category_id = categoryId,
+                    is_locked = false
+                };
+                await Client.From<Data.DTO.ProfileCategoryDTO>().Upsert(unlockData);
+
+                PlayerManager.Instance.HostAccount.Stars = newStars;
+                return true;
+            } catch (System.Exception e) {
+                Debug.LogError("Unlock failed: " + e.Message);
+                return false;
+            }
+        }
+     
+        public async Task<List<long>> GetUnlockedCategoryIds() {
+            try {
+                if (Client.Auth.CurrentUser == null) return new List<long>();
+
+                var response = await Client.From<Data.DTO.ProfileCategoryDTO>()
+                    .Where(x => x.profile_id == Client.Auth.CurrentUser.Id)
+                    .Where(x => x.is_locked == false)
                     .Get();
 
-                // .Model returns the profile if found, otherwise null
-                if (response.Model != null) {
-                    Debug.Log($"<color=cyan>Found player: {response.Model.username}</color>");
-                    return response.Model;
-                } else {
-                    Debug.LogWarning("No account found with that email.");
-                    return null;
+                List<long> ids = new List<long>();
+                foreach (var item in response.Models) {
+                    ids.Add(item.category_id);
                 }
-            } catch (System.Exception e) {
-                Debug.LogError($"Search Error: {e.Message}");
-                return null;
-            }
-
-        }
-        
-        
-        public async Task SaveMatchResults(string profileId, int pointsGained, bool wonMatch)
-        {
-            try
-            {
-                // 1. Fetch current stats
-                var response = await supabase.From<ProfileDTO>().Where(x => x.id == profileId).Get();
-                var profile = response.Model;
-
-                if (profile != null)
-                {
-                    // 2. Update stats
-                    profile.score += pointsGained;
-                    profile.matches_played += 1;
-                    if (wonMatch) profile.match_wins += 1;
-
-                    // 3. Push back to Supabase
-                    await profile.Update<ProfileDTO>();
-                    Debug.Log($"Cloud Save Complete for {profile.username}!");
-                }
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError($"Cloud Save Failed: {e.Message}");
+                return ids;
+            } catch {
+                return new List<long>(); 
             }
         }
-
-
-
     }
 }

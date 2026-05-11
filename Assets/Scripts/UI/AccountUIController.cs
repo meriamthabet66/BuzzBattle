@@ -3,7 +3,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using Managers;
-using RTLTMPro;
 
 namespace UI {
     public class AccountUIController : MonoBehaviour {
@@ -14,50 +13,93 @@ namespace UI {
         [SerializeField] private GameObject signUpPanel;
 
         [Header("Welcome Panel Buttons")]
-        [SerializeField] private Button goToSignInBtn; // Button on Welcome screen
-        [SerializeField] private Button goToSignUpBtn; // Button on Welcome screen
+        [SerializeField] private Button welcomeToSignInBtn; 
+        [SerializeField] private Button welcomeToSignUpBtn; 
+
+        [Header("Direct Switch Buttons")]
+        [SerializeField] private Button signInToSignUpBtn; 
+        [SerializeField] private Button signUpToSignInBtn; 
 
         [Header("Signup Fields")]
         [SerializeField] private TMP_InputField signupEmailInput;
         [SerializeField] private TMP_InputField signupPasswordInput;
         [SerializeField] private TMP_InputField signupUsernameInput;
         [SerializeField] private Button signupSubmit;
+        [SerializeField] private Button signupHideBtn; // The eye button inside Signup
+        [SerializeField] private Image signupEyeIcon;   // The icon to swap
 
         [Header("Login Fields")]
         [SerializeField] private TMP_InputField loginEmailInput;
         [SerializeField] private TMP_InputField loginPasswordInput;
         [SerializeField] private Button loginSubmit;
+        [SerializeField] private Button loginHideBtn;  // The eye button inside Login
+        [SerializeField] private Image loginEyeIcon;    // The icon to swap
+
+        [Header("Eye Sprites")]
+        [SerializeField] private Sprite eyeOpenSprite;
+        [SerializeField] private Sprite eyeClosedSprite;
 
         [Header("Status Feedback")]
         [SerializeField] private TMP_Text statusText;
 
+        private bool isLoginPasswordVisible = false;
+        private bool isSignupPasswordVisible = false;
+
         private void Start() {
-            // 1. Initial State: Show only Welcome
             ShowPanel(welcomePanel);
 
-            // 2. Navigation Buttons
-            if (goToSignInBtn != null) goToSignInBtn.onClick.AddListener(() => ShowPanel(signInPanel));
-            if (goToSignUpBtn != null) goToSignUpBtn.onClick.AddListener(() => ShowPanel(signUpPanel));
+            // Navigation
+            if (welcomeToSignInBtn != null) welcomeToSignInBtn.onClick.AddListener(() => ShowPanel(signInPanel));
+            if (welcomeToSignUpBtn != null) welcomeToSignUpBtn.onClick.AddListener(() => ShowPanel(signUpPanel));
+            if (signInToSignUpBtn != null) signInToSignUpBtn.onClick.AddListener(() => ShowPanel(signUpPanel));
+            if (signUpToSignInBtn != null) signUpToSignInBtn.onClick.AddListener(() => ShowPanel(signInPanel));
 
-            // 3. Submit Buttons
+            // Submit Buttons
             signupSubmit.onClick.AddListener(OnSignupClicked);
             loginSubmit.onClick.AddListener(OnLoginClicked);
+
+            // --- PASSWORD HIDE/SHOW LOGIC ---
+            if (loginHideBtn != null) loginHideBtn.onClick.AddListener(ToggleLoginPassword);
+            if (signupHideBtn != null) signupHideBtn.onClick.AddListener(ToggleSignupPassword);
             
-            // Clear status at start
-            if (statusText != null) statusText.text = "";
+            // Set initial state (Hidden)
+            ApplyPasswordState(loginPasswordInput, loginEyeIcon, false);
+            ApplyPasswordState(signupPasswordInput, signupEyeIcon, false);
         }
 
-        // --- PANEL NAVIGATION HELPER ---
+        // --- PASSWORD TOGGLE LOGIC ---
+
+        private void ToggleLoginPassword() {
+            isLoginPasswordVisible = !isLoginPasswordVisible;
+            ApplyPasswordState(loginPasswordInput, loginEyeIcon, isLoginPasswordVisible);
+        }
+
+        private void ToggleSignupPassword() {
+            isSignupPasswordVisible = !isSignupPasswordVisible;
+            ApplyPasswordState(signupPasswordInput, signupEyeIcon, isSignupPasswordVisible);
+        }
+
+        private void ApplyPasswordState(TMP_InputField input, Image icon, bool isVisible) {
+            if (input == null || icon == null) return;
+
+            // standard = visible, password = dots
+            input.contentType = isVisible ? TMP_InputField.ContentType.Standard : TMP_InputField.ContentType.Password;
+            
+            // Swap the sprite
+            icon.sprite = isVisible ? eyeOpenSprite : eyeClosedSprite;
+
+            // Force the InputField to refresh its visuals instantly
+            input.ForceLabelUpdate();
+        }
+
+        // --- AUTH LOGIC (Signup/Login) ---
+
         private void ShowPanel(GameObject targetPanel) {
             welcomePanel.SetActive(targetPanel == welcomePanel);
             signInPanel.SetActive(targetPanel == signInPanel);
             signUpPanel.SetActive(targetPanel == signUpPanel);
-            
-            // Clear status message when switching screens
             if (statusText != null) statusText.text = "";
         }
-
-        // --- AUTHENTICATION LOGIC ---
 
         private async void OnSignupClicked() {
             string email = signupEmailInput.text.Trim();
@@ -76,8 +118,6 @@ namespace UI {
             
             if (success) {
                 ShowStatus("تم إنشاء الحساب! جاري التحويل لتسجيل الدخول...");
-                
-                // --- THE FLOW: Move to Login page after 2 seconds ---
                 Invoke(nameof(SwitchToLoginAfterSignup), 2.0f);
             } else {
                 ShowStatus("فشل إنشاء الحساب. حاول مرة أخرى.");
@@ -87,7 +127,6 @@ namespace UI {
 
         private void SwitchToLoginAfterSignup() {
             ShowPanel(signInPanel);
-            loginSubmit.interactable = true;
         }
 
         private async void OnLoginClicked() {
@@ -107,8 +146,6 @@ namespace UI {
             if (profile != null) {
                 ShowStatus($"مرحباً بعودتك {profile.username}!");
                 PlayerManager.Instance.SetMainAccount(profile); 
-
-                // --- THE FLOW: Move to Main Menu ---
                 Invoke(nameof(GoToMainMenu), 1.5f);
             } else {
                 ShowStatus("خطأ في تسجيل الدخول. تأكد من البيانات.");
@@ -116,9 +153,7 @@ namespace UI {
             }
         }
 
-        private void GoToMainMenu() {
-            GameManager.Instance.ChangeState(GameState.Menu);
-        }
+        private void GoToMainMenu() => GameManager.Instance.ChangeState(GameState.Menu);
 
         private void ShowStatus(string message) {
             if (statusText != null) statusText.text = ArabicFixer.Fix(message);
