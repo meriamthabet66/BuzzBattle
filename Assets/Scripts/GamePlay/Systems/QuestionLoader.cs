@@ -40,13 +40,15 @@ namespace GamePlay.Systems
 
             foreach (Category category in currentRound.categories)
             {
+                // DEBUG: Let's see if the list is actually empty
+                Debug.Log($"Loader checking Category: {category.categoryName}. MCQ Count: {category.multipleChoiceQuestions.Count}");
+
                 switch (currentRound.questionType)
                 {
                     case QuestionType.MultipleChoice:
-                        // ONLY add the question if it is NOT in the memory!
                         foreach (var q in category.multipleChoiceQuestions) 
                             if (!askedQuestions.Contains(q)) pool.Add(q);
-                            
+                        
                         foreach (var q in category.trueOrFalseQuestions) 
                             if (!askedQuestions.Contains(q)) pool.Add(q);
                         break;

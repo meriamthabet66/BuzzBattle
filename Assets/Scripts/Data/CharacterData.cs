@@ -1,11 +1,13 @@
-﻿namespace Data {
+﻿using System.Collections.Generic;
+
+namespace Data {
     [System.Serializable]
     public class CharacterData
     {
-        public int CharacterID;
+        public long id;
+        public string nickname;
+        public string skin_url;
+        public List<ItemData> Items;
 
-        public int FoxSkinID;
-        public int HatID;
-        public int AccessoryID;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Data.Data;
 using GamePlay.Questions;
+using Managers;
 using UnityEngine;
 
 namespace UI {
@@ -23,6 +24,7 @@ namespace UI {
         [Header("Game Mode UI Buttons")]
         [SerializeField] private ModeBtn MCQBtn;
         [SerializeField] private ModeBtn VerbalBtn;
+        [SerializeField] private GameObject backButton;
 
         private void OnEnable()
         {
@@ -35,6 +37,15 @@ namespace UI {
 
             UpdateGridDisplay();
             UpdateModeVisuals();
+            
+            // --- NEW LOGIC: Hide the back button if we are mid-match! ---
+            if (backButton != null)
+            {
+                // If IsMatchActive is TRUE, it hides the button. If FALSE, it shows it!
+                bool isMidGame = Managers.MatchManager.Instance != null && Managers.MatchManager.Instance.IsMatchActive;
+                backButton.SetActive(!isMidGame);
+            }
+            
         }
 
         public void OnClickAddCategory()
@@ -97,30 +108,34 @@ namespace UI {
         }
 
         // --- CONTINUE BUTTON ---
-        public void OnClickNext()
+        // --- UPDATED: Now ASYNC to handle the download wait ---
+        public async void OnClickNext()
         {
-            if (localCategories.Count == 0)
-            {
-                Debug.LogWarning("You must select at least 1 category before continuing!");
-                return; 
+            if (localCategories.Count == 0) return; 
+
+            foreach (Category cat in localCategories) {
+                if (CategoryCloudManager.Instance.IsCategoryDownloaded(cat.id)) {
+                    CategoryCloudManager.Instance.LoadCategoryFromDisk(cat);
+                } else {
+                    await CategoryCloudManager.Instance.DownloadQuestions(cat);
+                    CategoryCloudManager.Instance.SaveCategoryLocally(cat);
+                }
             }
 
             MatchSetupData.SelectedCategories = new List<Category>(localCategories);
             MatchSetupData.QType = SelectedQuestionType; 
-            
-            // 1. If the match hasn't started yet, set up the rules!
+
+            // --- THE FIX: CHANGE STATE FIRST ---
+            // This turns on the Gameplay Canvas so it's ready to receive data
+            GameManager.Instance.ChangeState(GameState.Gameplay);
+
+            // --- THEN START THE MATCH ---
             if (!Managers.MatchManager.Instance.IsMatchActive)
             {
                 Managers.MatchManager.Instance.StartMatch(MatchSetupData.Mode, MatchSetupData.Rounds, MatchSetupData.QuestionsPerRound);
             }
 
-            // 2. ALWAYS start the round with the chosen categories
             Managers.MatchManager.Instance.StartRound(MatchSetupData.SelectedCategories, MatchSetupData.QType);
-
-            // 3. ONLY TELL THE GAME MANAGER TO CHANGE STATE!
-            // Do NOT write SetActive(false) here. 
-            // The CanvasStateListeners will hear this and do it automatically!
-            GameManager.Instance.ChangeState(GameState.Gameplay);
         }
     }
 }

@@ -15,7 +15,6 @@ namespace Managers
 
         public int CurrentRoundIndex { get; private set; }
         
-        // --- NEW: Tracks if we are mid-game! ---
         public bool IsMatchActive { get; private set; } 
         
         [SerializeField] private RoundManager roundManager;
@@ -24,21 +23,30 @@ namespace Managers
         {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
-            IsMatchActive = false; // Match hasn't started yet
+            IsMatchActive = false; 
         }
 
         public void StartMatch(GameMode mode, int rounds, int questions)
         {
             currentMode = mode;
-            totalRounds = rounds;
             questionsPerRound = questions;
             CurrentRoundIndex = 0;
             IsMatchActive = true; 
 
-            // --- NEW: Tell RoundManager to clear the question memory! ---
+            // --- THE TOURNAMENT FIX: Override the rounds! ---
+            if (mode == GameMode.Tournament)
+            {
+                // If 4 players = 3 rounds. If 3 players = 2 rounds.
+                totalRounds = PlayerManager.Instance.Players.Count - 1;
+            }
+            else
+            {
+                totalRounds = rounds;
+            }
+
             if (roundManager != null) roundManager.ClearQuestionMemory();
 
-            Debug.Log($"Match started | Mode: {mode} | Rounds: {rounds}");
+            Debug.Log($"Match started | Mode: {mode} | Rounds: {totalRounds}");
         }
         
         public void StartRound(List<Category> categories, QuestionType type)
@@ -52,17 +60,20 @@ namespace Managers
             return CurrentRoundIndex >= totalRounds - 1;
         }
 
-        // --- UPDATED: Stop auto-starting the round! ---
         public void OnRoundFinished()
         {
+            // --- THE TOURNAMENT FIX: Eliminate the loser! ---
+            if (currentMode == GameMode.Tournament && !IsLastRound())
+            {
+                PlayerManager.Instance.EliminateLowestScoringPlayer();
+            }
+
             if (!IsLastRound())
             {
                 CurrentRoundIndex++;
                 Debug.Log($"Round finished! Showing leaderboard before Round {CurrentRoundIndex + 1}");
                 
-                // --- CHANGED: Go to the new RoundResults state first! ---
                 GameManager.Instance.ChangeState(GameState.RoundResults); 
-                // Note: You must add `RoundResults` to your GameState enum in GameManager.cs!
             }
             else
             {
@@ -70,6 +81,14 @@ namespace Managers
                 Debug.Log("Match Over! Going to Final Results.");
                 GameManager.Instance.ChangeState(GameState.Results);
             }
+        }
+        
+        // --- NEW: Safely aborts a match if the user hits "Play Again" or "Home" early ---
+        // --- UPDATED: Safely aborts a match and resets the round index ---
+        public void CancelMatch()
+        {
+            IsMatchActive = false;
+            CurrentRoundIndex = 0; // Force it back to Round 1!
         }
     }
 }

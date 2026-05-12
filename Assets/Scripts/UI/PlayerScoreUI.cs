@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
 using Managers;
-using System;
 
 namespace UI 
 {
@@ -16,24 +15,25 @@ namespace UI
 
         private void OnEnable()
         {
-            // Listen to the Bank for point changes
+            // 1. Listen for points being added during the game
             PlayerManager.OnPlayerScoreUpdated += HandleScoreUpdated;
             
-            // Listen for the game start so we can set the text to "0"
-            GameManager.OnGameplayStart += InitializeScoreDisplay;
+            // 2. THE FIX: Grab the current score instantly when the buzzer turns on!
+            // This guarantees it will say "0" when a rematch starts.
+            InitializeScoreDisplay();
         }
 
         private void OnDisable()
         {
+            // Stop listening when the buzzer turns off
             PlayerManager.OnPlayerScoreUpdated -= HandleScoreUpdated;
-            GameManager.OnGameplayStart -= InitializeScoreDisplay;
         }
 
         private void InitializeScoreDisplay()
         {
             if (playerUI == null || scoreText == null) return;
 
-            // Get the starting score (usually 0) from the manager
+            // Grab the current TotalScore from the PlayerManager Bank
             PlayerData pData = PlayerManager.Instance.GetPlayer(playerUI.playerIndex - 1);
             if (pData != null)
             {

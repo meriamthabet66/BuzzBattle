@@ -2,12 +2,16 @@
 using UnityEngine;
 using System;
 using Data;
+using Data.DTO;
 
 namespace Managers
 {
     public class PlayerManager : MonoBehaviour
     {
         public static PlayerManager Instance { get; private set; }
+        
+        // --- NEW: This stores the logged-in Host's data ---
+        public AccountData HostAccount { get; private set; }
 
         public List<PlayerData> Players = new List<PlayerData>();
 
@@ -38,6 +42,30 @@ namespace Managers
             GameManager.OnStateChanged -= HandleGameStateChanged;
         }
 
+        
+        
+        
+        // =========================
+        // ACCOUNT MANAGEMENT
+        // =========================
+
+        // --- NEW: This takes the database DTO and turns it into Game Data ---
+        public void SetMainAccount(ProfileDTO dto)
+        {
+            HostAccount = new AccountData
+            {
+                Username = dto.username,
+                Stars = dto.stars,
+                Score = dto.score,
+                Steals = dto.total_steals,
+                MatchWinCount = dto.match_wins,
+                TournamentWinCount = dto.tournament_wins
+                // Link characters if needed later...
+            };
+
+            Debug.Log($"<color=orange>Host Account set: {HostAccount.Username}. Stars: {HostAccount.Stars}</color>");
+        }
+
         // =========================
         // PLAYER MANAGEMENT
         // =========================
@@ -60,6 +88,17 @@ namespace Managers
             Debug.Log($"Player added: {name}");
 
             OnPlayersUpdated?.Invoke(Players);
+        }
+        
+        
+        // Helper to convert DTO to AccountData
+        private AccountData ConvertDTOToAccount(ProfileDTO dto)
+        {
+            return new AccountData {
+                Username = dto.username,
+                Stars = dto.stars,
+                Score = dto.score
+            };
         }
 
         public bool ValidateMinPlayers(int min = 2)
@@ -98,6 +137,44 @@ namespace Managers
             foreach (var player in Players)
             {
                 player.RoundScore = 0;
+            }
+        }
+        
+        
+        
+        // --- ADD THIS METHOD ANYWHERE INSIDE PlayerManager.cs ---
+        public void ResetScoresForRematch()
+        {
+            for (int i = 0; i < Players.Count; i++)
+            {
+                Players[i].TotalScore = 0;
+                Players[i].RoundScore = 0;
+                
+                // FORCE the UI to update to 0 instantly!
+                OnPlayerScoreUpdated?.Invoke(i, 0); 
+            }
+        }
+        
+        // --- NEW: Tournament Elimination Logic ---
+        public void EliminateLowestScoringPlayer()
+        {
+            PlayerData lowestPlayer = null;
+            int lowestScore = int.MaxValue;
+
+            // Find the active player with the lowest total score
+            foreach (var p in Players)
+            {
+                if (!p.IsEliminated && p.TotalScore < lowestScore)
+                {
+                    lowestScore = p.TotalScore;
+                    lowestPlayer = p;
+                }
+            }
+
+            if (lowestPlayer != null)
+            {
+                lowestPlayer.IsEliminated = true;
+                Debug.Log($"TOURNAMENT: {lowestPlayer.DisplayName} has been ELIMINATED!");
             }
         }
 

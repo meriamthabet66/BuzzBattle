@@ -6,8 +6,10 @@ using UnityEngine;
 public abstract class BaseQuestion : ScriptableObject
 {
     [Header("Common Data")]
+    public long id;
     public string questionText;
     public AudioClip voiceClip;
+    public string voiceClipUrl;
     public int difficulty;
    
 

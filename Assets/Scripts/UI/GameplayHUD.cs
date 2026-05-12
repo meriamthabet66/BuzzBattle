@@ -74,12 +74,41 @@ namespace UI
             RoundManager.OnTimerUpdated -= UpdateTimerUI;
             RoundManager.OnAnswerTimeOutUI -= ForceClosePanel;
             GameManager.OnGameplayStart -= InitializePlayerBuzzers;
+            
+            ForceClosePanel();
         }
 
         private void InitializePlayerBuzzers() 
         {
-            for (int i = 0; i < playerBuzzers.Length; i++)
-                if (playerBuzzers[i] != null) playerBuzzers[i].SetupForMatch(i);
+            // 1. First, hide all buzzers to start fresh
+            foreach (var b in playerBuzzers) {
+                if (b != null) b.gameObject.SetActive(false);
+            }
+
+            int activePlayerCount = PlayerManager.Instance.Players.Count;
+
+            // 2. DIAGONAL LOGIC for 2 Players
+            if (activePlayerCount == 2) 
+            {
+                // List Index 0 (Player 1) -> Physical Buzzer 2 (Top Left)
+                // In your array, physical buzzer 2 is playerBuzzers[1]
+                playerBuzzers[1].SetupForMatch(0); 
+
+                // List Index 1 (Player 2) -> Physical Buzzer 3 (Bottom Right)
+                // In your array, physical buzzer 3 is playerBuzzers[2]
+                playerBuzzers[2].SetupForMatch(1);
+            }
+            // 3. NORMAL LOGIC for 3 or 4 Players
+            else 
+            {
+                for (int i = 0; i < activePlayerCount; i++)
+                {
+                    if (playerBuzzers[i] != null)
+                    {
+                        playerBuzzers[i].SetupForMatch(i);
+                    }
+                }
+            }
         }
 
         private void UpdateTimerUI(int secondsLeft)
@@ -151,9 +180,13 @@ namespace UI
 
         void OnPlayerBuzzed(int playerIndex)
         {
+            if (currentLoadedQuestion == null) {
+                Debug.LogWarning("Buzzer pressed but no question is loaded!");
+                return;
+            }
+
             currentPlayer = playerIndex;
             
-            // --- THE FIX: Do NOT open the panel if it's a verbal question! ---
             if (currentLoadedQuestion is VerbalQuestion) return; 
 
             if (answerPanel != null)
@@ -182,8 +215,25 @@ namespace UI
         {
             if (rect == null) return;
             float zRotation = 0f;
-            if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
-            else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
+
+            int playerCount = PlayerManager.Instance.Players.Count;
+
+            // --- THE SMART ROTATION FIX ---
+            if (playerCount == 2)
+            {
+                // In 2-player diagonal mode: 
+                // Player 1 is Top Left (180), Player 2 is Bottom Right (0)
+                zRotation = (playerIndex == 1) ? 180f : 0f;
+            }
+            else
+            {
+                // Standard Layout: Top=180, Bottom=0
+                // Top Right (1) or Top Left (2)
+                if (playerIndex == 1 || playerIndex == 2) zRotation = 180f; 
+                // Bottom Right (3) or Bottom Left (4)
+                else if (playerIndex == 3 || playerIndex == 4) zRotation = 0f; 
+            }
+
             rect.localEulerAngles = new Vector3(0, 0, zRotation);
         }
 

@@ -54,7 +54,10 @@ namespace UI
             this.playerIndex = managerIndex + 1;
             PlayerData pData = PlayerManager.Instance.GetPlayer(managerIndex);
 
-            if (pData == null) gameObject.SetActive(false);
+            if (pData == null || pData.IsEliminated) 
+            {
+                gameObject.SetActive(false); // Hide their buzzer from the table!
+            }
             else
             {
                 gameObject.SetActive(true); 
