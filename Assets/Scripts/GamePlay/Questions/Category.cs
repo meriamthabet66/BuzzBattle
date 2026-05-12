@@ -12,6 +12,7 @@ namespace GamePlay.Questions {
         public Sprite categoryIcon;
         public string categoryIconUrl;
         public int price;
+        public int version; // Add this variable
 
         [Header("Multiple Choice Questions")]
         public List<MultipleChoiceQuestion> multipleChoiceQuestions= new List<MultipleChoiceQuestion>();

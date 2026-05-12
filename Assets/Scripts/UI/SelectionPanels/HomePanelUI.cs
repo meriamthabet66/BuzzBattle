@@ -5,13 +5,14 @@ namespace UI {
     public class HomePanelUI : MonoBehaviour
     {
         [Header("Where to go next?")]
-        [SerializeField] private GameObject nextPanel; // Drag GameModePanel here
+        [SerializeField] private GameObject nextPanel; 
 
-        // Hook this to your big "Play" or "Start" button
         public void OnClickPlay()
         {
-            // Resets old data so a new game starts fresh!
             MatchSetupData.ResetData(); 
+            
+            // --- THE FIX: Transition from Lobby to Setup ---
+            GameManager.Instance.ChangeState(GameState.Setup);
             
             MenuController.Instance.OpenPanel(nextPanel);
         }

@@ -44,6 +44,27 @@ namespace UI {
 
         private bool isLoginPasswordVisible = false;
         private bool isSignupPasswordVisible = false;
+        
+        private void OnEnable()
+        {
+            // --- THE CLEANUP FIX ---
+            // Clear all text fields so the next person (or you) sees a fresh screen
+            if (loginEmailInput != null) loginEmailInput.text = "";
+            if (loginPasswordInput != null) loginPasswordInput.text = "";
+            if (signupEmailInput != null) signupEmailInput.text = "";
+            if (signupPasswordInput != null) signupPasswordInput.text = "";
+            if (signupUsernameInput != null) signupUsernameInput.text = "";
+
+            // Reset the status message
+            if (statusText != null) statusText.text = "";
+
+            // Make sure the buttons are clickable again
+            if (loginSubmit != null) loginSubmit.interactable = true;
+            if (signupSubmit != null) signupSubmit.interactable = true;
+
+            // Default to Welcome Screen
+            ShowPanel(welcomePanel);
+        }
 
         private void Start() {
             ShowPanel(welcomePanel);

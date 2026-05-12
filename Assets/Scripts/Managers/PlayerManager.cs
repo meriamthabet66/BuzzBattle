@@ -65,6 +65,11 @@ namespace Managers
 
             Debug.Log($"<color=orange>Host Account set: {HostAccount.Username}. Stars: {HostAccount.Stars}</color>");
         }
+        
+        public void ClearHostAccount()
+        {
+            HostAccount = null;
+        }
 
         // =========================
         // PLAYER MANAGEMENT

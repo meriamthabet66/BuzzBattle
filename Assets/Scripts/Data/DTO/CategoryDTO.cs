@@ -10,6 +10,7 @@ namespace Data.DTO {
         [Column("category_name")] public string category_name { get; set; }
         [Column("category_icon_url")] public string category_icon_url { get; set; }
         [Column("price")] public int price { get; set; }
+        [Column("version")] public int version { get; set; }
 
     }
 }

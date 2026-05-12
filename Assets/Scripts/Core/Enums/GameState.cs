@@ -11,6 +11,7 @@ using UnityEngine;
         Gameplay,
         Steal,
         RoundResults,
-        Results
+        Results,
+        Initializing
     }
 
