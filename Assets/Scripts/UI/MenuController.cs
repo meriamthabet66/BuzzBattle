@@ -65,9 +65,17 @@ namespace UI {
                 currentPanel.SetActive(false);
                 currentPanel = panelHistory.Pop();
                 currentPanel.SetActive(true);
+
+                // --- NEW LOGIC: Check if we just went back to the Home Panel ---
+                // If the panel we just opened is the 'startingPanel' (Home), return to Menu state
+                if (currentPanel == startingPanel)
+                {
+                    GameManager.Instance.ChangeState(GameState.Menu);
+                }
             }
             else
             {
+                // This handles edge cases where history is empty
                 GameManager.Instance.ChangeState(GameState.Menu);
             }
         }

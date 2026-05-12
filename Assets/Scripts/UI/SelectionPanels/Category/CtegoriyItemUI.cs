@@ -48,6 +48,12 @@ namespace UI {
             if (selectedOutline != null) {
                 selectedOutline.SetActive(alreadySelected && isUnlocked && isDownloaded);
             }
+            
+            if (downloadBtn != null) 
+            {
+                // isDownloaded comes from the (localVer >= cloudVer) check in the Popup script
+                downloadBtn.gameObject.SetActive(isUnlocked && !isDownloaded);
+            }
         }
 
         // --- BUTTON: CLICK THE WHOLE BOX ---

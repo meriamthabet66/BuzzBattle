@@ -27,6 +27,7 @@ namespace Managers {
                 cat.id = dto.id;
                 cat.categoryName = dto.category_name;
                 cat.price = dto.price;
+                cat.version = dto.version; 
                 list.Add(cat);
             }
             return list;
@@ -71,6 +72,7 @@ namespace Managers {
             CategorySavePack pack = new CategorySavePack {
                 categoryId = cat.id,
                 categoryName = cat.categoryName,
+                version = cat.version,
                 mcqs = cat.multipleChoiceQuestions.Select(q => new MCQSaveData {
                     baseData = new BaseQuestionDTO { id = q.id, question_text = q.questionText, difficulty = q.difficulty },
                     options = q.answers.Select(a => new MCQOptionDTO { answer_text = a.text, is_correct = a.isCorrect }).ToList()
@@ -89,6 +91,15 @@ namespace Managers {
             string path = Path.Combine(Application.persistentDataPath, $"cat_{cat.id}.json");
             File.WriteAllText(path, json);
             Debug.Log($"<color=cyan>Offline Pack Saved: {path}</color>");
+        }
+        
+        public int GetLocalVersion(long id) {
+            string path = Path.Combine(Application.persistentDataPath, $"cat_{id}.json");
+            if (!File.Exists(path)) return -1;
+
+            string json = File.ReadAllText(path);
+            CategorySavePack pack = JsonConvert.DeserializeObject<CategorySavePack>(json);
+            return pack.version;
         }
         
       
@@ -177,6 +188,7 @@ namespace Managers {
     public class CategorySavePack {
         public long categoryId;
         public string categoryName;
+        public int version; 
         public List<MCQSaveData> mcqs;
         public List<TFSaveData> tfs;
         public List<VerbalSaveData> verbals;
