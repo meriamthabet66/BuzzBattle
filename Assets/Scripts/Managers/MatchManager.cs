@@ -60,9 +60,8 @@ namespace Managers
             return CurrentRoundIndex >= totalRounds - 1;
         }
 
-        public void OnRoundFinished()
+     public async void OnRoundFinished()
         {
-            // --- THE TOURNAMENT FIX: Eliminate the loser! ---
             if (currentMode == GameMode.Tournament && !IsLastRound())
             {
                 PlayerManager.Instance.EliminateLowestScoringPlayer();
@@ -71,14 +70,50 @@ namespace Managers
             if (!IsLastRound())
             {
                 CurrentRoundIndex++;
-                Debug.Log($"Round finished! Showing leaderboard before Round {CurrentRoundIndex + 1}");
-                
                 GameManager.Instance.ChangeState(GameState.RoundResults); 
             }
             else
             {
                 IsMatchActive = false; 
-                Debug.Log("Match Over! Going to Final Results.");
+                Debug.Log("Match Over! Calculating rewards...");
+
+                int highestScore = -1;
+                foreach (var p in PlayerManager.Instance.Players)
+                    if (p.TotalScore > highestScore) highestScore = p.TotalScore;
+
+                foreach (var player in PlayerManager.Instance.Players)
+                {
+                    // 1. Calculate Rewards
+                    int starsEarned = Core.Enums.StarRules.ParticipationReward;
+                    bool isWinner = (player.TotalScore == highestScore);
+                    bool wonTournament = isWinner && (currentMode == GameMode.Tournament);
+
+                    if (wonTournament) starsEarned += Core.Enums.StarRules.TournamentWinReward;
+                    else if (isWinner) starsEarned += Core.Enums.StarRules.NormalMatchWinReward;
+                    
+                    starsEarned += (player.CorrectStealsInMatch * Core.Enums.StarRules.CorrectStealBonus);
+
+                    // 2. THE FIX: Only talk to the LOCAL manager
+                    // We check the ID to make sure we only update the Host's wallet
+                    if (player.LinkedAccount != null && LocalAccountManager.Instance.SavedAccount != null)
+                    {
+                        if (player.LinkedAccount.id == LocalAccountManager.Instance.SavedAccount.id)
+                        {
+                            Debug.Log($"<color=yellow>Handing off {starsEarned} stars to LocalAccountManager...</color>");
+        
+                            LocalAccountManager.Instance.AddMatchStats(
+                                starsEarned, 
+                                player.TotalScore, 
+                                1, 
+                                isWinner ? 1 : 0, 
+                                wonTournament ? 1 : 0,
+                                player.CorrectStealsInMatch, 
+                                player.Steals
+                            );
+                        }
+                    }
+                }
+
                 GameManager.Instance.ChangeState(GameState.Results);
             }
         }

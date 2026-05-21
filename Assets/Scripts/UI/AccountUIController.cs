@@ -87,6 +87,8 @@ namespace UI {
             ApplyPasswordState(loginPasswordInput, loginEyeIcon, false);
             ApplyPasswordState(signupPasswordInput, signupEyeIcon, false);
         }
+        
+        
 
         // --- PASSWORD TOGGLE LOGIC ---
 
@@ -162,11 +164,20 @@ namespace UI {
             loginSubmit.interactable = false;
             ShowStatus("جاري تسجيل الدخول...");
 
-            ProfileDTO profile = await SupabaseManager.Instance.Login(email, password);
+            // --- THE FIX: Change from ProfileDTO to bool ---
+            bool success = await SupabaseManager.Instance.Login(email, password);
             
-            if (profile != null) {
-                ShowStatus($"مرحباً بعودتك {profile.username}!");
-                PlayerManager.Instance.SetMainAccount(profile); 
+            if (success) {
+                // The SupabaseManager already told LocalAccountManager to save the data.
+                // We grab the name from the local save to show the message.
+                var host = LocalAccountManager.Instance.SavedAccount;
+                string name = host != null ? host.Username : "";
+
+                ShowStatus($"مرحباً بعودتك {name}!");
+                
+                // DELETE: PlayerManager.Instance.SetMainAccount(profile); 
+                // Why? Because LocalAccountManager already did this!
+
                 Invoke(nameof(GoToMainMenu), 1.5f);
             } else {
                 ShowStatus("خطأ في تسجيل الدخول. تأكد من البيانات.");

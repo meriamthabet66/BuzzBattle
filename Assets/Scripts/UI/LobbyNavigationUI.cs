@@ -1,36 +1,43 @@
 ﻿using UnityEngine;
+using Managers;
 
 namespace UI
 {
     public class LobbyNavigationUI : MonoBehaviour
     {
+        public static LobbyNavigationUI Instance { get; private set; }
+        
         [Header("Global UI")]
-        [SerializeField] private GameObject barMenuPanel; // Drag your BarMenuPanel here!
+        [SerializeField] private GameObject barMenuPanel;
+        [SerializeField] private GameObject HeadPanel;
 
         [Header("Views")]
         [SerializeField] private GameObject[] views; 
 
-        private void OnEnable()
+        private void Awake()
         {
-            // Subscribe to the state change
+            Instance = this;
             GameManager.OnStateChanged += HandleStateChange;
-            
-            // Check current state immediately
-            if (GameManager.Instance != null)
-                HandleStateChange(GameManager.Instance.CurrentState);
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             GameManager.OnStateChanged -= HandleStateChange;
         }
 
         private void HandleStateChange(GameState newState)
         {
-            // The Bar only appears in the main 'Menu' state (Lobby)
-            if (barMenuPanel != null)
+            if (barMenuPanel != null) barMenuPanel.SetActive(newState == GameState.Menu);
+            if (HeadPanel != null) HeadPanel.SetActive(newState == GameState.Menu);
+
+            if (newState == GameState.Menu)
             {
-                barMenuPanel.SetActive(newState == GameState.Menu);
+                // --- THE INSTANT FIX ---
+                // Silently start pre-loading leaderboard and category lists
+                // We don't use 'await' here because we don't want to block the screen
+                _ = SupabaseManager.Instance.PreloadLobbyData();
+                // _ = SupabaseManager.Instance.RefreshLobbyCache();
+                if (views.Length > 0) ShowViewByIndex(0);
             }
         }
 
@@ -38,11 +45,11 @@ namespace UI
         {
             for (int i = 0; i < views.Length; i++)
             {
-                if (views[i] != null)
-                {
-                    views[i].SetActive(i == index);
-                }
+                if (views[i] != null) views[i].SetActive(i == index);
             }
         }
+        
+        
+        
     }
 }

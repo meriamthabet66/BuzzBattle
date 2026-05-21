@@ -1,32 +1,37 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Supabase;
 using System.Threading.Tasks;
 using Data.DTO;
 using System.Collections.Generic;
-using Data;
+using GamePlay.Questions;
 
 namespace Managers {
     public class SupabaseManager : MonoBehaviour {
         public static SupabaseManager Instance { get; private set; }
 
         [Header("Connection")]
-        [SerializeField] private string supabaseUrl = "https://your-url.supabase.co";
-        [SerializeField] private string supabaseKey = "your-key";
+        [SerializeField] private string supabaseUrl = "https://aahjaarfkajqlbxubzld.supabase.co";
+        [SerializeField] private string supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFhaGphYXJma2FqcWxieHViemxkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5OTAzMTUsImV4cCI6MjA5MzU2NjMxNX0._0oLFxsXgwvMRSVymoN7SAuuOLPaGq5SLNyJP927SF8";
 
-        // THIS IS YOUR VARIABLE NAME -> Client
         public Supabase.Client Client { get; private set; }
+        public List<ProfileDTO> CachedGlobalLeaderboard { get; private set; }
+        public List<Category> CachedCloudCategories { get; private set; } = new List<Category>();
+        public List<long> CachedUnlockedIds { get; private set; } = new List<long>();
+        
+        public static Action OnLobbyDataReady;
+    
+        private NetworkReachability lastReachability;
 
         private void Awake() {
             if (Instance != null && Instance != this) { Destroy(gameObject); return; }
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // --- THE PERSISTENCE FIX ---
             var options = new SupabaseOptions { 
                 AutoRefreshToken = true, 
                 AutoConnectRealtime = true,
-                // This line tells Supabase to use our new Unity storage script!
-                SessionHandler = new UnitySessionHandler() 
+                SessionHandler = new Data.UnitySessionHandler() 
             };
         
             Client = new Supabase.Client(supabaseUrl, supabaseKey, options);
@@ -34,53 +39,77 @@ namespace Managers {
 
         private async void Start() 
         {
-            // 1. Reduced delay to the minimum needed for SDK stability
+            
+            lastReachability = Application.internetReachability;
             await Task.Delay(100); 
+
+            if (Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                if (LocalAccountManager.Instance != null && LocalAccountManager.Instance.SavedAccount != null)
+                {
+                    // If offline, the Local Manager ALREADY loaded the data in its Awake method.
+                    // We just transition to the Menu.
+                    GameManager.Instance.ChangeState(GameState.Menu);
+                }
+                else
+                {
+                    GameManager.Instance.ChangeState(GameState.Authentication);
+                }
+                return; 
+            }
 
             try 
             {
                 bool isRecovered = await TryManualRecovery();
-
                 if (isRecovered && Client.Auth.CurrentSession != null) 
                 {
                     ProfileDTO profile = await GetMyProfile();
-            
                     if (profile != null) 
                     {
-                        PlayerManager.Instance.SetMainAccount(profile);
-                        
-                        // 2. SUCCESS: Jump directly to the Menu (Bar will appear, etc.)
+                        // --- THE FIX: REMOVED SetMainAccount(profile) ---
+                        // Only let the Local Manager handle this data!
+                        if (LocalAccountManager.Instance != null) {
+                            LocalAccountManager.Instance.SaveProfileFromCloud(profile);
+                        }
                         GameManager.Instance.ChangeState(GameState.Menu);
                         return;
                     }
                 }
             }
-            catch (System.Exception e)
-            {
-                Debug.LogWarning("Persistence check failed: " + e.Message);
-            }
+            catch (System.Exception e) { Debug.LogWarning("Persistence failed: " + e.Message); }
 
-            // 3. FAILURE: Now show the Authentication Canvas
             GameManager.Instance.ChangeState(GameState.Authentication);
         }
+        
+        
+        private void Update()
+        {
+            // --- THE AUTO-REFRESH MIRACLE ---
+            NetworkReachability currentReachability = Application.internetReachability;
 
-        // --- NEW: THE BULLETPROOF RECOVERY METHOD ---
+            // If we were offline and now we are online
+            if (lastReachability == NetworkReachability.NotReachable && 
+                currentReachability != NetworkReachability.NotReachable)
+            {
+                Debug.Log("<color=green>Internet Restored! Refreshing Lobby Data...</color>");
+                _ = PreloadLobbyData(); // Silently fetch data
+            }
+
+            lastReachability = currentReachability;
+        }
+
         private async Task<bool> TryManualRecovery()
         {
-            // Make sure this string matches the one in your UnitySessionHandler!
             string key = "supabase_session"; 
-
             if (PlayerPrefs.HasKey(key))
             {
                 try
                 {
                     string json = PlayerPrefs.GetString(key);
-                    // Manually convert the text back into a Session object
                     var session = Newtonsoft.Json.JsonConvert.DeserializeObject<Supabase.Gotrue.Session>(json);
 
                     if (session != null && !string.IsNullOrEmpty(session.AccessToken))
                     {
-                        // This "Hand-Feeds" the token back into the Supabase Client
                         await Client.Auth.SetSession(session.AccessToken, session.RefreshToken);
                         return true;
                     }
@@ -98,34 +127,29 @@ namespace Managers {
         {
             try 
             {
-                // --- FIXED: Changed 'supabase' to 'Client' ---
                 if (Client.Auth.CurrentUser == null) return null;
-
-                var response = await Client
-                    .From<ProfileDTO>()
-                    .Where(x => x.id == Client.Auth.CurrentUser.Id)
-                    .Get();
-
+                var response = await Client.From<ProfileDTO>().Where(x => x.id == Client.Auth.CurrentUser.Id).Get();
                 return response.Model;
             }
-            catch (System.Exception e) 
-            {
-                Debug.LogError($"Failed to fetch profile: {e.Message}");
-                return null;
-            }
+            catch { return null; }
         }
 
-        public async Task<ProfileDTO> Login(string email, string password) {
+        public async Task<bool> Login(string email, string password) {
             try {
                 var session = await Client.Auth.SignIn(email, password);
                 if (session?.User != null) {
                     var response = await Client.From<ProfileDTO>().Filter("id", Postgrest.Constants.Operator.Equals, session.User.Id).Get();
-                    return response.Model;
+                    
+                    if (LocalAccountManager.Instance != null) {
+                        // This is the ONLY call we need. 
+                        // It will check if local > cloud before updating.
+                        LocalAccountManager.Instance.SaveProfileFromCloud(response.Model);
+                    }
+                    return true; // Return a bool, not the profile!
                 }
-                return null;
-            } catch { return null; }
+                return false;
+            } catch { return false; }
         }
-
         public async Task<bool> SignUp(string email, string password, string username) {
             try {
                 var options = new Supabase.Gotrue.SignUpOptions { Data = new Dictionary<string, object> { { "username", username } } };
@@ -140,80 +164,124 @@ namespace Managers {
             PlayerPrefs.DeleteKey("supabase_session");
             PlayerPrefs.Save();
 
-            // --- THE FIX: Clear the data in the Manager! ---
-            // If we don't do this, the next person who logs in might 
-            // briefly see the previous player's stats!
-            if (PlayerManager.Instance != null)
-            {
-                // We'll add this method to PlayerManager next
-                PlayerManager.Instance.ClearHostAccount(); 
-            }
+            if (PlayerManager.Instance != null) PlayerManager.Instance.ClearHostAccount(); 
+            if (LocalAccountManager.Instance != null) LocalAccountManager.Instance.WipeLocalData();
 
             GameManager.Instance.ChangeState(GameState.Authentication);
         }
 
         public async Task<ProfileDTO> SearchPlayerByEmail(string targetEmail) {
-            try
-            {
-                var response = await Client
-                    .From<ProfileDTO>()
-                    .Where(x => x.email == targetEmail.Trim().ToLower())
-                    .Get();
-
-                return response.Model; // Returns the first profile found
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError("Search failed: " + e.Message);
-                return null;
-            }
+            try {
+                string cleanEmail = targetEmail.Trim().Replace("\u200B", "").ToLower();
+                var response = await Client.From<ProfileDTO>().Where(x => x.email == cleanEmail).Get();
+                return (response.Models != null && response.Models.Count > 0) ? response.Models[0] : null;
+            } catch { return null; }
         }
         
+        public async Task<List<Data.CharacterData>> FetchCharactersForPlayer(string profileId)
+        {
+            try {
+                List<Data.CharacterData> characterList = new List<Data.CharacterData>();
+                var savedCharsResponse = await Client.From<Data.DTO.SavedCharacterDTO>().Where(x => x.profile_id == profileId).Get();
+
+                if (savedCharsResponse.Models != null) {
+                    foreach (var charDto in savedCharsResponse.Models) {
+                        characterList.Add(new Data.CharacterData {
+                            id = charDto.id,
+                            nickname = charDto.nickname,
+                            skin_url = charDto.skin_url,
+                            Items = new List<Data.ItemData>() 
+                        });
+                    }
+                }
+                return characterList;
+            } catch { return new List<Data.CharacterData>(); }
+        }
+
+        // --- SHOP & ECONOMY ---
         public async Task<bool> UnlockCategory(long categoryId, int price) {
             try {
                 var user = Client.Auth.CurrentUser;
                 if (user == null) return false;
 
-                if (PlayerManager.Instance.HostAccount.Stars < price) return false;
+                if (LocalAccountManager.Instance.SavedAccount.Stars < price) return false;
 
-                int newStars = PlayerManager.Instance.HostAccount.Stars - price;
+                int newStars = LocalAccountManager.Instance.SavedAccount.Stars - price;
+                
+                // 1. Update Cloud
                 await Client.From<Data.DTO.ProfileDTO>()
-                    .Where(x => x.id == user.Id)
-                    .Set(x => x.stars, newStars)
-                    .Update();
+                    .Where(x => x.id == user.Id).Set(x => x.stars, newStars).Update();
 
                 var unlockData = new Data.DTO.ProfileCategoryDTO {
-                    profile_id = user.Id,
-                    category_id = categoryId,
-                    is_locked = false
+                    profile_id = user.Id, category_id = categoryId, is_locked = false
                 };
                 await Client.From<Data.DTO.ProfileCategoryDTO>().Upsert(unlockData);
 
-                PlayerManager.Instance.HostAccount.Stars = newStars;
+                // 2. Update Local Memory
+                LocalAccountManager.Instance.SavedAccount.Stars = newStars;
+                
+                // --- THE FIX: Save the new star count to the phone's disk! ---
+                // We manually trigger the Local Manager to save the new JSON
+                // We use Reflection or make SaveToDisk public. 
+                // Let's call AddMatchStats with 0s to force a save:
+                LocalAccountManager.Instance.AddMatchStats(0, 0, 0, 0, 0, 0, 0); 
+                
+                PlayerManager.Instance.UpdateHostStars(newStars);
                 return true;
-            } catch (System.Exception e) {
-                Debug.LogError("Unlock failed: " + e.Message);
-                return false;
-            }
+            } catch { return false; }
         }
      
         public async Task<List<long>> GetUnlockedCategoryIds() {
             try {
                 if (Client.Auth.CurrentUser == null) return new List<long>();
-
-                var response = await Client.From<Data.DTO.ProfileCategoryDTO>()
-                    .Where(x => x.profile_id == Client.Auth.CurrentUser.Id)
-                    .Where(x => x.is_locked == false)
-                    .Get();
+                var response = await Client.From<Data.DTO.ProfileCategoryDTO>().Where(x => x.profile_id == Client.Auth.CurrentUser.Id).Where(x => x.is_locked == false).Get();
 
                 List<long> ids = new List<long>();
-                foreach (var item in response.Models) {
-                    ids.Add(item.category_id);
-                }
+                foreach (var item in response.Models) ids.Add(item.category_id);
                 return ids;
-            } catch {
-                return new List<long>(); 
-            }
+            } catch { return new List<long>(); }
         }
+        
+        
+        // Method to fetch data silently in the background
+        public async Task PreloadLobbyData()
+        {
+            if (Application.internetReachability == NetworkReachability.NotReachable) return;
+
+            try {
+                // Fetch Leaderboard
+                var leaderResponse = await Client.From<ProfileDTO>()
+                    .Order("score", Postgrest.Constants.Ordering.Descending)
+                    .Limit(10).Get();
+                CachedGlobalLeaderboard = leaderResponse.Models;
+
+                // Fetch Categories
+                CachedCloudCategories = await CategoryCloudManager.Instance.GetCategoryList();
+                CachedUnlockedIds = await GetUnlockedCategoryIds();
+            
+                // --- THE SIGNAL: Tell the UI that data is now in memory! ---
+                OnLobbyDataReady?.Invoke();
+            
+                Debug.Log("<color=green>Lobby: Pre-load complete!</color>");
+            } catch { }
+        }
+        
+        
+        // public async Task RefreshLobbyCache()
+        // {
+        //     if (Application.internetReachability == NetworkReachability.NotReachable) return;
+        //
+        //     try {
+        //         // 1. Fetch Categories
+        //         CachedCloudCategories = await CategoryCloudManager.Instance.GetCategoryList();
+        //
+        //         // 2. Fetch Unlocks
+        //         CachedUnlockedIds = await GetUnlockedCategoryIds();
+        //
+        //         Debug.Log("<color=green>Lobby Cache Refreshed Successfully.</color>");
+        //     } catch {
+        //         Debug.LogWarning("Failed to refresh lobby cache (Internet issue?).");
+        //     }
+        // }
     }
 }

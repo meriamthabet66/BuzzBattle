@@ -125,9 +125,7 @@ namespace UI {
             MatchSetupData.SelectedCategories = new List<Category>(localCategories);
             MatchSetupData.QType = SelectedQuestionType; 
 
-            // --- THE FIX: CHANGE STATE FIRST ---
-            // This turns on the Gameplay Canvas so it's ready to receive data
-            GameManager.Instance.ChangeState(GameState.Gameplay);
+            
 
             // --- THEN START THE MATCH ---
             if (!Managers.MatchManager.Instance.IsMatchActive)
@@ -136,6 +134,11 @@ namespace UI {
             }
 
             Managers.MatchManager.Instance.StartRound(MatchSetupData.SelectedCategories, MatchSetupData.QType);
+            
+            
+            // --- THE FIX: CHANGE STATE FIRST ---
+            // This turns on the Gameplay Canvas so it's ready to receive data
+            GameManager.Instance.ChangeState(GameState.Gameplay);
         }
     }
 }

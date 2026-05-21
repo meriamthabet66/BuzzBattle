@@ -17,6 +17,8 @@ MemoryCaptures/
 *.svd
 .idea/
 .vscode/
+*.asset
+*.ttf
 
 # OS generated
 .DS_Store

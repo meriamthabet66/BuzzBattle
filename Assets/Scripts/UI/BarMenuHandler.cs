@@ -16,6 +16,7 @@ namespace UI
         [SerializeField] private Button accountBtn;
 
         private List<BarButtonUI> allBarButtons = new List<BarButtonUI>();
+        
 
         private void Start()
         {

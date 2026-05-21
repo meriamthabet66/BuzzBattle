@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
@@ -19,6 +20,9 @@ namespace UI
         // [SerializeField] private Color inactiveColor = Color.white;
 
         // This is called by the BarMenuHandler
+
+        
+
         public void SetState(bool isActive)
         {
             // 1. Swap the Sprite

@@ -36,7 +36,7 @@ namespace Managers {
         // --- NEW: VERBAL STATE MACHINE ---
         private enum VerbalState { None, WaitingForBuzz, AnsweringOriginal, Stealing, AnsweringSteal }
         private VerbalState currentVerbalState = VerbalState.None;
-        private int originalVerbalPlayer = -1;
+        private int originalBuzzerPlayer = -1; 
         private int verbalTargetPlayer = -1;
 
         private void OnEnable()
@@ -80,7 +80,7 @@ namespace Managers {
             {
                 roundActive = false;
                 currentlyAnsweringPlayer = -1;
-                originalVerbalPlayer = -1;
+                originalBuzzerPlayer = -1;
                 verbalTargetPlayer = -1;
                 currentVerbalState = VerbalState.None;
 
@@ -96,7 +96,7 @@ namespace Managers {
         {
             currentlyAnsweringPlayer = -1;
             verbalTargetPlayer = -1;
-            originalVerbalPlayer = -1;
+            originalBuzzerPlayer = -1;
             currentQuestionAttempts = 0; 
             blockedPlayers.Clear(); 
             
@@ -144,28 +144,34 @@ namespace Managers {
         {
             if (blockedPlayers.Contains(playerIndex) || currentlyAnsweringPlayer != -1) return;
 
-            // --- THE VERBAL STEAL FLOW ---
+            // --- THE FIX: Record the original buzzer for MCQ & Verbal ---
+            if (originalBuzzerPlayer == -1) 
+            {
+                originalBuzzerPlayer = playerIndex;
+            }
+
+            // --- VERBAL FLOW ---
             if (currentVerbalState != VerbalState.None)
             {
                 if (currentVerbalState == VerbalState.WaitingForBuzz)
                 {
-                    // Phase 1: Original Answer
-                    originalVerbalPlayer = playerIndex;
                     verbalTargetPlayer = playerIndex;
-                    currentlyAnsweringPlayer = playerIndex; // Blocks others from buzzing
+                    currentlyAnsweringPlayer = playerIndex; 
                     currentVerbalState = VerbalState.AnsweringOriginal;
                     
-                    OnValidPlayerBuzzed?.Invoke(playerIndex); // Dims other players
+                    OnValidPlayerBuzzed?.Invoke(playerIndex); 
                     StartTimer(QuestionRules.VerbalTime, OnVerbalAnswerOriginalFinished);
                 }
                 else if (currentVerbalState == VerbalState.Stealing)
                 {
                     // Phase 2: A player steals!
                     verbalTargetPlayer = playerIndex;
-                    currentlyAnsweringPlayer = playerIndex; // Blocks others from stealing
+                    currentlyAnsweringPlayer = playerIndex; 
                     currentVerbalState = VerbalState.AnsweringSteal;
                     
-                    OnValidPlayerBuzzed?.Invoke(playerIndex); // Dims other players
+                    OnValidPlayerBuzzed?.Invoke(playerIndex); 
+                    
+                    // --- THE FIX: We MUST start the Steal Answer timer! ---
                     StartTimer(QuestionRules.VerbalTime, OnVerbalStealAnswerFinished);
                 }
                 return;
@@ -176,7 +182,6 @@ namespace Managers {
             OnValidPlayerBuzzed?.Invoke(playerIndex); 
             StartTimer(currentRound.questionTimerSeconds, OnAnswerTimeOut);
         }
-
         // --- VERBAL TIMEOUTS ---
         private void OnVerbalAnswerOriginalFinished()
         {
@@ -198,7 +203,7 @@ namespace Managers {
         private void OnVerbalStealWindowFinished()
         {
             // 5s passed and no one stole. Open panel to evaluate original player.
-            verbalTargetPlayer = originalVerbalPlayer; 
+            verbalTargetPlayer =  originalBuzzerPlayer; 
             OnVerbalEvaluationStarted?.Invoke(verbalTargetPlayer);
         }
 
@@ -220,25 +225,24 @@ namespace Managers {
         {
             if (activeTimer != null) StopCoroutine(activeTimer); 
 
-            // 1. Figure out the context
             bool isVerbal = questionLoader.CurrentQuestion is VerbalQuestion;
-            bool isSteal = isVerbal && (playerIndex != originalVerbalPlayer);
+            
+            // --- THE FIX: It is a steal if the player answering is NOT the original buzzer! ---
+            bool isSteal = (playerIndex != originalBuzzerPlayer);
 
-            // 2. TELL THE SCORE MANAGER TO DO THE MATH!
             if (ScoreManager.Instance != null)
             {
                 ScoreManager.Instance.CalculateAndApplyScore(playerIndex, result, isVerbal, isSteal);
             }
 
-            // 3. Move to the next state
             if (result == AnswerResult.Correct || result == AnswerResult.Almost)
             {
                 OnQuestionCompleted(); 
             }
             else
             {
-                if (isVerbal) OnQuestionCompleted(); // Verbal questions end immediately on a wrong evaluation
-                else ProcessFailedAttempt();         // MCQ gives others a chance to steal
+                if (isVerbal) OnQuestionCompleted(); 
+                else ProcessFailedAttempt();         
             }
         }
 

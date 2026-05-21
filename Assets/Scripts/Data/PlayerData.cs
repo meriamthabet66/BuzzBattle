@@ -1,25 +1,20 @@
-using System.Collections.Generic;
-using Data;
-using UnityEngine;
-
 [System.Serializable]
 public class PlayerData
 {
     public int ID;
-
     public string DisplayName;
 
-    public int RoundScore; // <--- NEW: Tracks just this round
-    public int TotalScore; // <--- NEW: Accumulates the whole match
-    public int Steals;
+    public int RoundScore; 
+    public int TotalScore; 
+    
+    // --- STATS FOR THIS SPECIFIC MATCH ---
+    public int Steals;              // Total attempts
+    public int CorrectStealsInMatch; // Only successful ones
+    
+    public bool MatchWon;      // --- NEW: Did they win the Normal Match?
+    public bool TournamentWon; // --- NEW: Did they win the Tournament?
 
     public int SelectedCharacterID;
-
-    // Optional link to account
-    public AccountData LinkedAccount;
-    
-    // --- NEW FOR TOURNAMENTS ---
+    public Data.AccountData LinkedAccount;
     public bool IsEliminated = false; 
-   
 }
-

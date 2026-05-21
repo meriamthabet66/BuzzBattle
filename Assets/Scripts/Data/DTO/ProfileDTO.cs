@@ -1,4 +1,5 @@
-﻿using Postgrest.Models;
+﻿using System;
+using Postgrest.Models;
 // Explicitly map the attributes to avoid conflicts with Unity's internal libraries
 using TableAttribute = Postgrest.Attributes.TableAttribute;
 using ColumnAttribute = Postgrest.Attributes.ColumnAttribute;
@@ -38,5 +39,8 @@ namespace Data.DTO
         
         [Column("tournament_wins")] 
         public int tournament_wins { get; set; }
+        
+        [Column("last_updated")] 
+        public DateTime last_updated { get; set; }
     }
 }

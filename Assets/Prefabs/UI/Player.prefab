@@ -381,6 +381,14 @@ PrefabInstance:
       propertyPath: m_VerticalAlignment
       value: 512
       objectReference: {fileID: 0}
+    - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 190.577
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 7857917325388131724, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -479,12 +487,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 23.65
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 36
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -524,7 +532,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
-  preserveNumbers: 0
+  preserveNumbers: 1
   farsi: 0
   originalText: "\u0627\u0633\u0645 \u0627\u0644\u0644\u0627\u0639\u0628"
   fixTags: 1

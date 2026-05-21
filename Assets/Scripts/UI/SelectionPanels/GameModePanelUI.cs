@@ -8,7 +8,8 @@ namespace UI
     public class GameModePanelUI : MonoBehaviour
     {
         [Header("Navigation")]
-        [SerializeField] private GameObject nextPanel; 
+        [SerializeField] private GameObject playerSetupPanel; // The normal one
+        [SerializeField] private GameObject teamsSetupPanel; 
 
         [Header("Player Count UI")]
         [SerializeField] private TMP_Text playerCountText; 
@@ -115,7 +116,18 @@ namespace UI
         {
             MatchSetupData.PlayerCount = localPlayerCount;
             MatchSetupData.Mode = localSelectedMode;
-            MenuController.Instance.OpenPanel(nextPanel);
+
+            // --- THE BRANCHING FIX ---
+            if (localSelectedMode == GameMode.Teams)
+            {
+                // Force player count logic for teams (usually 4 players total, but 2 active entities)
+                MatchSetupData.PlayerCount = 2; 
+                MenuController.Instance.OpenPanel(teamsSetupPanel);
+            }
+            else
+            {
+                MenuController.Instance.OpenPanel(playerSetupPanel);
+            }
         }
     }
-}
+    }

@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public static event Action OnGameplayStart;
     
     
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -49,6 +50,7 @@ public class GameManager : MonoBehaviour
         ExitState(CurrentState);
         CurrentState = newState;
         EnterState(CurrentState);
+        
 
         OnStateChanged?.Invoke(CurrentState);
         Debug.Log($"GameState changed to: {CurrentState}");
