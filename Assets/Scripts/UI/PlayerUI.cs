@@ -56,11 +56,20 @@ namespace UI
 
             if (pData == null || pData.IsEliminated) 
             {
-                gameObject.SetActive(false); // Hide their buzzer from the table!
+                gameObject.SetActive(false); 
             }
             else
             {
                 gameObject.SetActive(true); 
+                
+                // --- THE VISUAL RESET FIX ---
+                // Reset the internal block flag
+                isPermanentlyBlocked = false; 
+
+                // Force the button to be clickable and the opacity to be 100%
+                if (buzzerButton != null) buzzerButton.interactable = true;
+                if (canvasGroup != null) canvasGroup.alpha = 1f;
+
                 if (nameText != null) nameText.text = pData.DisplayName;
             }
         }

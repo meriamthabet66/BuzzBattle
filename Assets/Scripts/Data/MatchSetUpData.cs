@@ -16,9 +16,14 @@ namespace Data {
             public static QuestionType QType = QuestionType.MultipleChoice;
             public static List<Category> SelectedCategories = new List<Category>();
 
-            public static void ResetData() {
+            public static void ResetData()
+            {
+                PlayerCount = 4;
+                Mode = GameMode.Normal;
+                Rounds = 3;
+                QuestionsPerRound = 10;
+                QType = QuestionType.MultipleChoice;
                 SelectedCategories.Clear();
-                // Reset other defaults if needed when returning to main menu
             }
         }
     }

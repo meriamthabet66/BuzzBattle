@@ -58,5 +58,25 @@ namespace Managers
             QuestionRules.VerbalTime = PlayerPrefs.GetInt("Timer_Verbal", 10);
             QuestionRules.BuzzTimeLimit = PlayerPrefs.GetInt("Timer_Buzz", 5);
         }
+        
+        
+        
+
+
+        public void ResetAllSettings()
+        {
+            // 1. Delete the saved PlayerPrefs
+            PlayerPrefs.DeleteKey("MusicVol");
+            PlayerPrefs.DeleteKey("SfxVol");
+            PlayerPrefs.DeleteKey("Timer_MCQ");
+            PlayerPrefs.DeleteKey("Timer_Verbal");
+            PlayerPrefs.DeleteKey("Timer_Buzz");
+            PlayerPrefs.Save();
+
+            // 2. Reset the variables in the code
+            LoadAllSettings(); // This will reload the default values (1.0f, 5s, 10s, etc.)
+            
+            Debug.Log("<color=red>SettingsManager: All settings reset to defaults.</color>");
+        }
     }
 }

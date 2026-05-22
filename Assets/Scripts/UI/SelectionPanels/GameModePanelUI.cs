@@ -28,10 +28,17 @@ namespace UI
 
         private void OnEnable()
         {
+            
+            localPlayerCount = Data.Data.MatchSetupData.PlayerCount;
+            localSelectedMode = Data.Data.MatchSetupData.Mode;
+
+            
             UpdatePlayerCountUI();
             CheckTournamentEligibility(); // Always check rules first
             UpdateModeVisuals(); 
         }
+        
+       
 
         // --- GAME MODE LOGIC ---
 

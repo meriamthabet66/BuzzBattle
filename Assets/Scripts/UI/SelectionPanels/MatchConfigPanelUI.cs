@@ -23,6 +23,11 @@ namespace UI.Panels
 
         private void OnEnable()
         {
+            
+            
+            localRounds = MatchSetupData.Rounds;
+            localQuestions = MatchSetupData.QuestionsPerRound;
+            
             // --- NEW: Hide the Rounds UI if it's a Tournament! ---
             if (roundsUIContainer != null)
             {

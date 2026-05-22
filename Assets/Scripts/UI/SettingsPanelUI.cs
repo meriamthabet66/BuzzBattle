@@ -65,5 +65,21 @@ namespace UI.Panels
             SettingsManager.Instance.UpdateVerbalTimer(newVal);
             RefreshTimerUI();
         }
+        
+        
+        
+
+        // --- NEW: Force the UI to match the defaults ---
+        public void ResetUI()
+        {
+            // Update sliders
+            if (musicSlider != null) musicSlider.value = 1.0f; // Default 100%
+            if (sfxSlider != null) sfxSlider.value = 1.0f;
+
+            // Update timer texts
+            RefreshTimerUI();
+            
+            Debug.Log("<color=red>Settings UI: Sliders and Texts reset.</color>");
+        }
     }
 }

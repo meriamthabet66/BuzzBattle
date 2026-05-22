@@ -83,6 +83,14 @@ namespace Managers {
                 originalBuzzerPlayer = -1;
                 verbalTargetPlayer = -1;
                 currentVerbalState = VerbalState.None;
+                currentQuestionAttempts = 0; // Reset attempts too
+
+                // --- THE CRITICAL FIXES ---
+                // 1. Clear the list of blocked people
+                blockedPlayers.Clear(); 
+                
+                // 2. Tell all PlayerUI scripts to restore opacity to 100%
+                OnNewQuestionLoaded?.Invoke(); 
 
                 // KILL ALL GHOST TIMERS!
                 StopAllCoroutines(); 

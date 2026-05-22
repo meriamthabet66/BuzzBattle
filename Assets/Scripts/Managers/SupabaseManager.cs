@@ -158,14 +158,47 @@ namespace Managers {
             } catch { return false; }
         }
         
-        public void Logout()
+       public void Logout()
         {
             Client.Auth.SignOut();
             PlayerPrefs.DeleteKey("supabase_session");
+            
+            // 1. RESET LOGIC: Revert timers and volume in memory/disk
+            if (SettingsManager.Instance != null)
+            {
+                SettingsManager.Instance.ResetAllSettings();
+            }
+
+            // 2. RESET VISUALS: Revert sliders and texts (even if panel is hidden)
+            var settingsPanel = FindFirstObjectByType<UI.Panels.SettingsPanelUI>(FindObjectsInactive.Include);
+            if (settingsPanel != null)
+            {
+                settingsPanel.ResetUI();
+            }
+            
             PlayerPrefs.Save();
 
-            if (PlayerManager.Instance != null) PlayerManager.Instance.ClearHostAccount(); 
-            if (LocalAccountManager.Instance != null) LocalAccountManager.Instance.WipeLocalData();
+            if (LocalAccountManager.Instance != null)
+                LocalAccountManager.Instance.WipeLocalData();
+
+            if (PlayerManager.Instance != null)
+                PlayerManager.Instance.GlobalLogoutReset();
+
+            // 1. WIPE Individual Player Slots
+            var setupPanel = FindFirstObjectByType<UI.Panels.PlayerSetupPanelUI>(FindObjectsInactive.Include);
+            if (setupPanel != null) setupPanel.ResetAllSlots();
+
+            // 2. WIPE Team Names
+            var teamsPanel = FindFirstObjectByType<UI.SelectionPanels.TeamsSetupPanelUI>(FindObjectsInactive.Include);
+            if (teamsPanel != null) teamsPanel.ResetFields();
+
+            // 3. --- THE FIX: RESET Profile Popup ---
+            var profilePanel = FindFirstObjectByType<UI.ProfilePanelUI>(FindObjectsInactive.Include);
+            if (profilePanel != null) profilePanel.ResetUI();
+
+            // 4. RESET MENU: Back to Home tab
+            var barMenu = FindFirstObjectByType<UI.BarMenuHandler>(FindObjectsInactive.Include);
+            if (barMenu != null) barMenu.OnTabClicked(0);
 
             GameManager.Instance.ChangeState(GameState.Authentication);
         }

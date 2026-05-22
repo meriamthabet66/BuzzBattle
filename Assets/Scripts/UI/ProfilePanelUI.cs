@@ -147,5 +147,15 @@ namespace UI
         {
             SupabaseManager.Instance.Logout();
         }
+        
+        
+        public void ResetUI()
+        {
+            if (logoutWarningPopup != null)
+            {
+                logoutWarningPopup.SetActive(false);
+            }
+            Debug.Log("<color=red>Profile Panel: Warning popup reset.</color>");
+        }
     }
 }

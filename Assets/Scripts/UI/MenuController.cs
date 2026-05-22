@@ -1,25 +1,24 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Data.Data; // To check MatchSetupData.Mode
 
 namespace UI {
     public class MenuController : MonoBehaviour
     {
         public static MenuController Instance { get; private set; }
 
-        [SerializeField] private GameObject startingPanel; 
+        [Header("Menu Panels")]
+        [SerializeField] private GameObject startingPanel; // HomePanel
+        [SerializeField] private GameObject gameModePanel;
+        [SerializeField] private GameObject playerSetupPanel;
+        [SerializeField] private GameObject teamsSetupPanel;
+        [SerializeField] private GameObject matchConfigPanel;
         [SerializeField] private GameObject categoryPanel; 
-        
-        [Header("Rematch Back-Button Route")]
-        [Tooltip("Drag the panels here in the order of your flow: Home -> Mode -> Players -> Config")]
-        [SerializeField] private GameObject[] rematchBackHistory; 
         
         private Stack<GameObject> panelHistory = new Stack<GameObject>();
         private GameObject currentPanel;
 
-        private void Awake()
-        {
-            Instance = this;
-        }
+        private void Awake() { Instance = this; }
 
         private void OnEnable()
         {
@@ -28,15 +27,27 @@ namespace UI {
 
             if (GameManager.Instance != null && GameManager.Instance.CurrentState == GameState.CategorySelection)
             {
-                // --- THE FULL HISTORY FIX ---
-                // If it's a rematch, build the entire history stack!
+                // --- THE DYNAMIC HISTORY FIX ---
                 if (!Managers.MatchManager.Instance.IsMatchActive)
                 {
-                    // Push them in order, so the last one pushed is the first one they go back to.
-                    foreach (GameObject panel in rematchBackHistory)
+                    // 1. Push Home
+                    if (startingPanel != null) panelHistory.Push(startingPanel);
+                    
+                    // 2. Push Mode Selection
+                    if (gameModePanel != null) panelHistory.Push(gameModePanel);
+                    
+                    // 3. BRANCH: Push the correct Setup Panel based on Mode
+                    if (MatchSetupData.Mode == GameMode.Teams)
                     {
-                        if (panel != null) panelHistory.Push(panel);
+                        if (teamsSetupPanel != null) panelHistory.Push(teamsSetupPanel);
                     }
+                    else
+                    {
+                        if (playerSetupPanel != null) panelHistory.Push(playerSetupPanel);
+                    }
+                    
+                    // 4. Push Match Config (the screen immediately before Categories)
+                    if (matchConfigPanel != null) panelHistory.Push(matchConfigPanel);
                 }
 
                 if (categoryPanel != null) OpenPanel(categoryPanel);
@@ -66,8 +77,6 @@ namespace UI {
                 currentPanel = panelHistory.Pop();
                 currentPanel.SetActive(true);
 
-                // --- NEW LOGIC: Check if we just went back to the Home Panel ---
-                // If the panel we just opened is the 'startingPanel' (Home), return to Menu state
                 if (currentPanel == startingPanel)
                 {
                     GameManager.Instance.ChangeState(GameState.Menu);
@@ -75,7 +84,6 @@ namespace UI {
             }
             else
             {
-                // This handles edge cases where history is empty
                 GameManager.Instance.ChangeState(GameState.Menu);
             }
         }

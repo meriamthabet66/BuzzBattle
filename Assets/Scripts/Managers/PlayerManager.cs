@@ -225,5 +225,21 @@ namespace Managers
                     break;
             }
         }
+        
+        
+        
+        public void GlobalLogoutReset()
+        {
+            // 1. Clear the Host
+            ClearHostAccount();
+
+            // 2. Clear the active player list
+            ResetPlayers();
+
+            // 3. Reset the static match config
+            Data.Data.MatchSetupData.ResetData();
+    
+            Debug.Log("<color=red>PlayerManager: Global Reset Complete.</color>");
+        }
     }
 }

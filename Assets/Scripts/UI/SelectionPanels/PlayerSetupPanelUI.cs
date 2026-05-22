@@ -29,8 +29,16 @@ namespace UI.Panels
             {
                 if (inputSections[i] != null) inputSections[i].gameObject.SetActive(i < count);
             }
+            
+            if (PlayerManager.Instance.Players.Count == 0)
+            {
+                foreach (var slot in inputSections) slot.ClearSlot();
+            }
+            
             RefreshHostButtonState();
         }
+        
+        
 
         public void RefreshHostButtonState()
         {
@@ -109,6 +117,15 @@ namespace UI.Panels
                 if (inputSections[i] != null) inputSections[i].AddSelfToManager();
             }
             MenuController.Instance.OpenPanel(nextPanel);
+        }
+        
+        
+        public void ResetAllSlots()
+        {
+            foreach (var slot in inputSections)
+            {
+                if (slot != null) slot.ClearSlot();
+            }
         }
     }
 }

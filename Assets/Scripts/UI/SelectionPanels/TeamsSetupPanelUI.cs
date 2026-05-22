@@ -2,6 +2,7 @@
 using TMPro;
 using Managers;
 using Data.Data;
+using RTLTMPro;
 
 namespace UI.SelectionPanels
 {
@@ -10,9 +11,23 @@ namespace UI.SelectionPanels
         [Header("Input Fields")]
         [SerializeField] private TMP_InputField teamANameInput;
         [SerializeField] private TMP_InputField teamBNameInput;
+        [SerializeField] private RTLTextMeshPro teamANameDisplay;
+        [SerializeField] private RTLTextMeshPro teamBNameDisplay;
 
         [Header("Navigation")]
         [SerializeField] private GameObject nextPanel; // Usually MatchConfigPanel
+        
+        
+        
+        public void ResetFields()
+        {
+            if (teamANameInput != null) teamANameInput.text = "";
+            if (teamBNameInput != null) teamBNameInput.text = "";
+            if (teamANameDisplay != null) teamANameDisplay.text = "";
+            if (teamBNameDisplay != null) teamBNameDisplay.text = "";
+            Debug.Log("<color=red>Teams Panel: Fields wiped.</color>");
+        }
+
 
         public void OnClickConfirm()
         {
