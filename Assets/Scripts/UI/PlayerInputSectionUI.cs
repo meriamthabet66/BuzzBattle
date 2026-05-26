@@ -24,6 +24,10 @@ namespace UI
         [Header("Popup")]
         [SerializeField] private CharacterLinkPopup linkPopup;
 
+        [SerializeField] private GameObject globalOfflinePopup;
+        
+        [SerializeField] private FoxOutfitRenderer slotOutfitRenderer;
+
         public ProfileDTO LinkedProfile { get; private set; }
         public string DisplayName { get; private set; }
         public long CharacterId { get; private set; }
@@ -52,8 +56,20 @@ namespace UI
 
         private void OnOpenPopup()
         {
-            if (linkPopup != null) linkPopup.OpenForSlot(this);
+            // --- THE SMART ROUTER ---
+            if (Application.internetReachability == NetworkReachability.NotReachable)
+            {
+                // OFFLINE: Show the warning popup
+                if (globalOfflinePopup != null) globalOfflinePopup.SetActive(true);
+            }
+            else
+            {
+                // ONLINE: Open the character selection normally
+                if (linkPopup != null) linkPopup.OpenForSlot(this);
+            }
         }
+
+        // Update the SetLinkedData method in PlayerInputSectionUI.cs
 
         public void SetLinkedData(long charId, ProfileDTO profile)
         {
@@ -62,29 +78,33 @@ namespace UI
 
             if (profile != null)
             {
-                // 1. Lock the slot to the Account
                 DisplayName = profile.username;
-                
-                // We physically update the input field so the RTL script reacts to it
-                if (guestNameInput != null) 
-                {
-                    // Temporarily remove listener so it doesn't trigger OnNameTyped
+                if (displayNameText != null) displayNameText.text = profile.username;
+                if (guestNameInput != null) {
                     guestNameInput.onValueChanged.RemoveListener(OnNameTyped);
                     guestNameInput.text = profile.username;
                     guestNameInput.onValueChanged.AddListener(OnNameTyped);
-                    
-                    guestNameInput.interactable = false; // Lock the input
+                    guestNameInput.interactable = false; 
                 }
-                
                 if (clearAccountButton != null) clearAccountButton.gameObject.SetActive(true);
             }
 
+            // --- THE FIX: The Fox Overlay is ALWAYS ON now! ---
             if (characterOverlayImage != null)
             {
-                characterOverlayImage.gameObject.SetActive(charId != -1);
+                characterOverlayImage.gameObject.SetActive(true); // Always true
             }
 
-            // Tell the main panel to recheck if the Host Button should be disabled
+            if (slotOutfitRenderer != null)
+            {
+                slotOutfitRenderer.gameObject.SetActive(true); // Always true
+                
+                // If they picked a character, it passes the ID and dresses it.
+                // If they picked nothing (-1), the renderer will strip all clothes off!
+                CharacterData tempFox = new CharacterData { id = charId };
+                slotOutfitRenderer.RenderOutfit(tempFox);
+            }
+
             PlayerSetupPanelUI hostPanel = GetComponentInParent<PlayerSetupPanelUI>();
             if (hostPanel != null) hostPanel.RefreshHostButtonState();
         }

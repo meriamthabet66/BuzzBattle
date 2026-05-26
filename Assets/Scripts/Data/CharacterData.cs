@@ -8,6 +8,8 @@ namespace Data {
         public string nickname;
         public string skin_url;
         public List<ItemData> Items;
+        
+        public System.Collections.Generic.List<string> EquippedItemNames = new();
 
     }
 }

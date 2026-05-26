@@ -9,6 +9,7 @@ namespace Data.DTO {
         [PrimaryKey("id")] public long id { get; set; }
         [Column("item_name")] public string item_name { get; set; }
         [Column("item_type")] public string item_type { get; set; }
+        [Column("item_image_url")] public string item_image_url { get; set; }
         [Column("price")] public int price { get; set; }
     }
 }

@@ -29,11 +29,19 @@ namespace UI
             SupabaseManager.OnLobbyDataReady -= RefreshLeaderboard;
         }
 
-        public void RefreshLeaderboard()
+        public async void RefreshLeaderboard()
         {
             var data = SupabaseManager.Instance.CachedGlobalLeaderboard;
 
-            // --- THE OFFLINE MESSAGE LOGIC ---
+            // --- THE AUTO-FETCH FIX ---
+            // If data is missing but we have internet, force a fetch!
+            if ((data == null || data.Count == 0) && Application.internetReachability != NetworkReachability.NotReachable)
+            {
+                Debug.Log("Leaderboard: Data missing while online. Requesting fresh fetch...");
+                await SupabaseManager.Instance.PreloadLobbyData();
+                data = SupabaseManager.Instance.CachedGlobalLeaderboard; // Update our local reference
+            }
+
             if (data == null || data.Count == 0)
             {
                 if (offlineMessage != null) offlineMessage.SetActive(true);
@@ -41,11 +49,10 @@ namespace UI
                 return;
             }
 
-            // DATA FOUND: Hide message and show rows
+            // SUCCESS: Show the data
             if (offlineMessage != null) offlineMessage.SetActive(false);
             if (rowsContainer != null) rowsContainer.SetActive(true);
 
-            // Clear old rows and spawn new ones
             foreach (Transform child in contentContainer) Destroy(child.gameObject);
 
             for (int i = 0; i < data.Count; i++)

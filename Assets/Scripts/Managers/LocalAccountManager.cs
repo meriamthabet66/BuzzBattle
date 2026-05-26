@@ -100,6 +100,11 @@ namespace Managers
         {
             if (isSyncing || SavedAccount == null) return;
             isSyncing = true;
+            
+            if (Application.internetReachability != NetworkReachability.NotReachable)
+            {
+                await CacheCharactersLocally();
+            }
 
             try
             {
@@ -125,6 +130,43 @@ namespace Managers
             }
             catch (Exception e) { Debug.LogError("Sync Error: " + e.Message); }
             finally { isSyncing = false; }
+            
+            
+            
+        }
+        
+        
+        private async Task CacheCharactersLocally()
+        {
+            try
+            {
+                var chars = await SupabaseManager.Instance.Client.From<SavedCharacterDTO>().Where(x => x.profile_id == SavedAccount.id).Get();
+                var registry = await SupabaseManager.Instance.Client.From<OwnershipRegistryDTO>().Where(x => x.profile_id == SavedAccount.id).Get();
+                var catalog = await SupabaseManager.Instance.Client.From<ItemDTO>().Get();
+
+                SavedAccount.OwnedCharacters.Clear();
+
+                if (chars.Models != null)
+                {
+                    foreach (var c in chars.Models)
+                    {
+                        var newFox = new CharacterData { id = c.id, nickname = c.nickname };
+                        
+                        // Find what this fox is wearing
+                        var outfit = registry.Models.FindAll(x => x.character_id == c.id);
+                        foreach (var itemLink in outfit)
+                        {
+                            var itemDetails = catalog.Models.Find(i => i.id == itemLink.item_id);
+                            if (itemDetails != null) newFox.EquippedItemNames.Add(itemDetails.item_name);
+                        }
+                        
+                        SavedAccount.OwnedCharacters.Add(newFox);
+                    }
+                }
+                SaveToDisk(); // Save to phone!
+                Debug.Log("<color=green>Characters Cached for Offline Use!</color>");
+            }
+            catch { Debug.LogWarning("Failed to cache characters."); }
         }
         
         private async Task PushToCloud()
@@ -194,6 +236,21 @@ namespace Managers
             PlayerPrefs.Save();
             if (PlayerManager.Instance != null) PlayerManager.Instance.ClearHostAccount();
         }
+        
+        
+        
+        // Change from private to public!
+        public void ForceSaveToDisk()
+        {
+            if (SavedAccount == null) return;
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(SavedAccount);
+            PlayerPrefs.SetString(SAVE_KEY, json);
+            PlayerPrefs.SetInt("needs_sync", needsCloudSync ? 1 : 0);
+            PlayerPrefs.Save();
+        }
+        
+        // Don't forget to update any places inside this script that were calling 
+        // SaveToDisk() to now call ForceSaveToDisk() instead!
         
         
         

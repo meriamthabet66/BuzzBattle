@@ -41,39 +41,59 @@ namespace UI
         
         
 
-        public void OpenForSlot(PlayerInputSectionUI slot) 
+        public async void OpenForSlot(PlayerInputSectionUI slot) 
         {
             this.targetSlot = slot;
             this.foundProfile = null;
             this.selectedCharacterChoice = null;
 
-            // --- THE FIX: WIPE THE UI CLEAN ---
             if (emailInput != null) emailInput.text = "";
             if (searchStatusText != null) searchStatusText.text = "";
-            foreach (Transform child in characterGridContent) Destroy(child.gameObject);
             
             linkAccountToggle.isOn = false;
             OnToggleChanged(false);
 
             gameObject.SetActive(true);
+
+            // Fetch and populate with the Host's characters
+            string hostId = PlayerManager.Instance.HostAccount?.id;
+            if (!string.IsNullOrEmpty(hostId)) 
+            {
+                if (searchStatusText) searchStatusText.text = "Loading Host Foxes...";
+                
+                // WAIT for the database to return the Host's characters
+                List<CharacterData> hostChars = await SupabaseManager.Instance.FetchCharactersForPlayer(hostId);
+                PopulateCharacterList(hostChars);
+                
+                if (searchStatusText) searchStatusText.text = "";
+            }
+            else
+            {
+                Debug.LogWarning("No Host ID found. Cannot load default characters.");
+            }
         }
 
         private async void OnToggleChanged(bool isAccountLinkActive) 
         {
+            if (linkAccountToggleImage != null)
+                linkAccountToggleImage.sprite = isAccountLinkActive ? Toggled : NotToggled;
             
-            linkAccountToggleImage.sprite = isAccountLinkActive ? Toggled : NotToggled;
-            accountSearchSection.SetActive(isAccountLinkActive);
+            if (accountSearchSection != null)
+                accountSearchSection.SetActive(isAccountLinkActive);
             
-            // --- THE FIX: Clear characters when toggling back to Guest ---
             if (!isAccountLinkActive) 
             {
                 foundProfile = null;
                 if (searchStatusText != null) searchStatusText.text = "";
                 if (emailInput != null) emailInput.text = "";
                 
-                foreach (Transform child in characterGridContent) Destroy(child.gameObject);
-                
-                // Optional: You can spawn default "Guest" foxes here later!
+                // Revert to Host's characters
+                string hostId = PlayerManager.Instance.HostAccount?.id;
+                if (!string.IsNullOrEmpty(hostId)) 
+                {
+                    List<CharacterData> hostChars = await SupabaseManager.Instance.FetchCharactersForPlayer(hostId);
+                    PopulateCharacterList(hostChars);
+                }
             }
         }
 
@@ -105,24 +125,16 @@ namespace UI
             }
         }
 
+        // Update these methods in CharacterLinkPopup.cs
+
         private void PopulateCharacterList(List<CharacterData> characters) 
         {
-            // 1. Delete the "Dummy" display characters
-            foreach (Transform child in characterGridContent) 
-            {
-                Destroy(child.gameObject);
-            }
+            foreach (Transform child in characterGridContent) Destroy(child.gameObject);
         
             selectedCharacterChoice = null;
 
-            // 2. If no characters exist in the database, do nothing (or spawn a default one)
-            if (characters == null || characters.Count == 0) 
-            {
-                Debug.Log("No saved characters found for this account.");
-                return;
-            }
+            if (characters == null || characters.Count == 0) return;
         
-            // 3. Spawn the REAL characters from the database
             foreach (var characterData in characters) 
             {
                 GameObject newObj = Instantiate(characterItemPrefab, characterGridContent);
@@ -130,22 +142,32 @@ namespace UI
             
                 if (choiceUI != null) 
                 {
-                    // Send the database data to the prefab
                     choiceUI.Setup(characterData, this);
                 }
 
-                // Auto-select the first one in the list so the player doesn't have to
-                if (selectedCharacterChoice == null) 
-                {
-                    OnCharacterSelected(choiceUI);
-                }
+                // --- THE FIX: We REMOVED the Auto-Select logic here! ---
+                // Now, they all start unselected by default.
             }
         }
 
-        public void OnCharacterSelected(CharacterChoiceUI choice) {
-            if (selectedCharacterChoice != null) selectedCharacterChoice.Deselect();
-            selectedCharacterChoice = choice;
-            selectedCharacterChoice.Select();
+        public void OnCharacterSelected(CharacterChoiceUI choice) 
+        {
+            // --- THE FIX: Toggle Logic ---
+            // If they clicked the one that is already selected, DESELECT it!
+            if (selectedCharacterChoice == choice)
+            {
+                selectedCharacterChoice.Deselect();
+                selectedCharacterChoice = null; // No character is selected now
+            }
+            else
+            {
+                // Deselect the old one
+                if (selectedCharacterChoice != null) selectedCharacterChoice.Deselect();
+                
+                // Select the new one
+                selectedCharacterChoice = choice;
+                selectedCharacterChoice.Select();
+            }
         }
 
         public void OnConfirm() {

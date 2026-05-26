@@ -71,6 +71,7 @@ namespace Managers {
                         if (LocalAccountManager.Instance != null) {
                             LocalAccountManager.Instance.SaveProfileFromCloud(profile);
                         }
+                        _ = PreloadLobbyData();_ = PreloadLobbyData();
                         GameManager.Instance.ChangeState(GameState.Menu);
                         return;
                     }
@@ -297,6 +298,25 @@ namespace Managers {
             
                 Debug.Log("<color=green>Lobby: Pre-load complete!</color>");
             } catch { }
+        }
+        
+        // --- NEW: Direct Save for Guest Accounts (Non-Hosts) ---
+        public async Task SaveMatchResults(string profileId, int stars, int score, int matches, int wins, int tWins, int cSteals, int tSteals)
+        {
+            var parameters = new Dictionary<string, object>
+            {
+                { "p_id", profileId }, { "p_stars", stars }, { "p_score", score },
+                { "p_matches_played", matches }, { "p_match_wins", wins },
+                { "p_tournament_wins", tWins }, { "p_correct_steals", cSteals },
+                { "p_total_steals", tSteals }, { "p_last_updated", DateTime.UtcNow }
+            };
+
+            try {
+                await Client.Rpc("update_player_stats", parameters);
+                Debug.Log($"<color=green>Cloud Sync Successful for Guest ID: {profileId}</color>");
+            } catch (Exception e) {
+                Debug.LogError("Guest Cloud Save Failed: " + e.Message);
+            }
         }
         
         

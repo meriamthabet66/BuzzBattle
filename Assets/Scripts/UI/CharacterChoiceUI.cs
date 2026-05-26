@@ -6,40 +6,38 @@ namespace UI
 {
     public class CharacterChoiceUI : MonoBehaviour
     {
-        
-        [SerializeField] private Image characterImage;
         [SerializeField] private Image selectionOutline;
         [SerializeField] private Sprite SelectedOutline;
         [SerializeField] private Sprite NotSelectedOutline;
         
+        // --- NEW: Drag your layered Fox prefab here ---
+        [SerializeField] private FoxOutfitRenderer outfitRenderer; 
+        
         private CharacterLinkPopup parentPopup;
-        public long CharacterId { get; private set; } // The ID from the database
+        public long CharacterId { get; private set; } 
+        
+        
 
         public void Setup(CharacterData data, CharacterLinkPopup popup)
         {
             this.CharacterId = data.id;
             this.parentPopup = popup;
 
-            // TODO: Load the 'character' sprite from data.skin_url
-            // For now, it will just show the placeholder you have in the prefab.
-
+            // Draw the clothes!
+            if (outfitRenderer != null)
+            {
+                outfitRenderer.gameObject.SetActive(true);
+                outfitRenderer.RenderOutfit(data);
+            }
             Deselect();
         }
 
         public void OnClick()
         {
-            // Tell the main popup that I have been selected!
             parentPopup.OnCharacterSelected(this);
         }
 
-        public void Select()
-        {
-            if (selectionOutline != null) selectionOutline.sprite = SelectedOutline;
-        }
-
-        public void Deselect()
-        {
-            if (selectionOutline != null) selectionOutline.sprite = NotSelectedOutline;
-        }
+        public void Select() { if (selectionOutline != null) selectionOutline.sprite = SelectedOutline; }
+        public void Deselect() { if (selectionOutline != null) selectionOutline.sprite = NotSelectedOutline; }
     }
 }

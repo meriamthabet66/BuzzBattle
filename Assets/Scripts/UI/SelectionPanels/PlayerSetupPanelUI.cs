@@ -16,6 +16,10 @@ namespace UI.Panels
 
         [Header("Host Controls")]
         [SerializeField] private Button addHostButton; 
+        
+        // --- NEW: We need a reference to the pop-up to turn it off ---
+        [Header("Popups")]
+        [SerializeField] private GameObject characterLinkPopup;
 
         private void Start()
         {
@@ -38,7 +42,14 @@ namespace UI.Panels
             RefreshHostButtonState();
         }
         
-        
+        private void OnDisable()
+        {
+            // If the popup was left open, force it to close!
+            if (characterLinkPopup != null && characterLinkPopup.activeSelf)
+            {
+                characterLinkPopup.SetActive(false);
+            }
+        }
 
         public void RefreshHostButtonState()
         {

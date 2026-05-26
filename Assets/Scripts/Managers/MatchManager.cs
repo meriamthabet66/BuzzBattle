@@ -82,37 +82,54 @@ namespace Managers
                     if (p.TotalScore > highestScore) highestScore = p.TotalScore;
 
                 foreach (var player in PlayerManager.Instance.Players)
-                {
-                    // 1. Calculate Rewards
-                    int starsEarned = Core.Enums.StarRules.ParticipationReward;
-                    bool isWinner = (player.TotalScore == highestScore);
-                    bool wonTournament = isWinner && (currentMode == GameMode.Tournament);
+    {
+        // 1. Calculate Rewards (Participation + Win + Steals)
+        int starsEarned = Core.Enums.StarRules.ParticipationReward;
+        bool isWinner = (player.TotalScore == highestScore);
+        bool wonTournament = isWinner && (currentMode == GameMode.Tournament);
 
-                    if (wonTournament) starsEarned += Core.Enums.StarRules.TournamentWinReward;
-                    else if (isWinner) starsEarned += Core.Enums.StarRules.NormalMatchWinReward;
-                    
-                    starsEarned += (player.CorrectStealsInMatch * Core.Enums.StarRules.CorrectStealBonus);
-
-                    // 2. THE FIX: Only talk to the LOCAL manager
-                    // We check the ID to make sure we only update the Host's wallet
-                    if (player.LinkedAccount != null && LocalAccountManager.Instance.SavedAccount != null)
-                    {
-                        if (player.LinkedAccount.id == LocalAccountManager.Instance.SavedAccount.id)
-                        {
-                            Debug.Log($"<color=yellow>Handing off {starsEarned} stars to LocalAccountManager...</color>");
+        if (wonTournament) starsEarned += Core.Enums.StarRules.TournamentWinReward;
+        else if (isWinner) starsEarned += Core.Enums.StarRules.NormalMatchWinReward;
         
-                            LocalAccountManager.Instance.AddMatchStats(
-                                starsEarned, 
-                                player.TotalScore, 
-                                1, 
-                                isWinner ? 1 : 0, 
-                                wonTournament ? 1 : 0,
-                                player.CorrectStealsInMatch, 
-                                player.Steals
-                            );
-                        }
-                    }
+        starsEarned += (player.CorrectStealsInMatch * Core.Enums.StarRules.CorrectStealBonus);
+
+        // 2. CHECK FOR LINKED ACCOUNTS
+        if (player.LinkedAccount != null)
+        {
+            // CASE A: The player is the HOST of this device
+            if (LocalAccountManager.Instance.SavedAccount != null && 
+                player.LinkedAccount.id == LocalAccountManager.Instance.SavedAccount.id)
+            {
+                Debug.Log($"Saving Host Stats: {player.DisplayName}");
+                LocalAccountManager.Instance.AddMatchStats(
+                    starsEarned, player.TotalScore, 1, isWinner ? 1 : 0, 
+                    wonTournament ? 1 : 0, player.CorrectStealsInMatch, player.Steals
+                );
+            }
+            // CASE B: The player is a GUEST ACCOUNT (Friend playing on Host's phone)
+            else 
+            {
+                // We cannot save their data locally (it's not their phone), 
+                // so we push it directly to the Cloud!
+                if (Application.internetReachability != NetworkReachability.NotReachable)
+                {
+                    Debug.Log($"Pushing Guest Account stats to Cloud for: {player.DisplayName}");
+                    
+                    // We calculate the NEW totals based on their current cloud snapshot + match gains
+                    int nextStars = player.LinkedAccount.Stars + starsEarned;
+                    int nextScore = player.LinkedAccount.Score + player.TotalScore;
+                    int nextMatches = player.LinkedAccount.MatchPlayedCount + 1;
+                    int nextWins = isWinner ? player.LinkedAccount.MatchWinCount + 1 : player.LinkedAccount.MatchWinCount;
+
+                    // Call the RPC directly for this specific player ID
+                    _ = SupabaseManager.Instance.SaveMatchResults(
+                        player.LinkedAccount.id, nextStars, nextScore, nextMatches, nextWins, 
+                        (wonTournament ? 1 : 0), player.CorrectStealsInMatch, player.Steals
+                    );
                 }
+            }
+        }
+    }
 
                 GameManager.Instance.ChangeState(GameState.Results);
             }

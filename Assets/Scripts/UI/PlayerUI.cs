@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Data;
+using UnityEngine;
 using UnityEngine.UI;
 using GamePlay.Systems;
 using Managers;
@@ -14,6 +15,9 @@ namespace UI
         
         [Header("Name Display")]
         [SerializeField] private RTLTextMeshPro nameText; 
+        
+        [Header("Character Display")]
+        [SerializeField] private FoxOutfitRenderer buzzerOutfitRenderer; 
         
         private CanvasGroup canvasGroup;
         
@@ -61,16 +65,21 @@ namespace UI
             else
             {
                 gameObject.SetActive(true); 
-                
-                // --- THE VISUAL RESET FIX ---
-                // Reset the internal block flag
                 isPermanentlyBlocked = false; 
 
-                // Force the button to be clickable and the opacity to be 100%
                 if (buzzerButton != null) buzzerButton.interactable = true;
                 if (canvasGroup != null) canvasGroup.alpha = 1f;
-
                 if (nameText != null) nameText.text = pData.DisplayName;
+
+                // --- THE FIX: Always show the Fox on the buzzer! ---
+                if (buzzerOutfitRenderer != null)
+                {
+                    buzzerOutfitRenderer.gameObject.SetActive(true); // Always true
+                    
+                    // If -1, it will strip the clothes off and just show the base fox
+                    CharacterData tempFox = new CharacterData { id = pData.SelectedCharacterID };
+                    buzzerOutfitRenderer.RenderOutfit(tempFox);
+                }
             }
         }
 

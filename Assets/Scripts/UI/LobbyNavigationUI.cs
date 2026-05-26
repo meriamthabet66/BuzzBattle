@@ -25,21 +25,35 @@ namespace UI
             GameManager.OnStateChanged -= HandleStateChange;
         }
 
-        private void HandleStateChange(GameState newState)
+        // Inside LobbyNavigationUI.cs
+
+        // --- THE FIX: Added 'async' here ---
+        private async void HandleStateChange(GameState newState)
         {
             if (barMenuPanel != null) barMenuPanel.SetActive(newState == GameState.Menu);
             if (HeadPanel != null) HeadPanel.SetActive(newState == GameState.Menu);
 
             if (newState == GameState.Menu)
             {
-                // --- THE INSTANT FIX ---
-                // Silently start pre-loading leaderboard and category lists
-                // We don't use 'await' here because we don't want to block the screen
-                _ = SupabaseManager.Instance.PreloadLobbyData();
-                // _ = SupabaseManager.Instance.RefreshLobbyCache();
+                if (Application.internetReachability != NetworkReachability.NotReachable)
+                {
+                    Debug.Log("Refreshing profile from Cloud...");
+                    
+                    // Now that the method is 'async', this 'await' will work!
+                    var freshProfile = await SupabaseManager.Instance.GetMyProfile();
+                    
+                    if (freshProfile != null)
+                    {
+                        LocalAccountManager.Instance.SaveProfileFromCloud(freshProfile);
+                    }
+                    
+                    _ = SupabaseManager.Instance.PreloadLobbyData();
+                }
+                
                 if (views.Length > 0) ShowViewByIndex(0);
             }
         }
+        
 
         public void ShowViewByIndex(int index)
         {
