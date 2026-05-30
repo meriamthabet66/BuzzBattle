@@ -896,11 +896,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 30.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_margin.x
+      value: 7.8941174
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_margin.y
+      value: 6.620819
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_fontSizeBase
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5974557470822655129, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_VerticalAlignment
@@ -908,23 +924,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 190.577
+      value: 192.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 79.3579
       objectReference: {fileID: 0}
     - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 18
+      value: 12.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6299294590836166971, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.4646
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857917325388131724, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 54.0454
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857917325388131724, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 44.0017
       objectReference: {fileID: 0}
     - target: {fileID: 7857917325388131724, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8704636028658466307, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 84.6389
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704636028658466307, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 58.6176
+      value: 70.7926
+      objectReference: {fileID: 0}
+    - target: {fileID: 8704636028658466307, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17.760101
       objectReference: {fileID: 0}
     - target: {fileID: 8704636028658466307, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.309
+      value: -2.1783
       objectReference: {fileID: 0}
     - target: {fileID: 8957844526149167989, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -932,7 +972,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8957844526149167989, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 10.4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4547513733506944556, guid: 1efd79f59ab720f40ab2d697a6a5cfb9, type: 3}
@@ -1012,12 +1052,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.65
+  m_fontSize: 37.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 36
+  m_fontSizeMax: 70
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512

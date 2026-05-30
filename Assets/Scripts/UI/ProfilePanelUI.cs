@@ -29,6 +29,9 @@ namespace UI
 
         [Header("Controls")]
         [SerializeField] private Button logoutBtn;
+        
+        [SerializeField] private Button openEditPopupBtn;
+        [SerializeField] private GameObject editProfilePopup;
 
         private void Start()
         {
@@ -38,6 +41,8 @@ namespace UI
             // The buttons inside the warning
             if (confirmLogoutBtn != null) confirmLogoutBtn.onClick.AddListener(ExecuteFinalLogout);
             if (cancelLogoutBtn != null) cancelLogoutBtn.onClick.AddListener(() => ShowLogoutWarning(false));
+            
+            if (openEditPopupBtn != null) openEditPopupBtn.onClick.AddListener(() => editProfilePopup.SetActive(true));
         }
         // Update the OnEnable method in ProfilePanelUI.cs
         private void OnEnable()
@@ -55,7 +60,12 @@ namespace UI
         private void OnDisable()
         {
             GameManager.OnStateChanged -= HandleStateChange;
+            if (editProfilePopup != null && editProfilePopup.activeSelf)
+            {
+                editProfilePopup.SetActive(false);
+            }
         }
+        
         
         private void HandleStateChange(GameState state)
         {

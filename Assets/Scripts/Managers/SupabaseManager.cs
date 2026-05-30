@@ -336,5 +336,131 @@ namespace Managers {
         //         Debug.LogWarning("Failed to refresh lobby cache (Internet issue?).");
         //     }
         // }
+        
+        
+        
+        
+        
+        
+        // =========================
+        // ACCOUNT EDITING
+        // =========================
+
+        public async Task<bool> UpdateUsername(string newUsername)
+        {
+            try
+            {
+                string userId = Client.Auth.CurrentUser.Id;
+                
+                // Update the public.profiles table
+                await Client.From<ProfileDTO>()
+                    .Where(x => x.id == userId)
+                    .Set(x => x.username, newUsername)
+                    .Update();
+
+                // Update Local Memory
+                LocalAccountManager.Instance.SavedAccount.Username = newUsername;
+                LocalAccountManager.Instance.ForceSaveToDisk();
+                
+                Debug.Log("<color=green>Username updated successfully!</color>");
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Update Username Failed: " + e.Message);
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateEmail(string newEmail)
+        {
+            try
+            {
+                // --- THE AGGRESSIVE CLEAN FIX ---
+                // Strip spaces, line breaks, AND literal quotation marks!
+                string cleanEmail = newEmail.Replace("\u200B", "")
+                    .Replace("\r", "")
+                    .Replace("\n", "")
+                    .Replace("\"", "") // Removes "
+                    .Replace("'", "")  // Removes '
+                    .Trim().ToLower();
+
+                Debug.Log($"<color=yellow>Sending Email Update to Auth Vault: [{cleanEmail}]</color>");
+
+                // 1. Update the Auth Vault (Supabase Auth)
+                var attrs = new Supabase.Gotrue.UserAttributes { Email = cleanEmail };
+                var user = await Client.Auth.Update(attrs);
+
+                if (user != null)
+                {
+                    // 2. Update our public.profiles table
+                    await Client.From<ProfileDTO>()
+                        .Where(x => x.id == user.Id)
+                        .Set(x => x.email, cleanEmail)
+                        .Update();
+
+                    // 3. Update Local Memory
+                    LocalAccountManager.Instance.SavedAccount.email = cleanEmail;
+                    LocalAccountManager.Instance.ForceSaveToDisk();
+                
+                    Debug.Log("<color=green>Email updated successfully in Vault and Profile!</color>");
+                    return true;
+                }
+                return false;
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Update Email Failed: " + e.Message);
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdatePassword(string newPassword)
+        {
+            try
+            {
+                // Passwords only need to be updated in the Auth Vault
+                var attrs = new Supabase.Gotrue.UserAttributes { Password = newPassword };
+                await Client.Auth.Update(attrs);
+                
+                Debug.Log("<color=green>Password updated successfully!</color>");
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Update Password Failed: " + e.Message);
+                return false;
+            }
+        }
+
+        public async Task<bool> DeleteMyAccount()
+        {
+            try
+            {
+                Debug.Log("<color=red>Initiating permanent account deletion...</color>");
+
+                // 1. Call the SQL function we just created
+                // This cleans the DB and the Auth vault in one step
+                await Client.Rpc("delete_my_account", null);
+                
+                // 2. Clear local data immediately so the app doesn't try 
+                // to sync deleted data on the next frame
+                if (LocalAccountManager.Instance != null)
+                {
+                    LocalAccountManager.Instance.WipeLocalData();
+                }
+
+                // 3. Log out and return to Auth screen
+                Logout();
+                
+                Debug.Log("<color=green>Account deleted successfully.</color>");
+                return true;
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Delete Account Failed: " + e.Message);
+                return false;
+            }
+        }
     }
 }

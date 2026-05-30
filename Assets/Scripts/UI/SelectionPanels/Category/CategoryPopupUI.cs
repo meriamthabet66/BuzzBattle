@@ -14,6 +14,18 @@ namespace UI {
         private CategoryPanelUI parentPanel;
         private List<Category> temporarySelections = new List<Category>();
         
+        [Header("Warning Popups")]
+        [SerializeField] private GameObject starWarningPopup;
+        
+        
+        private void OnDisable()
+        {
+            // If the popup was left open, force it to close!
+            if (starWarningPopup != null && starWarningPopup.activeSelf)
+            {
+                starWarningPopup.SetActive(false);
+            }
+        }
         
 
         // Update the OpenPopup method in CategoryPopupUI.cs
@@ -84,7 +96,7 @@ namespace UI {
         
         bool isAlreadySelected = temporarySelections.Exists(x => x.id == cat.id);
 
-        itemUI.SetupWithState(cat, this, isUnlocked, isDownloaded, isAlreadySelected);
+        itemUI.SetupWithState(cat, this, isUnlocked, isDownloaded, isAlreadySelected, starWarningPopup);
     }
 }
         public void OnCategoryToggled(Category cat, bool isSelected)

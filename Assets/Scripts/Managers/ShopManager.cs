@@ -38,6 +38,9 @@ namespace UI.Shop
         [Header("Offline Protection")]
         [SerializeField] private GameObject shopUIContainer; 
         [SerializeField] private GameObject offlineMessagePanel; 
+        
+        [Header("Warning Popups")]
+        [SerializeField] private GameObject starWarningPopup; 
 
         
         private NetworkReachability lastReachability;
@@ -111,6 +114,16 @@ namespace UI.Shop
             
             await RefreshShop(0);
         }
+        
+        private void OnDisable()
+        {
+            // If the popup was left open, force it to close!
+            if (starWarningPopup != null && starWarningPopup.activeSelf)
+            {
+                starWarningPopup.SetActive(false);
+            }
+        }
+
 
         // We add a parameter with a default value of 0
         public async Task RefreshShop(int targetIndex = 0)
@@ -326,7 +339,13 @@ namespace UI.Shop
             int price = itemUI.ItemData.price;
             
             var savedAccount = LocalAccountManager.Instance.SavedAccount;
-            if (savedAccount.Stars < price) return;
+            if (savedAccount.Stars < price)
+            {
+                Debug.LogWarning("Shop: Not enough stars. Showing Warning.");
+                if (starWarningPopup != null) starWarningPopup.SetActive(true);
+                return;
+            }
+
 
             // 1. Deduct Stars
             int newStars = savedAccount.Stars - price;

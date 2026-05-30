@@ -17,18 +17,19 @@ namespace UI {
         [SerializeField] private GameObject lockedOverlay;     // The container with the lock and price
         [SerializeField] private TMP_Text priceText;           
         [SerializeField] private Button downloadBtn;           
-
+        private GameObject starWarningPopup;
         public Category CategoryData { get; private set; }
         private CategoryPopupUI parentPopup;
         
         private bool isUnlocked = false;
         private bool isDownloaded = false;
 
-        public void SetupWithState(Category data, CategoryPopupUI popup, bool unlocked, bool downloaded, bool alreadySelected) {
+        public void SetupWithState(Category data, CategoryPopupUI popup, bool unlocked, bool downloaded, bool alreadySelected, GameObject warning) {
             this.CategoryData = data;
             this.parentPopup = popup;
             this.isUnlocked = unlocked;
             this.isDownloaded = downloaded;
+            this.starWarningPopup = warning;
 
             if (categoryNameText != null) categoryNameText.text = data.categoryName;
             if (iconImage != null && data.categoryIcon != null) iconImage.sprite = data.categoryIcon;
@@ -67,15 +68,22 @@ namespace UI {
         }
 
         // --- BUTTON: THE LOCKED OVERLAY (Unlock Button) ---
+       
         public async void OnUnlockClicked() {
-            bool success = await SupabaseManager.Instance.UnlockCategory(CategoryData.id, CategoryData.price);
+            // 1. Check stars BEFORE calling Supabase
+            if (Managers.LocalAccountManager.Instance.SavedAccount.Stars < CategoryData.price) {
+                Debug.LogWarning("UI: Not enough stars for Category. Showing Warning.");
+                if (starWarningPopup != null) starWarningPopup.SetActive(true);
+                return;
+            }
+
+            // 2. If they have enough, proceed normally
+            bool success = await Managers.SupabaseManager.Instance.UnlockCategory(CategoryData.id, CategoryData.price);
             if (success) {
                 isUnlocked = true;
                 RefreshVisuals(false);
-                Debug.Log("Category Unlocked!");
             }
         }
-
         // --- BUTTON: THE DOWNLOAD ARROW ---
         public async void OnDownloadClicked() {
             downloadBtn.interactable = false;
