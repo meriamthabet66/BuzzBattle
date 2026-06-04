@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using GamePlay.Questions;
 
 namespace Managers
@@ -6,6 +7,9 @@ namespace Managers
     public class SettingsManager : MonoBehaviour
     {
         public static SettingsManager Instance { get; private set; }
+        
+        public static Action OnAudioSettingsChanged;
+
 
         public float MusicVolume { get; private set; }
         public float SfxVolume { get; private set; }
@@ -21,13 +25,14 @@ namespace Managers
             MusicVolume = volume;
             PlayerPrefs.SetFloat("MusicVol", volume);
             PlayerPrefs.Save();
-            // TODO: Update your AudioSource.volume here
+            OnAudioSettingsChanged?.Invoke(); 
         }
 
         public void SetSfxVolume(float volume) {
             SfxVolume = volume;
             PlayerPrefs.SetFloat("SfxVol", volume);
             PlayerPrefs.Save();
+            OnAudioSettingsChanged?.Invoke();
         }
 
         // --- TIMERS ---
@@ -75,6 +80,8 @@ namespace Managers
 
             // 2. Reset the variables in the code
             LoadAllSettings(); // This will reload the default values (1.0f, 5s, 10s, etc.)
+            
+            OnAudioSettingsChanged?.Invoke();
             
             Debug.Log("<color=red>SettingsManager: All settings reset to defaults.</color>");
         }

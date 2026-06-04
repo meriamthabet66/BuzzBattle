@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Core.Audio;
 using Core.Enums;
 using UnityEngine;
 using GamePlay.Configs;
@@ -22,6 +23,8 @@ namespace Managers {
         public static event Action<int> OnPlayerLockedOut;   
         public static event Action OnBuzzerWindowReopened;
         public static event Action<int> OnVerbalEvaluationStarted;
+        
+        public static event Action<int, string> OnPlayAnimation; // <--- ADD THIS
 
         private RoundConfig currentRound;
         private int questionIndex;
@@ -156,6 +159,16 @@ namespace Managers {
             if (originalBuzzerPlayer == -1) 
             {
                 originalBuzzerPlayer = playerIndex;
+                if (AudioManager.Instance != null) 
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.buzzSound);
+            }
+            else 
+            {
+                // --- ANIMATION: Someone buzzed after the first person! It's a steal! ---
+                OnPlayAnimation?.Invoke(playerIndex, "steal");
+                if (AudioManager.Instance != null) 
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.stealSound);
+                
             }
 
             // --- VERBAL FLOW ---
@@ -245,10 +258,22 @@ namespace Managers {
 
             if (result == AnswerResult.Correct || result == AnswerResult.Almost)
             {
+                // --- ANIMATION: Win! ---
+                OnPlayAnimation?.Invoke(playerIndex, "win");
+                
+                if (AudioManager.Instance != null) 
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.winSound);
                 OnQuestionCompleted(); 
             }
             else
             {
+                // --- ANIMATION: Lose! ---
+                OnPlayAnimation?.Invoke(playerIndex, "lose");
+                
+                // Play Lose Sound
+                if (AudioManager.Instance != null) 
+                    AudioManager.Instance.PlaySFX(AudioManager.Instance.loseSound);
+
                 if (isVerbal) OnQuestionCompleted(); 
                 else ProcessFailedAttempt();         
             }

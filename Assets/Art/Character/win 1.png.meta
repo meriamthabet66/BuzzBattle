@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f2a7f4fd9285948479a7569f40493af5
+guid: 2be193f3c8935c94894d628ee4b6465b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8676910166181039473
-    second: steal 1_0
+      213: -804355145038162961
+    second: win 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: steal 1_0
+      name: win 1_0
       rect:
         serializedVersion: 2
-        x: 315
+        x: 255
         y: 128
-        width: 429
-        height: 750
+        width: 607
+        height: 759
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17d423be2d39a6870800000000000000
-      internalID: 8676910166181039473
+      spriteID: fe31ebad14b56d4f0800000000000000
+      internalID: -804355145038162961
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 290de3f3b97f4fe4aad2a55f4d99e6e5
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      steal 1_0: 8676910166181039473
+      win 1_0: -804355145038162961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

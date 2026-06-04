@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle
+  m_Name: lose
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -4744724232239111109, guid: aa14252834d73014ead75712e3c33deb, type: 3}
+      value: {fileID: -8699814470570244575, guid: d724ee6bf64c1b14381cf4ed59b3f9cd, type: 3}
     - time: 0.5
-      value: {fileID: 9075381334120939931, guid: d348a24b4bdabb24fa8ffeb92e0badcf, type: 3}
+      value: {fileID: 6892639038137858930, guid: a9799458a2a979649884dc3a0586a14f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 114
@@ -46,8 +46,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -4744724232239111109, guid: aa14252834d73014ead75712e3c33deb, type: 3}
-    - {fileID: 9075381334120939931, guid: d348a24b4bdabb24fa8ffeb92e0badcf, type: 3}
+    - {fileID: -8699814470570244575, guid: d724ee6bf64c1b14381cf4ed59b3f9cd, type: 3}
+    - {fileID: 6892639038137858930, guid: a9799458a2a979649884dc3a0586a14f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -72,4 +72,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

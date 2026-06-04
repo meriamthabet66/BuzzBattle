@@ -23,6 +23,9 @@ namespace UI
         
         // --- NEW: Tracks if this player is completely dead for this question ---
         private bool isPermanentlyBlocked = false;
+        
+        [Header("Animation")]
+        [SerializeField] private Animator characterAnimator; // Drag the GameObject with the Animator here!
 
         private void Awake()
         {
@@ -42,6 +45,8 @@ namespace UI
             // --- NEW: Listen to temporary phase changes ---
             RoundManager.OnValidPlayerBuzzed += HandleSomeoneBuzzed;
             RoundManager.OnBuzzerWindowReopened += ReopenBuzzer;
+            
+            RoundManager.OnPlayAnimation += TriggerAnimation; // NEW
         }
 
         private void OnDisable()
@@ -51,6 +56,8 @@ namespace UI
             
             RoundManager.OnValidPlayerBuzzed -= HandleSomeoneBuzzed;
             RoundManager.OnBuzzerWindowReopened -= ReopenBuzzer;
+            
+            RoundManager.OnPlayAnimation -= TriggerAnimation; // NEW
         }
 
         public void SetupForMatch(int managerIndex)
@@ -136,6 +143,16 @@ namespace UI
         public void OnBuzz()
         {
             BuzzerSystem.OnPlayerBuzzed?.Invoke(this.playerIndex);
+        }
+        
+        
+        private void TriggerAnimation(int targetPlayerIndex, string animationName)
+        {
+            // Only play if this message is for ME!
+            if (targetPlayerIndex == this.playerIndex && characterAnimator != null)
+            {
+                characterAnimator.SetTrigger(animationName);
+            }
         }
     }
 }
